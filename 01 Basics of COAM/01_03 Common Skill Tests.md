@@ -1,4 +1,4 @@
-## Common Skill Tests
+## 01.03 Common Skill Tests
 
 These are quick sketches of the most common Skill Tests used in GA COAM, included here for reference (refer to our individual specs for specific details about our implementation of these features)
 
@@ -20,8 +20,8 @@ These are quick sketches of the most common Skill Tests used in GA COAM, include
 ### Overlay
 
 - This is a broad category since it can include nearly any conceivable mini-game style Skill Test. Some examples include:
+  - Choosing correctly between two items
   - Hidden pictures
-  - Choosing between two items
   - Solving a maze
   - Matching colors or numbers
   - Repeating a pattern
