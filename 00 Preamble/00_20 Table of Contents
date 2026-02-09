@@ -1,44 +1,69 @@
-01. Basics of COAM
-  01.01. Important Terms & Entities
+- 01 Basics of COAM
+
+  - 01.01 Important Terms & Entities
+
     - COAM = Coin-Operated Amusement Machines
+
     - GLC = Georgia Lottery Commission
+
     - Intralot
+
     - Skill Test
+
     - Hand Count
+
     - Site Controller
+
     - SAS = Slot Accounting System
+
     - Publisher
+
     - Master License Holder
+
     - Location License Holder
-  01.02. Skill Test
+
+  - 01.02 Skill Test
+
     - What Defines a Skill Test
+
     - Features Common of All Skill Test Presentations
-  01.03. Common Skill Tests
+
+  - 01.03 Common Skill Tests
+
     - Reel Nudge
+
     - Symbol Select
     - Overlay
-  01.04. Hand Count
-  01.05. Cash-Out Requirements and Limitations
-  01.06. Location Requirements
-  01.07. Regulatory Considerations
+
+  - 01.04 Hand Count
+
+  - 01.05 Cash-Out Requirements and Limitations
+
+  - 01.06 Location Requirements
+
+  - 01.07 Regulatory Considerations
+
     - Table Game Imagery Disallowed
+
     - Cash Labels and Imagery Disallowed
-02. Other Design Considerations
-   02.01. Demographics
-   02.02. Complexity
-   02.03. Upfront Information
-   02.04. Sound
-   02.05. Less Than Ideal Environment
-03. Government Document Excerpts
-   03.01. Georgia Title 16-12-20
-   03.02. Georgia Title 16-12-35
-   03.03. Georgia Title 43-8-1
-   03.04. Georgia Title 50-27-70
-   03.05. Georgia Title 50-27-84
-   03.06. Georgia Title 50-27-87
-   03.07. Georgia Title 50-27-101
-   03.08. GLC Rules RU 13.1.2
-   03.09. GLC Rules RU 13.1.4
-   03.10. GLC Rules RU 13.1.16
-   03.11. Georgia Lottery Corporation Coin Operated Amusement Machine Notice “FISH GAME”
-   03.12. Georgia COAM SAS Requirements v1.7
+
+- 02 Other Design Considerations
+  - 02.01 Demographics
+  - 02.02 Complexity
+  - 02.03 Upfront Information
+  - 02.04 Sound
+  - 02.05 Less Than Ideal Environment
+
+- 03 Government Document Excerpts
+  - 03.01 Georgia Title 16-12-20
+  - 03.02 Georgia Title 16-12-35
+  - 03.03 Georgia Title 43-8-1
+  - 03.04 Georgia Title 50-27-70
+  - 03.05 Georgia Title 50-27-84
+  - 03.06 Georgia Title 50-27-87
+  - 03.07 Georgia Title 50-27-101
+  - 03.08 GLC Rules RU 13.1.2
+  - 03.09 GLC Rules RU 13.1.4
+  - 03.10 GLC Rules RU 13.1.16
+  - 03.11 Georgia Lottery Corporation Coin Operated Amusement Machine Notice “FISH GAME”
+  - 03.12 Georgia COAM SAS Requirements v1.7
