@@ -1,0 +1,44 @@
+01. Basics of COAM
+  01.01. Important Terms & Entities
+    01.01.01. COAM = Coin-Operated Amusement Machines
+    01.01.02. GLC = Georgia Lottery Commission
+    01.01.03. Intralot
+    01.01.04. Skill Test
+    01.01.05. Hand Count
+    01.01.06. Site Controller
+    01.01.07. SAS = Slot Accounting System
+    01.01.08. Publisher
+    01.01.09. Master License Holder
+    01.01.10. Location License Holder
+  01.02. Skill Test
+    01.02.01. What Defines a Skill Test
+    01.02.02. Features Common of All Skill Test Presentations
+  01.03. Common Skill Tests
+    01.03.01. Reel Nudge
+    01.03.02. Symbol Select
+    01.03.03. Overlay
+  01.04. Hand Count
+  01.05. Cash-Out Requirements and Limitations
+  01.06. Location Requirements
+  01.07. Regulatory Considerations
+    01.07.01. Table Game Imagery Disallowed
+    01.07.02. Cash Labels and Imagery Disallowed
+02. Other Design Considerations
+   02.01. Demographics
+   02.02. Complexity
+   02.03. Upfront Information
+   02.04. Sound
+   02.05. Less Than Ideal Environment
+03. Government Document Excerpts
+   03.01. Georgia Title 16-12-20
+   03.02. Georgia Title 16-12-35
+   03.03. Georgia Title 43-8-1
+   03.04. Georgia Title 50-27-70
+   03.05. Georgia Title 50-27-84
+   03.06. Georgia Title 50-27-87
+   03.07. Georgia Title 50-27-101
+   03.08. GLC Rules RU 13.1.2
+   03.09. GLC Rules RU 13.1.4
+   03.10. GLC Rules RU 13.1.16
+   03.11. Georgia Lottery Corporation Coin Operated Amusement Machine Notice “FISH GAME”
+   03.12. Georgia COAM SAS Requirements v1.7
