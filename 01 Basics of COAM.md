@@ -3,39 +3,25 @@
 ## 01.01 Important Terms & Entities
 
 - **COAM** = Coin Operated Amusement Machines
-
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
-
   - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
-
     - Skill-based, cannot be 100% chance
-
     - Credits are carried over from game to game
-
     - Dispense credits in some form that must be redeemed for merchandise on-location
-
 - **GLC** = Georgia Lottery Commission
-
   - The GLC oversees COAM games in Georgia.
-
 - **Intralot**
   - Manages daily operation, security, accounting, and records of all COAM games in Georgia
-
 - **Skill Test**
   - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
-
 - **Hand Count**
   - Each play on a GA COAM machine adds to the Hand Count, which is used for determining cash-out values (see below)
-
 - **Site Controller**
   - A device that all cabinets on site communicate with to handle Intralot reporting, ticket printing and other related tasks
-
 - **SAS** = Slot Accounting System
   - A direct connection between each cabinet and Intralot; is used to monitor gaming for legal, regulatory, and tax purposes
-
 - **Publisher**
   - Produces games and cabinets
-
 - **Master License Holder**
   - Purchases cabinets from the publisher and owns them
 
@@ -67,10 +53,8 @@ A few things to keep in mind when determining if the gameplay is properly skill-
 - The *Bet Level*, *Max Bet*, *Exit*, and *Help* buttons are also disabled until the Skill Test is completed
 - If the game is AutoPlaying, the AutoPlay will stop when a Skill Test needs to be solved
   - The game may resume AutoPlay following the Skill Test evaluation, but it is not required
-
 - The potential Win Line or combination is highlighted, so it is clear to the player which potential Win is being evaluated
   - This may also involve deemphasizing symbols not involved in the potential Win, but this is not required
-
 - There may be multiple Wins present; in these cases, the Skill Test is applied to the highest Win
   - Correctly solving the Skill Test awards **ALL the Wins**
   - Failing the Skill Test awards **NONE of the Wins** (this must be made clear in the Help Pages)
@@ -82,7 +66,8 @@ A few things to keep in mind when determining if the gameplay is properly skill-
 
 ## 01.03 Common Skill Tests
 
-These are quick sketches of the most common Skill Tests used in GA COAM, included here for reference (refer to our individual specs for specific details about our implementation of these features)
+These are quick sketches of the most common Skill Tests used in GA COAM, included here for reference. 
+Refer to individual specs for specific details about our implementation of these features.
 
 ### Reel Nudge
 
@@ -110,3 +95,31 @@ These are quick sketches of the most common Skill Tests used in GA COAM, include
   - Repeating a pattern
   - Etc.
 - Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort
+
+## 01.04 Hand Count
+
+The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
+
+- The Hand Count starts at 0 when credit is first added to the machine
+- Every play adds 1 to the Hand Count
+- When cashing out, the maximum amount that can be collected is [Hand Count] x $5
+  - Cash-out increment and minimum Cash-out Amount can be set to anything from $0.01 to $5
+  - Any remainder is left on the cabinet as credit
+  - The number of Hand Counts cashed out will be subtracted from the current Hand Count upon cashing out
+
+**Example:**
+A player has $42.50 in credits and 9 Hand Count (so the maximum amount the player can cash out is $45):
+
+1. If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
+2. If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
+
+- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
+  - When the countdown reaches 0, the Hand Count resets to 0
+  - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
+
+**Example:**
+A player has $0.40 in credits and the Minimum Bet for the game is $0.25.
+Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+
+- If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+- If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
