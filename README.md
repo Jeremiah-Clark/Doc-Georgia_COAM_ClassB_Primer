@@ -18,3 +18,7 @@ A plain-English breakdown of the current state of COAM regulations in Georgia as
   - 02.03 Upfront Information
   - 02.04 Sound
   - 02.05 Less Than Ideal Environment
+
+## Build
+
+"**Georgia_COAM_ClassB_Primer-Latest.pdf**" is my most recent build of this document.
