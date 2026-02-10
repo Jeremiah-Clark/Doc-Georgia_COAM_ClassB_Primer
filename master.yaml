@@ -3,7 +3,7 @@ title: Georgia COAM (Class B) Primer
 author: Jeremiah D Clark
 date: 2025-10-16
 version: "2.0"
-abstract: >
+abstract: |
   A plain-English breakdown of the state of the Georgia COAM regulation
   and market as of October 2025.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - COAM
   - regulations
 fontsize: 12pt
-documentclass: book
+documentclass: article
 geometry:
   - margin=1in
   - top=1.5in
