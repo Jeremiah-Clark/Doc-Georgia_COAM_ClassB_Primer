@@ -1,42 +1,31 @@
 ---
-title: "Georgia COAM (Class B) Primer"
-author: "Jeremiah D Clark"
-date: "2025-10-16"
+title: Georgia COAM (Class B) Primer
+author: Jeremiah D Clark
+date: 2025-10-16
 version: "2.0"
-
-# Document info
-abstract: |
-  A plain-English breakdown of the state of the Georgia COAM regulation and market as of October 2025.
-
-keywords: [gaming, Georgia, COAM, regulations]
-  
-# PDF-specific settings
+abstract: >
+  A plain-English breakdown of the state of the Georgia COAM regulation
+  and market as of October 2025.
+keywords:
+  - gaming
+  - Georgia
+  - COAM
+  - regulations
 fontsize: 12pt
 geometry:
   - margin=1in
   - top=1.5in
   - bottom=1.5in
 papersize: letter
-
-# PDF metadata
-subject: "Georgia COAM market and regulations."
+subject: Georgia COAM market and regulations.
 lang: en-US
-
-# Table of contents
 toc: true
 toc-depth: 2
 numbersections: true
-
-# Custom header/footer
 header-includes: |
-  \usepackage{lastpage}
-  \usepackage{fancyhdr}
-  \pagestyle{fancy}
   \fancyfoot[R]{Page \thepage of \pageref{LastPage}}
   \fancyfoot[L]{Georgia COAM (Class B) Primer}
-
-# HTML
 css: style.css
-self-contained: true  # Embed images/CSS in single file
+self-contained: true
   
 ---
