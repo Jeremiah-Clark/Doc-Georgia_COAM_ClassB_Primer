@@ -29,6 +29,8 @@ numbersections: true
 
 # Custom header/footer
 header-includes: |
+  \usepackage{lastpage}
+  \usepackage{fancyhdr}
   \pagestyle{fancy}
   \fancyfoot[R]{Page \thepage of \pageref{LastPage}}
   \fancyfoot[L]{Georgia COAM (Class B) Primer}
