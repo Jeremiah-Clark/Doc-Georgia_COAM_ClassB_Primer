@@ -22,11 +22,11 @@ subject: Georgia COAM market and regulations.
 lang: en-US
 toc: true
 toc-depth: 3
-numbersections: true
+numbersections: false
 header-includes: |
   \usepackage{fancyhdr}
   \pagestyle{fancy}
-  \fancyhead[L]{Widget Development Guide}
+  \fancyhead[L]{Georgia COAM (Class B) Primer}
   \fancyhead[R]{\thepage}
 css: style.css
 self-contained: true
