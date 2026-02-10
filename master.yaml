@@ -31,8 +31,16 @@ numbersections: false
 
 header-includes: |
   \usepackage{fancyhdr}
+  \usepackage{xcolor}
+  \usepackage{graphicx}
+  \usepackage{enumitem}
+  \usepackage{titlesec}
+  
   \pagestyle{fancy}
   \fancyhf{}
+  \renewcommand{\headrulewidth}{0.5pt}
+  \fancyhead{}
+  \renewcommand{\footrulewidth}{0.5pt}
   \fancyfoot[L]{Your Document Title}
   \fancyfoot[R]{Page \thepage}
 
