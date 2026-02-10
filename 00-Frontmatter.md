@@ -38,19 +38,6 @@
   - 02.04 Sound
   - 02.05 Less Than Ideal Environment
 
-- 03 Government Document Excerpts
-  - 03.01 Georgia Title 16-12-20
-  - 03.02 Georgia Title 16-12-35
-  - 03.03 Georgia Title 43-8-1
-  - 03.04 Georgia Title 50-27-70
-  - 03.05 Georgia Title 50-27-84
-  - 03.06 Georgia Title 50-27-87
-  - 03.07 Georgia Title 50-27-101
-  - 03.08 GLC Rules RU 13.1.2
-  - 03.09 GLC Rules RU 13.1.4
-  - 03.10 GLC Rules RU 13.1.16
-  - 03.11 Georgia Lottery Corporation Coin Operated Amusement Machine Notice “FISH GAME”
-  - 03.12 Georgia COAM SAS Requirements v1.7
 
 
 
