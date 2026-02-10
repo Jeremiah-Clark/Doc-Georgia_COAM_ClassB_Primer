@@ -100,7 +100,7 @@ Refer to individual specs for specific details about our implementation of these
 
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
 
-- The Hand Count starts at 0 when credit is first added to the machine
+- The Hand Count starts at 0 when credits are first added to the machine
 - Every play adds 1 to the Hand Count
 - When cashing out, the maximum amount that can be collected is [Hand Count] x $5
   - Cash-out increment and minimum Cash-out Amount can be set to anything from $0.01 to $5
@@ -123,3 +123,46 @@ Playing a game with a Bet of $0.16 or more will drop the current credits below t
 
 - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
 - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
+
+## 01.05 Cash-Out Requirements and Limitations
+
+Cash-out in Georgia COAM has several specific limitations
+
+- A COAM machine cannot dispense cash
+- It can dispense vouchers or gift cards to be redeemed on-site
+  - Cannot be redeemed for cash, firearms, alcohol, tobacco, or pornography
+- Other prizes of equivalent value are also permitted
+- ***NOTE:** A voluntary pilot program is in progress to allow winnings to be placed on a pre-paid Visa or Mastercard; we will update as necessary*
+- Can cash-out only $5 per Hand Count (see above)
+- Legally speaking, each Hand Count is treated as an individual game with a $5 maximum award, so that there is no traditional “hand pay” for taxable wins. In other words, a $1500 cash out isn’t a $1500 win, it is 300 x $5 wins.
+
+## 01.06 Location Requirements
+
+There are particular requirements that locations must meet to qualify for a COAM license:
+
+- Any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content; and primarily sells merchandise rather than services
+- COAM revenue cannot exceed 50% of the total revenue for the location
+- There are a maximum of 9 COAM machines per site
+- ***NOTE:** The rules are changing soon to allow for COAM machines to be placed in bars; we will update as necessary*
+
+## 01.07 Regulatory Considerations
+
+### Table Game Imagery Disallowed
+
+- Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is not allowed
+- DO NOT use card suits and face cards in designs
+- Traditional royals (A, K, Q, J, and 10) are allowed so long as they do not look like cards and are not paired with a suit
+- Dice are allowed
+
+### Cash Labels and Imagery Disallowed
+
+These are not explicit regulatory requirements, but rather guidance we have received from regulators:
+
+- There can be no messaging, implicit or implied, that the game will dispense actual cash
+- DO NOT use “Cash Out” in-game or on buttons
+	- Use “Collect” instead
+- DO NOT label anything as “Cash”
+	- Use “Credits” instead
+- Dollar signs and cash values on credit amounts and prizes are OK
+- Dollar sign and gold bar reel Symbols are OK
+- Bank and cash themes are OK
