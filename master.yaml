@@ -1,8 +1,19 @@
 ---
 title: "Georgia COAM (Class B) Primer"
-author: "Jeremiah Clark"
-date: "2026-02-10"
-toc: true
-numbersections: false
+author: "Jeremiah D Clark"
+date: "2025-10-16"
+version: "2.0"
+abstract: |
+  A plain-English breakdown of the state of COAM regulations in Georgia as of October 2025.
+  
+# PDF-specific settings
 geometry: margin=1in
+fontsize: 12pt
+papersize: letter
+
+# Table of contents
+toc: true
+toc-depth: 2
+numbersections: true
+
 ---
