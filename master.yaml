@@ -36,7 +36,6 @@ linestretch: 1.15
 # Custom header and footer
 header-includes: |
   \usepackage{fancyhdr}
-  \usepackage{lastpage}
   \usepackage{xcolor}
   \usepackage{graphicx}
   \definecolor{brandblue}{RGB}{25,55,120}
@@ -52,7 +51,7 @@ header-includes: |
   % Footer with document title and page numbers
   \renewcommand{\footrulewidth}{0.5pt}
   \fancyfoot[L]{Your Document Title}
-  \fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+  \fancyfoot[R]{Page \thepage}
   
   % First page style (for title page)
   \fancypagestyle{plain}{
