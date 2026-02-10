@@ -1,0 +1,112 @@
+# 01 Basics of COAM
+
+## 01.01 Important Terms & Entities
+
+- **COAM** = Coin Operated Amusement Machines
+
+  - **Class A:** Classic arcade-style games like skee-ball and claw games.
+
+  - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
+
+    - Skill-based, cannot be 100% chance
+
+    - Credits are carried over from game to game
+
+    - Dispense credits in some form that must be redeemed for merchandise on-location
+
+- **GLC** = Georgia Lottery Commission
+
+  - The GLC oversees COAM games in Georgia.
+
+- **Intralot**
+  - Manages daily operation, security, accounting, and records of all COAM games in Georgia
+
+- **Skill Test**
+  - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
+
+- **Hand Count**
+  - Each play on a GA COAM machine adds to the Hand Count, which is used for determining cash-out values (see below)
+
+- **Site Controller**
+  - A device that all cabinets on site communicate with to handle Intralot reporting, ticket printing and other related tasks
+
+- **SAS** = Slot Accounting System
+  - A direct connection between each cabinet and Intralot; is used to monitor gaming for legal, regulatory, and tax purposes
+
+- **Publisher**
+  - Produces games and cabinets
+
+- **Master License Holder**
+  - Purchases cabinets from the publisher and owns them
+
+### Location License Holder
+
+Owns the retail space, leases cabinets from Master License Holder.
+
+## 01.02. Skill Test
+
+### What Defines a Skill Test
+
+A few things to keep in mind when determining if the gameplay is properly skill-based or not:
+
+- All Wins MUST be gated behind a Skill Test
+  - The sequence is ALWAYS: **Bet → Skill → Award**
+  - The Win Award may encompass an entire Bonus feature, so long as there has been a Skill Test between the Bet and the Award
+  - The reel spin presentation may come before or after the Skill Test, though it is nearly always placed before the Skill Test 
+- The Player has to decide something and take an action to determine success or failure
+  - If there is no player interaction, it is not skill-based
+- It must be possible for the test to fail
+  - If there is no way to lose or fail, then it is not a skill test
+- The possible award amount is predetermined as normal in a game of the type being played (usually a slot machine)
+  - The skill determination only decides whether the Player receives the award or not, and it does not impact the prize amount
+- These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
+
+### Features Common to All Skill Test Presentations
+
+- Pressing the *Play* button without solving the Skill Test will do nothing
+- The *Bet Level*, *Max Bet*, *Exit*, and *Help* buttons are also disabled until the Skill Test is completed
+- If the game is AutoPlaying, the AutoPlay will stop when a Skill Test needs to be solved
+  - The game may resume AutoPlay following the Skill Test evaluation, but it is not required
+
+- The potential Win Line or combination is highlighted, so it is clear to the player which potential Win is being evaluated
+  - This may also involve deemphasizing symbols not involved in the potential Win, but this is not required
+
+- There may be multiple Wins present; in these cases, the Skill Test is applied to the highest Win
+  - Correctly solving the Skill Test awards **ALL the Wins**
+  - Failing the Skill Test awards **NONE of the Wins** (this must be made clear in the Help Pages)
+- Hinting at the correct answer is allowed. Some examples of hinting include: 
+  - Making the correct option a different color
+  - Adding particles or other effects to the correct option
+  - Animating the correct option
+
+
+## 01.03 Common Skill Tests
+
+These are quick sketches of the most common Skill Tests used in GA COAM, included here for reference (refer to our individual specs for specific details about our implementation of these features)
+
+### Reel Nudge
+
+- After the reels stop spinning, if there is a potential Win, one of the reels will be positioned one stop too high or too low to complete the Win
+- Arrows at the top and bottom of every reel allow the Player to nudge a reel up or down by one reel stop
+- After ONE reel is nudged ONE stop, the Skill Test will be evaluated for pass/fail
+- Some Nudge games can be configured with the nudge arrows present after every spin, even if there is no potential Win
+  - In these cases, pressing the *Play* button without solving the Skill Test will start the next game
+  - After ONE reel is nudged ONE stop, the Skill Test will be evaluated as a failure
+
+### Symbol Select
+
+- After the reels stop spinning, only if there is a potential Win, one of the symbols involved in that Win will be obscured from the Player
+- The Player will be presented with two symbols to choose from, one of which will complete the Winning combination and award the Win
+- After one of the symbols is selected, the Skill Test will be evaluated
+
+### Overlay
+
+- The Skill Test will be shown on an overlay graphic that will overlay the reels, rather than being shown on the reels
+- This is a broad category that can include nearly any conceivable mini-game as a Skill Test. Some examples include:
+  - Choosing correctly between two items
+  - Hidden pictures
+  - Solving a maze
+  - Matching colors or numbers
+  - Repeating a pattern
+  - Etc.
+- Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort

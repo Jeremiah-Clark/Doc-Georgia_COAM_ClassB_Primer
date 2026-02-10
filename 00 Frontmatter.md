@@ -1,3 +1,7 @@
+# Table of Contents
+
+
+
 - 01 Basics of COAM
 
   - 01.01 Important Terms & Entities
@@ -67,3 +71,9 @@
   - 03.10 GLC Rules RU 13.1.16
   - 03.11 Georgia Lottery Corporation Coin Operated Amusement Machine Notice “FISH GAME”
   - 03.12 Georgia COAM SAS Requirements v1.7
+
+
+
+**Please Note**:
+This is not meant to be all-inclusive; it is intended to provide game developers with the information and context needed to guide their decisions.
+This is a living document and will be updated as things change.
