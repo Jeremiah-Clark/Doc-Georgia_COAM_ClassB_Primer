@@ -39,6 +39,7 @@ header-includes: |
   \usepackage{lastpage}
   \usepackage{xcolor}
   \usepackage{graphicx}
+  \definecolor{brandblue}{RGB}{25,55,120}
   
   % Define footer and header
   \pagestyle{fancy}
@@ -59,6 +60,9 @@ header-includes: |
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0pt}
   }
+
+  % Make section headers blue
+  \titleformat{\section}{\Large\bfseries\color{brandblue}}{\thesection}{1em}{}
   
   % Adjust list spacing and symbols
   \usepackage{enumitem}
