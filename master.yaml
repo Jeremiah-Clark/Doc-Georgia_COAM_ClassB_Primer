@@ -39,7 +39,7 @@ header-includes: |
   \pagestyle{fancy}
   \fancyhf{}
   \fancyhead{}
-  \fancyfoot[L]{Your Document Title}
+  \fancyfoot[L]{Georgia COAM (Class B) Primer}
   \fancyfoot[R]{Page \thepage}
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
