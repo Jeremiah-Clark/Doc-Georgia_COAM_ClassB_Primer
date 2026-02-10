@@ -14,60 +14,18 @@ keywords:
 subject: Georgia COAM market and regulations.
 lang: en-US
 
-# Document class and layout
 documentclass: article
-papersize: letter
 fontsize: 11pt
-geometry:
-  - margin=1in
-  - top=1.25in
-  - bottom=1.25in
+geometry: margin=1in
 
-# Table of contents
 toc: true
-toc-depth: 3
-toc-title: "Table of Contents"
 numbersections: false
 
-# Font settings
-mainfont: "Times New Roman"
-linestretch: 1.15
-
-# Custom header and footer
 header-includes: |
   \usepackage{fancyhdr}
-  \usepackage{xcolor}
-  \usepackage{graphicx}
-  \usepackage{enumitem}
-  \usepackage{titlesec}
-  
   \pagestyle{fancy}
   \fancyhf{}
-  \renewcommand{\headrulewidth}{0.5pt}
-  \fancyhead{}
-  \renewcommand{\footrulewidth}{0.5pt}
   \fancyfoot[L]{Your Document Title}
   \fancyfoot[R]{Page \thepage}
-  
-  \fancypagestyle{plain}{
-    \fancyhf{}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
-  }
-  
-  \setlistdepth{9}
-  \renewlist{itemize}{itemize}{9}
-  \setlist[itemize,1]{label=\textbullet}
-  \setlist[itemize,2]{label=\circ}
-  \setlist[itemize,3]{label=\square}
-  \setlist[itemize,4]{label=\ast}
-  \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
-  
-  \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
-  \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
-  \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
-  
-  \setlength{\parskip}{6pt}
-  \setlength{\parindent}{0pt}
 
 ---
