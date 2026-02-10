@@ -23,8 +23,10 @@ toc: true
 toc-depth: 2
 numbersections: true
 header-includes: |
-  \fancyfoot[R]{Page \thepage of \pageref{LastPage}}
-  \fancyfoot[L]{Georgia COAM (Class B) Primer}
+  \usepackage{fancyhdr}
+  \pagestyle{fancy}
+  \fancyhead[L]{Widget Development Guide}
+  \fancyhead[R]{\thepage}
 css: style.css
 self-contained: true
   
