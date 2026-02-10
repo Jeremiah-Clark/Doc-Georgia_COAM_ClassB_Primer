@@ -1,5 +1,6 @@
 # Doc-Georgia_COAM_ClassB_Primer
-A plain-English breakdown of the current state of COAM regulations in Georgia.
+
+A plain-English breakdown of the current state of COAM regulations in Georgia as of October 2025.
 
 ## Table of Contents
 
