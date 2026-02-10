@@ -52,7 +52,7 @@ header-includes: |
   \renewlist{itemize}{itemize}{9}
   \setlist[itemize,1]{label=\textbullet}
   \setlist[itemize,2]{label=$\circ$}
-  \setlist[itemize,3]{label=$\square$}
+  \setlist[itemize,3]{label=$\smallsquare$}
   \setlist[itemize,4]{label=$\ast$}
   \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
   
