@@ -17,6 +17,8 @@ lang: en-US
 documentclass: article
 papersize: letter
 fontsize: 11pt
+mainfont: "Times New Roman"
+linestretch: 1.15
 geometry:
   - margin=1in
   - top=1.25in
