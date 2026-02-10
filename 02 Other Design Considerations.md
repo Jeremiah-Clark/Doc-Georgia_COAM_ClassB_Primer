@@ -22,4 +22,4 @@ Designing COAM games requires a different mindset and considerations than tradit
 
 - Since COAM games are located in retail establishments as an add-on business, the environment is not as conducive to slot games as traditional casinos are. Screens can be too dim to be seen easily through the light from outside and the glare from overhead lights, the space is often cramped, and maintenance may not be a high priority for the location
 
-![IMG_6435](C:\Users\clark\Desktop\IMG_6435.JPEG)
+![IMG_6435](https://github.com/user-attachments/assets/00979408-22ae-4c6a-b6bc-e0a2ffebd456)
