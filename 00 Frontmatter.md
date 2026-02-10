@@ -6,26 +6,6 @@
 
   - 01.01 Important Terms & Entities
 
-    - COAM = Coin-Operated Amusement Machines
-
-    - GLC = Georgia Lottery Commission
-
-    - Intralot
-
-    - Skill Test
-
-    - Hand Count
-
-    - Site Controller
-
-    - SAS = Slot Accounting System
-
-    - Publisher
-
-    - Master License Holder
-
-    - Location License Holder
-
   - 01.02 Skill Test
 
     - What Defines a Skill Test
@@ -38,19 +18,19 @@
 
     - Symbol Select
     - Overlay
-
+  
   - 01.04 Hand Count
-
+  
   - 01.05 Cash-Out Requirements and Limitations
-
+  
   - 01.06 Location Requirements
-
+  
   - 01.07 Regulatory Considerations
-
+  
     - Table Game Imagery Disallowed
-
+  
     - Cash Labels and Imagery Disallowed
-
+  
 - 02 Other Design Considerations
   - 02.01 Demographics
   - 02.02 Complexity
