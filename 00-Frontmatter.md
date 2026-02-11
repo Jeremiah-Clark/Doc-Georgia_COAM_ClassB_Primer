@@ -1,4 +1,6 @@
-\begin{flushright} ![](images/BraveryLogo.png){ width=90% } \end{flushright}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/BraveryLogo.png}
+\end{center}
 
 \vspace{1.25em}
 
