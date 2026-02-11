@@ -35,9 +35,9 @@ function BlockQuote(el)
         first.content = new_content
       end
       
-      -- Create the LaTeX environment
-      local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}')
-      local end_env = pandoc.RawBlock('latex', '\\end{' .. env_name .. '}')
+      -- Create the LaTeX environment with minipage to handle lists properly
+      local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}\n\\begin{minipage}{\\textwidth}')
+      local end_env = pandoc.RawBlock('latex', '\\end{minipage}\n\\end{' .. env_name .. '}')
       
       -- Return the content wrapped in the environment
       local result = {begin_env}
