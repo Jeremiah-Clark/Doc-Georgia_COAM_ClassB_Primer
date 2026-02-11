@@ -139,7 +139,7 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
-> [!Important]
+> [!Summary]
 >
 > - Hand Count starts at 0; add 1 Hand Count per play
 > - Player can cash-out only $5 per Hand Count
