@@ -51,7 +51,7 @@ header-includes: |
   \renewlist{itemize}{itemize}{9}
   \setlist[itemize,1]{label=\textbullet}
   \setlist[itemize,2]{label=$\circ$}
-  \setlist[itemize,3]{label=$\blacksquare$}
+  \setlist[itemize,3]{label=\scalebox{0.5}{$\blacksquare$}}
   \setlist[itemize,4]{label=$\ast$}
   \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
   
