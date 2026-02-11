@@ -60,9 +60,8 @@ There are few specific items that determine if gameplay is properly skill-based:
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
 > [!Summary]
-> 
-> - All wins gated behind a Skill Test  
-> - Skill Tests require player interaction  
+> - All wins gated behind a Skill Test
+> - Skill Tests require player interaction
 > - Skill Test results are pass/fail
 
 ### Features Common to Skill Test Presentations
@@ -151,11 +150,10 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
 > [!Summary]
-> 
-> - Hand Count starts at 0; add 1 Hand Count per play  
-> - Player can cash-out only $5 per Hand Count  
->   - For every $5 cashed-out, subtract 1 Hand Count  
-> - Credits falling below minimum Bet Level triggers Hand Count Reset countdown  
+> - Hand Count starts at 0; add 1 Hand Count per play
+> - Player can cash-out only $5 per Hand Count
+>   - For every $5 cashed-out, subtract 1 Hand Count
+> - Credits falling below minimum Bet Level triggers Hand Count Reset countdown
 >   - If no credits are added before countdown ends, Hand Count resets to 0
 
 ## 01.05 Cash-Out Requirements and Limitations
@@ -166,18 +164,17 @@ Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
 
-> [!Important]  
-> 
-> Prior to July 1, 2026:  
+> [!Important]
+>
+> Prior to July 1, 2026:
 >
 > - A COAM machine can dispense vouchers or gift cards
-> - Must be redeemed on-site only  
+> - Must be redeemed on-site only
 > - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
 > - Other prizes of equivalent value are also permitted
 >
-> After July 1, 2026:  
->
-> Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
+> After July 1, 2026:
+> - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
 > - Gift cards will be able to be used for any legal purchase at any location that accepts them 
 
 - Can cash-out no more than $5 per Hand Count
