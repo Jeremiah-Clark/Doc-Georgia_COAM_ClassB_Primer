@@ -1,6 +1,4 @@
-\begin{center} 
-![](images/BraveryLogo.png){ width=90% }
-\end{center}
+![](images/BraveryLogo.png){ width=90%, center }
 
 \vspace{1em}
 
