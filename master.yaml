@@ -77,4 +77,5 @@ header-includes: |
   \newtcolorbox{warning}{colback=orange!5!white,colframe=orange!75!black,fonttitle=\bfseries,title=Warning,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
   \newtcolorbox{tip}{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries,title=Tip,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
   \newtcolorbox{caution}{colback=yellow!5!white,colframe=yellow!75!black,fonttitle=\bfseries,title=Caution,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
+  \newtcolorbox{summary}{colback=violet!5!white,colframe=violet!75!black,fonttitle=\bfseries,title=In Summary,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
 ---
