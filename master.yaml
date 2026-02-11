@@ -3,8 +3,6 @@ title: Georgia COAM (Class B) Primer
 author: Jeremiah D Clark
 date: 2025-10-16
 version: "2.0"
-abstract: |
-  This document explains the current Georgia COAM regulations as of October 2025. It also provides guidance for those new to this unique market.
 keywords:
   - gaming
   - Georgia
@@ -23,9 +21,7 @@ geometry:
   - top=1.25in
   - bottom=1.25in
 
-toc: true
 toc-depth: 3
-toc-title: "Table of Contents"
 numbersections: false
 
 header-includes: |
@@ -62,5 +58,4 @@ header-includes: |
   
   \setlength{\parskip}{6pt}
   \setlength{\parindent}{0pt}
-  
 ---
