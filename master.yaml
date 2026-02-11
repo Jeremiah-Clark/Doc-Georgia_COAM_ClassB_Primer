@@ -32,6 +32,7 @@ header-includes: |
   \usepackage{enumitem}
   \usepackage{titlesec}
   \usepackage{ifxetex,ifluatex}
+  \usepackage{tcolorbox}
   
   \ifxetex
     \usepackage{fontspec}
@@ -73,4 +74,65 @@ header-includes: |
   
   \setlength{\parskip}{6pt}
   \setlength{\parindent}{0pt}
+  
+  % Callout box definitions
+  \newtcolorbox{important}{
+    colback=red!5!white,
+    colframe=red!75!black,
+    fonttitle=\bfseries,
+    title=Important,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    arc=2mm
+  }
+  
+  \newtcolorbox{note}{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    fonttitle=\bfseries,
+    title=Note,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    arc=2mm
+  }
+  
+  \newtcolorbox{warning}{
+    colback=orange!5!white,
+    colframe=orange!75!black,
+    fonttitle=\bfseries,
+    title=Warning,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    arc=2mm
+  }
+  
+  \newtcolorbox{tip}{
+    colback=green!5!white,
+    colframe=green!75!black,
+    fonttitle=\bfseries,
+    title=Tip,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    arc=2mm
+  }
+  
+  \newtcolorbox{caution}{
+    colback=yellow!5!white,
+    colframe=yellow!75!black,
+    fonttitle=\bfseries,
+    title=Caution,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    arc=2mm
+  }
 ---
