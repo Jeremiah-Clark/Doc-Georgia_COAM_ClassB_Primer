@@ -110,41 +110,43 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 - The Hand Count starts at 0 when credits are first added to the machine
 - Every play adds 1 to the Hand Count
-- When cashing out, the maximum amount that can be collected is [Hand Count] x $5
+- When cashing out, the maximum amount that can be collected is [Hand Count] × $5
   - Cash-out increment and minimum Cash-out Amount can be set to anything from $0.01 to $5
   - Any remainder is left on the cabinet as credit
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count upon cashing out
-
-**Example:**
-
-> A player has $42.50 in credit and 9 Hand Count:
-> 1. The most they could cash-out under any circumstance is $45
-> 2. If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
-> 3. If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
-
 - If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
 
-**Example:**
-> A player has $0.40 in credits and the Minimum Bet for the game is $0.25.
-> Playing a game with a Bet of $0.16 or more will drop the current credits below the
-> Minimum Bet, which will trigger the Hand Count Reset countdown:
+**Cash-Out Examples:**
 
-- If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
-- If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
+> A player has $42.50 in credit and 9 Hand Count:
+>
+> 1. The most they could cash-out under any circumstance is $45
+> 2. If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
+> 3. If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
+
+**Hand Count Reset Examples:**
+
+> A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
+> - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+>   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+>   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
 ## 01.05 Cash-Out Requirements and Limitations
 
-Cash-out in Georgia COAM has several specific limitations
+Cash-out in Georgia COAM has several specific limitations:
 
-- A COAM machine cannot dispense cash
-- It can dispense vouchers or gift cards to be redeemed on-site
-  - Cannot be redeemed for cash, firearms, alcohol, tobacco, or pornography
+- A COAM machine **cannot** dispense cash
+  - ***NOTE:** A pilot program is in progress to allow winnings to be placed on a pre-paid Visa or Mastercard; the plan is for this to roll out market-wide in 2026*
+
+- A COAM machine **can** dispense vouchers or gift cards to be redeemed on-site
+  - Such vouchers cannot be redeemed for cash, firearms, alcohol, tobacco, or pornography
 - Other prizes of equivalent value are also permitted
-- ***NOTE:** A voluntary pilot program is in progress to allow winnings to be placed on a pre-paid Visa or Mastercard; the plan is for this to roll out market-wide in 2026*
-- Can cash-out only $5 per Hand Count (see above)
-- Legally speaking, each Hand Count is treated as an individual game with a $5 maximum award, so that there is no traditional “hand pay” for taxable wins. In other words, a $1500 cash out isn’t a $1500 win, it is 300 x $5 wins.
+- Can cash-out no more than $5 per Hand Count
+- Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
+  - Put another way, a $1500 cash-out isn’t a $1500 win, it is 300 × $5 wins.
+
 
 ## 01.06 Location Requirements
 
@@ -153,9 +155,11 @@ There are particular requirements that locations must meet to qualify for a COAM
 - Any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content; and primarily sells merchandise rather than services
 - COAM revenue cannot exceed 50% of the total revenue for the location
 - There are a maximum of 9 COAM machines per site
-- ***NOTE:** The rules are changing soon to allow for COAM machines to be placed in bars; we will update as necessary*
+- ***NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
 
 ## 01.07 Regulatory Considerations
+
+These are not explicit regulatory requirements, but rather guidance we have received from interactions with regulators.
 
 ### Table Game Imagery Disallowed
 
@@ -166,13 +170,11 @@ There are particular requirements that locations must meet to qualify for a COAM
 
 ### Cash Labels and Imagery Disallowed
 
-These are not explicit regulatory requirements, but rather guidance we have received from regulators:
-
 - There can be no messaging, implicit or implied, that the game will dispense actual cash
 - DO NOT use “Cash Out” in-game or on buttons
 	- Use “Collect” instead
 - DO NOT label anything as “Cash”
 	- Use “Credits” instead
 - Dollar signs and cash values on credit amounts and prizes are OK
-- Dollar sign and gold bar reel Symbols are OK
+- Dollar sign and gold bar or similar reel Symbols are OK
 - Bank and cash themes are OK
