@@ -5,11 +5,30 @@ function BlockQuote(el)
     local callout_type = text:match("^%[!(%w+)%]")
     
     if callout_type then
-      -- Remove the [!Type] line
-      table.remove(el.content, 1)
-      
       -- Convert to lowercase for environment name
       local env_name = callout_type:lower()
+      
+      -- Remove the [!Type] marker from the first paragraph
+      local new_content = {}
+      local found_marker = false
+      
+      for i, inline in ipairs(first.content) do
+        local inline_text = pandoc.utils.stringify(inline)
+        if not found_marker and inline_text:match("^%[!%w+%]") then
+          -- This is the marker, skip it
+          found_marker = true
+          -- If there's text after the marker in the same inline element, keep it
+          local remaining = inline_text:gsub("^%[!%w+%]%s*", "")
+          if remaining ~= "" then
+            table.insert(new_content, pandoc.Str(remaining))
+          end
+        else
+          table.insert(new_content, inline)
+        end
+      end
+      
+      -- Replace the first paragraph's content
+      first.content = new_content
       
       -- Create the LaTeX environment
       local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}')
