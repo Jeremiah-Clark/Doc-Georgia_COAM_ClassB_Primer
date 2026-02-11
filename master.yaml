@@ -15,7 +15,6 @@ documentclass: article
 papersize: letter
 fontsize: 11pt
 mainfont: "Clear Sans"
-sansfont: "Clear Sans"
 linestretch: 1.15
 geometry:
   - margin=1in
@@ -31,20 +30,6 @@ header-includes: |
   \usepackage{graphicx}
   \usepackage{enumitem}
   \usepackage{titlesec}
-  \usepackage{ifxetex,ifluatex}
-  
-  \ifxetex
-    \usepackage{fontspec}
-    \IfFontExistsTF{Clear Sans}{
-      \setmainfont{Clear Sans}
-    }{
-      \IfFontExistsTF{Arial}{
-        \setmainfont{Arial}
-      }{
-        \setmainfont{Helvetica}
-      }
-    }
-  \fi
   
   \pagestyle{fancy}
   \fancyhf{}
