@@ -35,12 +35,6 @@ header-includes: |
   \usepackage{enumitem}
   \usepackage{titlesec}
   
-  % Custom title page
-  \usepackage{titling}
-  \pretitle{\begin{center}\LARGE\bfseries}
-  \posttitle{\par\end{center}\vskip 0.5em}
-  
-  % Custom header and footer
   \pagestyle{fancy}
   \fancyhf{}
   \fancyhead{}
@@ -49,12 +43,10 @@ header-includes: |
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
 
-  % Page Style
   \fancypagestyle{plain}{
     \fancyhf{}
   }
   
-  % List Formatting
   \setlistdepth{9}
   \renewlist{itemize}{itemize}{9}
   \setlist[itemize,1]{label=\textbullet}
@@ -63,12 +55,10 @@ header-includes: |
   \setlist[itemize,4]{label=$\ast$}
   \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
 
-  % Title Formatting
-  \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
-  \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
-  \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
   \definecolor{brandblue}{RGB}{25,55,120}
   \titleformat{\section}{\Large\bfseries\color{brandblue}}{\thesection}{1em}{}
+  \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+  \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
   
   \setlength{\parskip}{6pt}
   \setlength{\parindent}{0pt}
