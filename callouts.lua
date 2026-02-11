@@ -8,27 +8,32 @@ function BlockQuote(el)
       -- Convert to lowercase for environment name
       local env_name = callout_type:lower()
       
-      -- Remove the [!Type] marker from the first paragraph
-      local new_content = {}
-      local found_marker = false
+      -- Check if the first paragraph only contains the marker
+      local marker_only = text:match("^%[!%w+%]%s*$")
       
-      for i, inline in ipairs(first.content) do
-        local inline_text = pandoc.utils.stringify(inline)
-        if not found_marker and inline_text:match("^%[!%w+%]") then
-          -- This is the marker, skip it
-          found_marker = true
-          -- If there's text after the marker in the same inline element, keep it
-          local remaining = inline_text:gsub("^%[!%w+%]%s*", "")
-          if remaining ~= "" then
-            table.insert(new_content, pandoc.Str(remaining))
+      if marker_only then
+        -- Remove the entire first paragraph (it's just the marker)
+        table.remove(el.content, 1)
+      else
+        -- Remove just the [!Type] marker from the first paragraph
+        local new_content = {}
+        local found_marker = false
+        
+        for i, inline in ipairs(first.content) do
+          local inline_text = pandoc.utils.stringify(inline)
+          if not found_marker and inline_text:match("^%[!%w+%]") then
+            found_marker = true
+            local remaining = inline_text:gsub("^%[!%w+%]%s*", "")
+            if remaining ~= "" then
+              table.insert(new_content, pandoc.Str(remaining))
+            end
+          else
+            table.insert(new_content, inline)
           end
-        else
-          table.insert(new_content, inline)
         end
+        
+        first.content = new_content
       end
-      
-      -- Replace the first paragraph's content
-      first.content = new_content
       
       -- Create the LaTeX environment
       local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}')
