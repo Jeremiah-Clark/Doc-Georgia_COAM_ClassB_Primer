@@ -34,4 +34,4 @@ Most COAM games have their pay tables displayed on the screen at all times. Play
 
 ![](images/IMG_6435.JPEG){ width=100% }
 
-This image—depicting a fairly average recent COAM installation—illustrates several of these points.
+This image—of a fairly average recent COAM installation—illustrates several of these points.

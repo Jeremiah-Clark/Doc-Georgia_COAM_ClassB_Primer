@@ -1,4 +1,4 @@
-![](images/BraveryLogo.png){ width=100% }
+![](images/BraveryLogo.png){ width=90% align=right }
 
 \vspace{1.25em}
 
