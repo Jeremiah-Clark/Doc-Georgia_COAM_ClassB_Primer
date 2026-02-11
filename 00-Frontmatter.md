@@ -5,7 +5,6 @@
 \vspace{2em}
 
 > [!Caution]
-> 
 > This document is not legal advice, nor is it meant to be all-inclusive. It is intended as a source of general information and market context only. Check all up to date laws and regulations before taking any action.
 
 **Content Last Updated:**  
