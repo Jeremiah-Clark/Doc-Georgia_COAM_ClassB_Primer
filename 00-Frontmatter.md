@@ -1,5 +1,5 @@
 \begin{center} 
-\includegraphics[width=3in]{images/BraveryLogo.svg} 
+\includegraphics[width=3in]{images/BraveryLogo.png} 
 \end{center} 
 
 \vspace{1em}
