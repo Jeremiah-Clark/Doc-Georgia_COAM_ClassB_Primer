@@ -2,7 +2,7 @@
 \includegraphics[width=0.9\textwidth]{images/BraveryLogo.png}
 \end{center}
 
-\vspace{1.25em}
+\vspace{2em}
 
 **Please Note:**  
 This is not meant to be all-inclusive; it is intended to provide game developers with the information and context needed to guide their decisions. This is a living document and will be updated as things change.
