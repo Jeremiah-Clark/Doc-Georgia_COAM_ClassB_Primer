@@ -31,7 +31,7 @@ header-includes: |
   \usepackage{graphicx}
   \usepackage{enumitem}
   \usepackage{titlesec}
-  \usepackage{tcolorbox}
+  \usepackage[most]{tcolorbox}
   \usepackage{ifxetex,ifluatex}
   
   \ifxetex
@@ -70,4 +70,11 @@ header-includes: |
   \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
   
   \setlength{\parskip}{6pt}
-  \se
+  \setlength{\parindent}{0pt}
+  
+  \newtcolorbox{important}{enhanced,colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,title=Important,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm,boxrule=1pt,before upper={\parindent0pt}}
+  \newtcolorbox{note}{enhanced,colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=Note,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm,boxrule=1pt,before upper={\parindent0pt}}
+  \newtcolorbox{warning}{enhanced,colback=orange!5!white,colframe=orange!75!black,fonttitle=\bfseries,title=Warning,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm,boxrule=1pt,before upper={\parindent0pt}}
+  \newtcolorbox{tip}{enhanced,colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries,title=Tip,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm,boxrule=1pt,before upper={\parindent0pt}}
+  \newtcolorbox{caution}{enhanced,colback=yellow!5!white,colframe=yellow!75!black,fonttitle=\bfseries,title=Caution,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm,boxrule=1pt,before upper={\parindent0pt}}
+  \newtcolorbox{summary}{enhanced,
