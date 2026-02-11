@@ -1,6 +1,14 @@
+\begin{center} 
+\includegraphics[width=3in]{images/BraveryLogo.svg} 
+\end{center} 
+
+\vspace{1em}
+
 ***Please Note**:*
 *This is not meant to be all-inclusive; it is intended to provide game developers with the information and context needed to guide their decisions.*
 *This is a living document and will be updated as things change.*
 
 ***Content Last Updated**:*
 *2025-10-20*
+
+\newpage
