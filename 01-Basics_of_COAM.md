@@ -2,6 +2,8 @@
 
 ## 01.01 Glossary
 
+ *(Ref: O.C.G.A § 50-27-70; O.C.G.A § 50-27-84; O.C.G.A § 50-27-87; O.C.G.A § 50-27-102)*
+
 - **COAM** = Coin Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
   - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
@@ -12,15 +14,19 @@
   - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
 - **Hand Count**
   - Each play on a GA COAM machine adds to the Hand Count, which is used in determining cash-out values
+- **Game Pack**
+  - COAM games are multi-game systems, usually consisting of 5–6 titles per pack that may be freely switched between from a central game select screen
+- **Cabinet**
+  - A catch-all term for the physical hardware the Game Pack is installed on
 - **Site Controller**
-  - A device that all cabinets on site communicate with to handle Intralot reporting, ticket printing and other related tasks
+  - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
 - **SAS** = Slot Accounting System
-  - A direct connection between each cabinet and Intralot; is used to monitor gaming for legal, regulatory, and tax purposes
+  - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes
 
 ### Governance
 
 - **GLC** = Georgia Lottery Commission
-  - The GLC oversees the regulation of COAM games in Georgia
+  - The GLC oversees the regulation of COAM games in Georgia and retains 13% net receipts for the state
 - **Intralot**
   - Contracted by the GLC to oversee the daily operation, security, accounting, and record keeping of all COAM games in Georgia
 
@@ -29,15 +35,17 @@
 - **Publisher**
   - The company that produces the games and cabinets. A Publisher can not also be an MLH or LLH. The Publisher can not profit directly from their games beyond the initial sale to an MLH
 - **MLH** = Master License Holder
-  - A legally mandated buffer between the Publisher and LLH. The MLH purchases games from the publisher and leases them to the LLH
+  - A legally mandated buffer between the Publisher and LLH. The MLH purchases games from the publisher and leases them to the LLH, and is entitled to 43.5% of net receipts. An MLH can not be the exclusive supplier of a Publisher’s products to LLHs.
 - **LLH** = Location License Holder
-  - Owns the retail space where the games are located. The LLH leases games from the MLH, and is the only entity that can directly profit from coin-in
+  - Owns the retail space where the games are located. The LLH leases games from the MLH, and is entitled to 43.5% of net receipts
 
 ## 01.02. Skill Test
 
+(*Ref: O.C.G.A § 16-12-35*)
+
 ### What Defines a Skill Test
 
-There are few specific items that determin if gameplay is properly skill-based:
+There are few specific items that determine if gameplay is properly skill-based:
 
 - All Wins MUST be gated behind a Skill Test
   - The sequence is ALWAYS: **Bet → Skill → Award**
@@ -52,7 +60,6 @@ There are few specific items that determin if gameplay is properly skill-based:
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
 > [!Summary]
->
 > - All wins gated behind a Skill Test
 > - Skill Tests require player interaction
 > - Skill Test results are pass/fail
@@ -108,12 +115,15 @@ Refer to individual specs for specific details about our implementation of these
   - Solving a maze
   - Repeating a pattern (aka “Simon”)
 - Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort
-- They risk inturrupting the flow of play if they are not carefully designed
+- They risk interrupting the flow of play if they are not carefully designed
 
 ## 01.04 Hand Count
 
+*(Ref: O.C.G.A § 16-12-35)*
+
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
 
+- The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
 - The Hand Count starts at 0 when credits are first added to the machine
 - Every play adds 1 to the Hand Count
 - When cashing out, the maximum amount that can be collected is [Hand Count] × $5
@@ -124,7 +134,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
 
-**Cash-Out Examples:**
+**Hand Count Cash-Out Examples:**
 
 A player has $42.50 in credit and 9 Hand Count:
 
@@ -140,7 +150,6 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
 > [!Summary]
->
 > - Hand Count starts at 0; add 1 Hand Count per play
 > - Player can cash-out only $5 per Hand Count
 >   - For every $5 cashed-out, subtract 1 Hand Count
@@ -149,29 +158,56 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
 
 ## 01.05 Cash-Out Requirements and Limitations
 
+*(Ref: O.C.G.A § 16-12-35; O.C.G.A § 50-27-71)*
+
 Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
-  - ***NOTE:** A pilot program is in progress to allow winnings to be placed on a pre-paid Visa or Mastercard; the plan is for this to roll out market-wide in 2026*
 
-- A COAM machine **can** dispense vouchers or gift cards to be redeemed on-site
-  - Such vouchers cannot be redeemed for cash, firearms, alcohol, tobacco, or pornography
-- Other prizes of equivalent value are also permitted
+> [!Important]
+> - Prior to July 1, 2026:
+>   - A COAM machine can dispense vouchers or gift cards
+>     - Must be redeemed on-site only
+>     - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
+>   - Other prizes of equivalent value are also permitted
+> - After July 1, 2026:
+>   - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption
+>     - Gift cards will be able to be used for any legal purchase at any location that accepts them
+
 - Can cash-out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
   - Put another way, a $1500 cash-out isn’t a $1500 win, it is 300 × $5 wins.
 
-
 ## 01.06 Location Requirements
 
-There are particular requirements that locations must meet to qualify for a COAM license:
+*Ref: O.C.G.A § 50-27-84*
 
-- Any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content; and primarily sells merchandise rather than services
+There are particular requirements that locations must meet to qualify for a COAM license.
+
+- May be any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content; and primarily sells merchandise rather than services
+  - ***NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
 - COAM revenue cannot exceed 50% of the total revenue for the location
 - There are a maximum of 9 COAM machines per site
-- ***NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
 
-## 01.07 Regulatory Considerations
+## 01.07  Other Regulations
+
+### Networking
+
+- COAM game cabinets are not allowed to be networked together
+  - Progressives can not be shared between cabinets, nor can they interact in any other way
+  - Games that are a part of the same Game Pack may share Progressives within that single cabinet
+
+### SAS Support
+
+- Our separate SAS Requirements document includes the full list of required SAS Long Polls, Meters, and Events
+
+- The Primary SAS port may only be used by Intralot to connect the Cabinet to their Site Controller
+  - The Site Controller will confirm the identity of the Game Pack by running a LP21 (ROM Signature) and comparing the results to their records. If this check fails, the Game Pack will be disabled
+
+- The Secondary SAS port is allowed to be used by kiosk payment systems
+  - Secondary SAS is disallowed from sending LP01 (Disable Play) and LP02 (Enable Play) commands
+
+## 01.08 Other Considerations
 
 These are not explicit regulatory requirements, but rather guidance we have received from interactions with regulators.
 
