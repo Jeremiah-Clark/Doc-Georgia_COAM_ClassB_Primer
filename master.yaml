@@ -1,7 +1,7 @@
 ---
 title: Georgia COAM (Class B) Primer
 author: Jeremiah D Clark
-date: 2026-02-11
+date: 2025-10-16
 version: "2.0"
 keywords:
   - gaming
@@ -78,28 +78,4 @@ header-includes: |
   \newmdenv[linecolor=green!75!black,backgroundcolor=green!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,frametitle=Tip,frametitlefont=\bfseries,frametitleaboveskip=5pt,frametitlebelowskip=5pt]{tip}
   \newmdenv[linecolor=yellow!75!black,backgroundcolor=yellow!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,frametitle=Caution,frametitlefont=\bfseries,frametitleaboveskip=5pt,frametitlebelowskip=5pt]{caution}
   \newmdenv[linecolor=violet!75!black,backgroundcolor=violet!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,frametitle=In Summary,frametitlefont=\bfseries,frametitleaboveskip=5pt,frametitlebelowskip=5pt]{summary}
-  
-  \let\Oldimportant\important
-  \let\endOldimportant\endimportant
-  \renewenvironment{important}{\Oldimportant}{\endOldimportant}
-  
-  \let\Oldnote\note
-  \let\endOldnote\endnote
-  \renewenvironment{note}{\Oldnote}{\endOldnote}
-  
-  \let\Oldwarning\warning
-  \let\endOldwarning\endwarning
-  \renewenvironment{warning}{\Oldwarning}{\endOldwarning}
-  
-  \let\Oldtip\tip
-  \let\endOldtip\endtip
-  \renewenvironment{tip}{\Oldtip}{\endOldtip}
-  
-  \let\Oldcaution\caution
-  \let\endOldcaution\endcaution
-  \renewenvironment{caution}{\Oldcaution}{\endOldcaution}
-  
-  \let\Oldsummary\summary
-  \let\endOldsummary\endsummary
-  \renewenvironment{summary}{\Oldsummary}{\endOldsummary}
 ---
