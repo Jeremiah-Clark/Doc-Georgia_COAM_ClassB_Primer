@@ -1,6 +1,6 @@
 ![](images/BraveryLogo.png){ width=100% }
 
-\vspace{2em}
+\vspace{1.25em}
 
 **Please Note:**  
 This is not meant to be all-inclusive; it is intended to provide game developers with the information and context needed to guide their decisions. This is a living document and will be updated as things change.
