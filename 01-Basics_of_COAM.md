@@ -60,6 +60,7 @@ There are few specific items that determine if gameplay is properly skill-based:
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
 > [!Summary]
+> Test here
 > - All wins gated behind a Skill Test
 > - Skill Tests require player interaction
 > - Skill Test results are pass/fail
