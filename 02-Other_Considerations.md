@@ -32,6 +32,6 @@ In our hard won experience, these factors can make the difference between a succ
 - Fair math
 Most COAM games have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance, and are unlikely to look in the Help screens.
 
-![](images/IMG_6435.JPEG){ width=80% }
+![](images/IMG_6435.JPEG){ width=100% }
 
-This image, depicting a fairly average recent COAM installation, illustrates several of these points.
+This image—depicting a fairly average recent COAM installation—illustrates several of these points.
