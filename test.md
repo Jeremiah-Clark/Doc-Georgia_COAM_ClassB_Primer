@@ -1,6 +1,7 @@
 # Test
 
-\begin{summary}
-Test content here
-- And here
-\end{summary}
+::: summary
+- All wins gated behind a Skill Test
+- Skill Tests require player interaction
+- Skill Test results are pass/fail
+:::
