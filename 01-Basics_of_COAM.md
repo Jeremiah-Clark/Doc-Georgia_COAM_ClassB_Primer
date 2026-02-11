@@ -51,7 +51,8 @@ There are few specific items that determin if gameplay is properly skill-based:
   - The Skill Test result is pass or fail only, it does not impact the prize amount
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
-> [!Important]
+> [!Summary]
+>
 > - All wins gated behind a Skill Test
 > - Skill Tests require player interaction
 > - Skill Test results are pass/fail
