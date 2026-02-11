@@ -165,17 +165,14 @@ Cash-out in Georgia COAM has several specific limitations:
 - A COAM machine **cannot** dispense cash
 
 > [!Important]
->
 > Prior to July 1, 2026:
->
 > - A COAM machine can dispense vouchers or gift cards
-> - Must be redeemed on-site only
-> - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
+>	 - Must be redeemed on-site only
+>	 - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
 > - Other prizes of equivalent value are also permitted
->
 > After July 1, 2026:
 > - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
-> - Gift cards will be able to be used for any legal purchase at any location that accepts them 
+> 	- Gift cards will be able to be used for any legal purchase at any location that accepts them 
 
 - Can cash-out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
