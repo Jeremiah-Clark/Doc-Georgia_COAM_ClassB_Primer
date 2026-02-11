@@ -1,9 +1,8 @@
 \begin{center}
 \includegraphics[width=0.9\textwidth]{images/BraveryLogo.png}
+\end{center}
 
 \vspace{2em}
-
-
 
 > [!Caution]
 > 
@@ -11,8 +10,6 @@
 
 **Content Last Updated:**  
 2026-02-11
-
-\end{center}
 
 \newpage
 
