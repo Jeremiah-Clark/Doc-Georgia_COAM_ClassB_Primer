@@ -35,11 +35,14 @@ function BlockQuote(el)
         first.content = new_content
       end
       
-      -- Create the LaTeX environment with minipage to handle lists properly
-      local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}\n\\begin{minipage}{\\textwidth}')
-      local end_env = pandoc.RawBlock('latex', '\\end{minipage}\n\\end{' .. env_name .. '}')
+      -- Create a Div with the callout class instead of raw LaTeX
+      -- This lets Pandoc handle the content rendering properly
+      local div = pandoc.Div(el.content, {class = env_name})
       
-      -- Return the content wrapped in the environment
+      -- Wrap it in raw LaTeX for the tcolorbox
+      local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}')
+      local end_env = pandoc.RawBlock('latex', '\\end{' .. env_name .. '}')
+      
       local result = {begin_env}
       for i, block in ipairs(el.content) do
         table.insert(result, block)
