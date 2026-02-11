@@ -5,17 +5,15 @@ function BlockQuote(el)
     local callout_type = text:match("^%[!(%w+)%]")
     
     if callout_type then
-      -- Convert to lowercase for environment name
       local env_name = callout_type:lower()
       
-      -- Check if the first paragraph only contains the marker
+      -- Check if marker is standalone
       local marker_only = text:match("^%[!%w+%]%s*$")
       
       if marker_only then
-        -- Remove the entire first paragraph (it's just the marker)
         table.remove(el.content, 1)
       else
-        -- Remove just the [!Type] marker from the first paragraph
+        -- Remove marker from first paragraph
         local new_content = {}
         local found_marker = false
         
@@ -35,18 +33,12 @@ function BlockQuote(el)
         first.content = new_content
       end
       
-      -- Create the LaTeX environment
-      local begin_env = pandoc.RawBlock('latex', '\\begin{' .. env_name .. '}')
-      local end_env = pandoc.RawBlock('latex', '\\end{' .. env_name .. '}')
+      -- Instead of raw LaTeX blocks, create a proper Div
+      -- Pandoc will handle this better
+      local div = pandoc.Div(el.content)
+      div.classes = {env_name}
       
-      -- Return the content wrapped in the environment
-      local result = {begin_env}
-      for i, block in ipairs(el.content) do
-        table.insert(result, block)
-      end
-      table.insert(result, end_env)
-      
-      return result
+      return div
     end
   end
   
