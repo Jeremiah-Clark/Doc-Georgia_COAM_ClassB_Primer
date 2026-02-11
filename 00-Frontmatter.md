@@ -1,4 +1,4 @@
-![](images/BraveryLogo.png){ width=90%, center }
+![](images/BraveryLogo.png){ width=100% }
 
 \vspace{1em}
 
@@ -14,6 +14,7 @@ This is not meant to be all-inclusive; it is intended to provide game developers
 
 This document explains the current Georgia COAM regulations as of October 2025. It also provides guidance for those new to this unique market.
 
+\renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
 
 \newpage
