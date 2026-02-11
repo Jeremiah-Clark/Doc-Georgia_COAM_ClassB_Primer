@@ -53,8 +53,8 @@ There are few specific items that determin if gameplay is properly skill-based:
 
 > [!Important]
 > - All wins gated behind a Skill Test
-> - Requires player interaction
-> - Result are pass/fail
+> - Skill Tests require player interaction
+> - Skill Test results are pass/fail
 
 ### Features Common to Skill Test Presentations
 
@@ -125,18 +125,26 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 **Cash-Out Examples:**
 
-> A player has $42.50 in credit and 9 Hand Count:
->
-> 1. The most they could cash-out under any circumstance is $45
-> 2. If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
-> 3. If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
+A player has $42.50 in credit and 9 Hand Count:
+
+- The most they could cash-out under any circumstance is $45
+- If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
+- If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
 
 **Hand Count Reset Examples:**
 
-> A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
-> - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
->   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
->   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
+A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
+- Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+  - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
+
+> [!Important]
+>
+> - Hand Count starts at 0; add 1 Hand Count per play
+> - Player can cash-out only $5 per Hand Count
+>   - For every $5 cashed-out, subtract 1 Hand Count
+> - Credits falling below minimum Bet Level triggers Hand Count Reset countdown
+>   - If no credits are added before countdown ends, Hand Count resets to 0
 
 ## 01.05 Cash-Out Requirements and Limitations
 
