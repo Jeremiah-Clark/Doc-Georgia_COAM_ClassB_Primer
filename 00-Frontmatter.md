@@ -4,17 +4,20 @@
 
 \vspace{2em}
 
-**Please Note:**  
-This is not meant to be all-inclusive; it is intended to provide game developers with the information and context needed to guide their decisions. This is a living document and will be updated as things change.
+> [!Caution] 
+> **This document is not legal advice**, nor is it meant to be all-inclusive.
+> It is intended as a source of general information and market context only.
+> Check all up to date laws and regulations before taking any action.
 
 **Content Last Updated:**  
-2025-10-20
+2026-02-11
 
 \newpage
 
 # Abstract
 
-This document explains the current Georgia COAM regulations as of October 2025. It also provides guidance for those new to this unique market.
+This document explains the current Georgia COAM regulations as of February 2026.
+It also provides guidance for those new to this unique market.
 
 \renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
