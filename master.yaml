@@ -31,8 +31,8 @@ header-includes: |
   \usepackage{graphicx}
   \usepackage{enumitem}
   \usepackage{titlesec}
-  \usepackage{ifxetex,ifluatex}
   \usepackage{tcolorbox}
+  \usepackage{ifxetex,ifluatex}
   
   \ifxetex
     \usepackage{fontspec}
@@ -54,10 +54,7 @@ header-includes: |
   \fancyfoot[R]{Page \thepage}
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
-
-  \fancypagestyle{plain}{
-    \fancyhf{}
-  }
+  \fancypagestyle{plain}{\fancyhf{}}
   
   \setlistdepth{9}
   \renewlist{itemize}{itemize}{9}
@@ -66,7 +63,7 @@ header-includes: |
   \setlist[itemize,3]{label=\scalebox{0.5}{$\blacksquare$}}
   \setlist[itemize,4]{label=$\ast$}
   \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
-
+  
   \definecolor{brandblue}{RGB}{25,55,120}
   \titleformat{\section}{\Large\bfseries\color{brandblue}}{\thesection}{1em}{}
   \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
@@ -75,64 +72,9 @@ header-includes: |
   \setlength{\parskip}{6pt}
   \setlength{\parindent}{0pt}
   
-  % Callout box definitions
-  \newtcolorbox{important}{
-    colback=red!5!white,
-    colframe=red!75!black,
-    fonttitle=\bfseries,
-    title=Important,
-    left=5pt,
-    right=5pt,
-    top=5pt,
-    bottom=5pt,
-    arc=2mm
-  }
-  
-  \newtcolorbox{note}{
-    colback=blue!5!white,
-    colframe=blue!75!black,
-    fonttitle=\bfseries,
-    title=Note,
-    left=5pt,
-    right=5pt,
-    top=5pt,
-    bottom=5pt,
-    arc=2mm
-  }
-  
-  \newtcolorbox{warning}{
-    colback=orange!5!white,
-    colframe=orange!75!black,
-    fonttitle=\bfseries,
-    title=Warning,
-    left=5pt,
-    right=5pt,
-    top=5pt,
-    bottom=5pt,
-    arc=2mm
-  }
-  
-  \newtcolorbox{tip}{
-    colback=green!5!white,
-    colframe=green!75!black,
-    fonttitle=\bfseries,
-    title=Tip,
-    left=5pt,
-    right=5pt,
-    top=5pt,
-    bottom=5pt,
-    arc=2mm
-  }
-  
-  \newtcolorbox{caution}{
-    colback=yellow!5!white,
-    colframe=yellow!75!black,
-    fonttitle=\bfseries,
-    title=Caution,
-    left=5pt,
-    right=5pt,
-    top=5pt,
-    bottom=5pt,
-    arc=2mm
-  }
+  \newtcolorbox{important}{colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries,title=Important,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
+  \newtcolorbox{note}{colback=blue!5!white,colframe=blue!75!black,fonttitle=\bfseries,title=Note,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
+  \newtcolorbox{warning}{colback=orange!5!white,colframe=orange!75!black,fonttitle=\bfseries,title=Warning,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
+  \newtcolorbox{tip}{colback=green!5!white,colframe=green!75!black,fonttitle=\bfseries,title=Tip,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
+  \newtcolorbox{caution}{colback=yellow!5!white,colframe=yellow!75!black,fonttitle=\bfseries,title=Caution,left=5pt,right=5pt,top=5pt,bottom=5pt,arc=2mm}
 ---
