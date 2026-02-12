@@ -4,7 +4,7 @@
 
  *(Ref: O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-102)*
 
-- **COAM** = Coin Operated Amusement Machines
+- **COAM** = Coin-Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
   - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
     - Skill-based—cannot be 100% chance
@@ -17,7 +17,7 @@
 - **Game Pack**
   - COAM games are multi-game products, usually consisting of 5–6 titles per pack that may be freely switched between from a central Game Select screen
 - **Cabinet**
-  - A catch-all term for the physical hardware the Game Pack is installed on
+  - A catch-all term for the physical hardware that the Game Pack is installed on
 - **Site Controller**
   - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
 - **SAS** = Slot Accounting System
@@ -67,7 +67,7 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 - It must be possible for the test to fail
   - If there is no way to lose or fail, then it is not a Skill Test
 - The award amount is predetermined as normal
-  - The Skill Test result is pass or fail only, it does not impact the prize amount
+  - The Skill Test result is pass or fail only; it does not impact the prize amount
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
 ## 01.03 Hand Count
@@ -79,10 +79,10 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 ::: summary
 
 - Hand Count starts at 0; add 1 Hand Count per play
-- Player can cash-out only $5 per Hand Count
+- The player can cash out only $5 per Hand Count
   - For every $5 cashed-out, subtract 1 Hand Count
-- Credits falling below minimum Bet Level triggers Hand Count Reset countdown
-  - If no credits are added before countdown ends, Hand Count resets to 0
+- Credits falling below the minimum Bet Level triggers the Hand Count Reset countdown
+  - If no credits are added before the countdown ends, Hand Count resets to 0
 
 :::
 
@@ -101,16 +101,16 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 **Hand Count Cash-Out Examples:**
 
 > A player has $42.50 in credit and 9 Hand Count:
-> - The most they could cash-out under any circumstance is $45
-> - If the Cash-out increment is set to $5, they will actually cash-out $40; $2.50 will remain on the machine and the Hand Count will be reduced to 1
-> - If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine and the Hand Count will be reduced to 0
+> - The most they could cash out under any circumstance is $45
+> - If the Cash-out increment is set to $5, they will actually cash out $40; $2.50 will remain on the machine, and the Hand Count will be reduced to 1
+> - If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine, and the Hand Count will be reduced to 0
 
 **Hand Count Reset Examples:**
 
-> A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
+> A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
 > - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
 >   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
->   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
+>   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
 
 ## 01.04 Cash-Out Requirements and Limitations
 
@@ -136,9 +136,9 @@ After July 1, 2026:
 
 :::
 
-- Can cash-out no more than $5 per Hand Count
+- Can cash out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
-  - Put another way, a $1500 cash-out isn’t a $1500 win, it is 300 × $5 wins.
+  - Put another way, a $1500 cash-out isn’t a $1500 win; it is 300 × $5 wins.
 
 ## 01.05 Location Requirements
 
@@ -146,10 +146,10 @@ After July 1, 2026:
 
 There are particular requirements that locations must meet to qualify for a COAM license.
 
-- May be any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content; and primarily sells merchandise rather than services
+- May be any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content, and primarily sells merchandise rather than services
   - ***NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
 - COAM revenue cannot exceed 50% of the total revenue for the location
-- There are a maximum of 9 COAM machines per site
+- There is a maximum of 9 COAM machines per site
 
 ## 01.06  Other Regulations
 
@@ -163,7 +163,8 @@ There are particular requirements that locations must meet to qualify for a COAM
 
 - Our separate SAS Requirements document includes the full list of required SAS Long Polls, Meters, and Events
 - The Primary SAS port may only be used by Intralot to connect the Cabinet to their Site Controller
-  - The Site Controller will confirm the identity of the Game Pack by running a LP21 (ROM Signature) and comparing the results to their records. If this check fails, the Game Pack will be disabled
+  - The Site Controller will confirm the identity of the Game Pack by running an LP21 (ROM Signature) and comparing the results to their records
+    - If this check fails, the Game Pack will be disabled
 - The Secondary SAS port is allowed to be used by kiosk payment systems
   - Secondary SAS is disallowed from sending LP01 (Disable Play) and LP02 (Enable Play) commands
 
