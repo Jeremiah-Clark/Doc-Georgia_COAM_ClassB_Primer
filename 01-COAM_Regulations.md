@@ -91,26 +91,32 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 - Every play adds 1 to the Hand Count
 - When cashing out, the maximum amount that can be collected is [Hand Count] × $5
   - Cash-out increment and Cash-out Amount can be anything from $0.01 to $5
-    - Not all Game Packs allow this to be changed; most default to $5 for both
-  - Any remainder is left on the cabinet as credit
+    - Not all Game Packs allow this to be changed; most that do default both to $5
+  - Any remainder is left on the cabinet as credits
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count
 - If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
 
-**Hand Count Cash-Out Examples:**
+::: example
 
-> A player has $42.50 in credit and 9 Hand Count:
-> - The most they could cash out under any circumstance is $45
-> - If the Cash-out increment is set to $5, they will actually cash out $40; $2.50 will remain on the machine, and the Hand Count will be reduced to 1
-> - If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine, and the Hand Count will be reduced to 0
+**Hand Count Cash-Out**
 
-**Hand Count Reset Examples:**
+A player has $42.50 in credit and 9 Hand Count:
 
-> A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
-> - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
->   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
->   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
+- The most they could cash out under any circumstance is $45
+- If the Cash-out increment is set to $5, they will actually cash out $40; $2.50 will remain on the machine, and the Hand Count will be reduced to 1
+- If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine, and the Hand Count will be reduced to 0
+
+**Hand Count Reset**
+
+A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
+
+- Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+  - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
+
+:::
 
 ## 01.04 Cash-Out Requirements and Limitations
 
@@ -120,7 +126,7 @@ Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
 
-::: important
+::: tip
 
 Prior to July 1, 2026:
 
