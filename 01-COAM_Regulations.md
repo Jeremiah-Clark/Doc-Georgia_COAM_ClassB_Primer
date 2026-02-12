@@ -15,7 +15,7 @@
 - **Hand Count**
   - Each play on a GA COAM machine adds to the Hand Count, which is used in determining cash-out values
 - **Game Pack**
-  - COAM games are multi-game systems, usually consisting of 5–6 titles per pack that may be freely switched between from a central game select screen
+  - COAM games are multi-game products, usually consisting of 5–6 titles per pack that may be freely switched between from a central Game Select screen
 - **Cabinet**
   - A catch-all term for the physical hardware the Game Pack is installed on
 - **Site Controller**
@@ -35,11 +35,14 @@
 - **Publisher**
   - The company that produces the games and cabinets. A Publisher can not also be an MLH or LLH. The Publisher can not profit directly from their games beyond the initial sale to an MLH
 - **MLH** = Master License Holder
-  - A legally mandated buffer between the Publisher and LLH. The MLH purchases games from the publisher and leases them to the LLH, and is entitled to 43.5% of net receipts. An MLH can not be the exclusive supplier of a Publisher’s products to LLHs.
-- **LLH** = Location License Holder
-  - Owns the retail space where the games are located. The LLH leases games from the MLH, and is entitled to 43.5% of net receipts
+  - A legally mandated buffer between the Publisher and Locations
+  - An MLH can not be the exclusive supplier of a Publisher’s products to Locations
+  - The MLH purchases games from the Publisher and leases them to the Location, and is entitled to 43.5% of net receipts
+- **Location**
+  - Owns the retail space where the games are located.
+  - The Location leases games from the MLH, and is entitled to 43.5% of net receipts
 
-## 01.02. Skill Test
+## 01.02 Skill Test
 
 *(Ref: O.C.G.A. § 16-12-35)*
 
@@ -59,11 +62,11 @@ There are few specific items that determine if gameplay is properly skill-based:
   - The Skill Test result is pass or fail only, it does not impact the prize amount
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
-
 ::: Summary
 - All wins gated behind a Skill Test
 - Skill Tests require player interaction
 - Skill Test results are pass/fail
+
 :::
 
 ## 01.03 Hand Count
@@ -98,7 +101,6 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
-
 ::: summary
 - Hand Count starts at 0; add 1 Hand Count per play
 - Player can cash-out only $5 per Hand Count
@@ -116,12 +118,11 @@ Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
 
-
 ::: important
 
 Prior to July 1, 2026:
 
-- A COAM machine can dispense vouchers or gift cards
+- A COAM game can award vouchers, gift cards, or lottery products
   - Must be redeemed on-site only
   - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
   - Other prizes of equivalent value are also permitted
@@ -129,7 +130,7 @@ Prior to July 1, 2026:
 After July 1, 2026:
 
 - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
-  - Gift cards will be able to be used for any legal purchase at any location that accepts them 
+  - Gift cards can be used for any legal purchase at any location that accepts them 
 
 :::
 
@@ -159,10 +160,8 @@ There are particular requirements that locations must meet to qualify for a COAM
 ### SAS Support
 
 - Our separate SAS Requirements document includes the full list of required SAS Long Polls, Meters, and Events
-
 - The Primary SAS port may only be used by Intralot to connect the Cabinet to their Site Controller
   - The Site Controller will confirm the identity of the Game Pack by running a LP21 (ROM Signature) and comparing the results to their records. If this check fails, the Game Pack will be disabled
-
 - The Secondary SAS port is allowed to be used by kiosk payment systems
   - Secondary SAS is disallowed from sending LP01 (Disable Play) and LP02 (Enable Play) commands
 
@@ -174,7 +173,8 @@ These are not explicit regulatory requirements, but rather guidance we have rece
 
 - Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is not allowed
 - DO NOT use card suits and face cards in designs
-- Traditional royals (A, K, Q, J, and 10) are allowed so long as they do not look like cards and are not paired with a suit
+  - Traditional royal symbols (A, K, Q, J, and 10) are allowed so long as they do not look like cards and are not paired with a suit
+
 - Dice are allowed
 
 ### Cash Labels and Imagery Disallowed
