@@ -59,6 +59,7 @@ There are few specific items that determine if gameplay is properly skill-based:
   - The Skill Test result is pass or fail only, it does not impact the prize amount
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, progressives, etc.
 
+
 ::: Summary
 - All wins gated behind a Skill Test
 - Skill Tests require player interaction
@@ -150,6 +151,7 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
   - If the countdown reaches 0, the Hand Count is reset to 0 and any credits left on the machine remain
 
+
 ::: summary
 - Hand Count starts at 0; add 1 Hand Count per play
 - Player can cash-out only $5 per Hand Count
@@ -166,6 +168,7 @@ A player has $0.40 in credits and the Minimum Bet for the game is $0.25:
 Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
+
 
 ::: important
 
