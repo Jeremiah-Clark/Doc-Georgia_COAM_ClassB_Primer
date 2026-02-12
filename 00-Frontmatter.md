@@ -4,7 +4,7 @@
 
 \vspace{3em}
 
-::: warning
+::: important
 **This document is not legal advice**, nor is it meant to be all-inclusive. It is intended solely as an introduction and source of general information and market context. Check all up-to-date laws and regulations before taking any action.
 :::
 
