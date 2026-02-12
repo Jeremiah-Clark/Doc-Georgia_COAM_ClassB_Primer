@@ -12,7 +12,7 @@
 
 # Description
 
-This document describes the current Georgia COAM regulations as of February 2026 (Sections 01 & 02).
+A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02).
 It also provides guidance for those new to this unique market (Section 03).
 
 \renewcommand{\contentsname}{Table of Contents}
