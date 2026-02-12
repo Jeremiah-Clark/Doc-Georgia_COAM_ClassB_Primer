@@ -1,4 +1,4 @@
-# 01 Basics of COAM
+# 01 COAM Regulations
 
 ## 01.01 Glossary
 
