@@ -1,8 +1,8 @@
-# 02 Market Considerations
+# 03 Market Considerations
 
 Designing COAM games requires a different mindset and considerations than traditional Class 2 and Class 3 slot games.
 
-## 02.01 Key Differences from Casinos
+## 03.01 Key Differences from Casinos
 
 - Casinos are destinations, located in and adjacent to resorts, fine dining, and hotels; players travel specifically to visit them and play their games. COAM games are located in gas stations and restaurants, often in back rooms and dark corners.
 - The average COAM player—in as much as such a thing exists—is markedly different from the average casino player:
@@ -22,7 +22,7 @@ Designing COAM games requires a different mindset and considerations than tradit
 
 This image—of a fairly average recent COAM installation—illustrates several of these points.
 
-## 02.02 What Attracts and Sustains COAM Players
+## 03.02 What Attracts and Sustains COAM Players
 
 In our experience and observation, these factors can make the difference between a success and a failure. Note that these are generalities and prone to change over time and even from location to location.
 
