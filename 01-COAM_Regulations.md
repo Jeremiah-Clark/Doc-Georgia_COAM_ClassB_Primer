@@ -201,11 +201,11 @@ These are not explicit regulatory requirements, but rather guidance we have rece
   - Hand Count starts at 0; add 1 Hand Count per play
   - The player can cash out only $5 per Hand Count
     - For every $5 cashed-out, subtract 1 Hand Count
-  - Credits falling below the minimum Bet Level triggers the Hand Count Reset countdown
+  - Credits below the minimum Bet triggers the Hand Count Reset countdown
     - If no credits are added before the countdown ends, Hand Count resets to 0
 - **Cash Out**
   - No cash, award vouchers, gift cards, or lottery products
-  - After June 1 2026, only pre-paid gift cards
+  - After June 1, 2026, only prepaid gift cards
 - **Locations**
   - No more than 50% revenue from COAM
   - Limit of 9 COAM cabinets per location
