@@ -1,6 +1,7 @@
 # Doc-Georgia_COAM_ClassB_Primer
 
-A plain-English breakdown of the current state of COAM regulations in Georgia as of October 2025.
+A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02).
+It also provides guidance for those new to this unique market (Section 03).
 
 ## Table of Contents
 
@@ -22,3 +23,12 @@ A plain-English breakdown of the current state of COAM regulations in Georgia as
 ## Build
 
 "**Georgia_COAM_ClassB_Primer-Latest.pdf**" is my most recent build of this document.
+
+## Version History
+
+- v1 - Initial document created, October 2022
+- v2 - Full reworking and updating, February 2026
+  - Renamed “02 Other Design Considerations” to “03 Market Considerations”
+  - Pulled content in the new section “02 Skill Test Considerations” from section 01
+  - Complete rewrite of section “03 Market Considerations”
+  - Updated legal references
