@@ -33,8 +33,7 @@ It also provides guidance for those new to this unique market (Section 03).
 ├── 03-Market_Considerations.md
 ├── 04-GA_Regulation_Documents.md
 ├── master.yaml                # Document metadata (title, author, settings)
-├── template.tex               # LaTeX template — reusable across projects
-├── titlepage.tex              # Title page layout — edit per project
+├── template.tex               # LaTeX template (all formatting lives here)
 ├── gfm-to-latex.lua           # Lua filter (GFM admonitions → LaTeX callouts)
 ├── build.sh                   # Build script
 └── images/
@@ -48,10 +47,11 @@ The Markdown files are written in **standard GitHub-Flavored Markdown** and are 
 
 When building the PDF, Pandoc converts the GFM source to LaTeX using:
 
-- **`template.tex`** — the reusable base template: callout box styling, headers/footers, typography, font setup. Shared across projects without modification.
-- **`titlepage.tex`** — the title page layout, loaded by the template. Edit this per project to change the title page design. Uses `\doctitle`, `\docauthor`, `\docdate`, `\doclogo`, and `\docdisclaimer` commands that are automatically populated from `master.yaml`.
+- **`template.tex`** — handles all formatting: title page, logo, callout box styling, headers/footers, typography. No LaTeX ever appears in the Markdown files.
 - **`gfm-to-latex.lua`** — a Lua filter that bridges GFM features to LaTeX, converting `> [!WARNING]` blockquotes into styled callout environments, making images full-width, and inserting page breaks before major sections.
-- **`master.yaml`** — pure metadata (title, author, date, logo path, disclaimer text, etc.) and build settings.
+
+**Note:** `build.sh` uses `--from gfm-alerts` (not `--from gfm`) to prevent Pandoc from natively parsing alerts. This is necessary because Pandoc 3.1.7+ handles standard GFM alerts internally in a way that bypasses the Lua filter. Disabling the `alerts` extension keeps everything as blockquotes so the filter can convert them into our custom LaTeX callout environments.
+- **`master.yaml`** — pure metadata (title, author, date, etc.) and build settings.
 
 ### Writing Callouts
 
@@ -65,15 +65,6 @@ Use GitHub's admonition syntax. Supported types: `WARNING`, `NOTE`, `TIP`, `IMPO
 ```
 
 For best results, put the `[!TYPE]` marker on its own line with a blank `>` line before the content.
-
-### Starting a New Project
-
-To reuse this setup for a new document:
-
-1. Copy `template.tex`, `gfm-to-latex.lua`, and `build.sh` to the new project
-2. Create a new `master.yaml` with the new document's metadata
-3. Edit `titlepage.tex` to customize the title page layout (or copy and modify this one)
-4. Write your content in standard GFM Markdown files
 
 ### Building the PDF
 

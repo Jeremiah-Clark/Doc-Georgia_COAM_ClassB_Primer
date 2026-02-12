@@ -1,5 +1,5 @@
 #!/bin/bash
-pandoc --from gfm \
+pandoc --from gfm-alerts \
        --metadata-file master.yaml \
        --template template.tex \
        --pdf-engine=xelatex \
