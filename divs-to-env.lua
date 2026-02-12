@@ -1,6 +1,6 @@
 function Div(el)
   -- Check if the div has one of our callout classes
-  local callout_classes = {"important", "note", "warning", "tip", "caution", "summary"}
+  local callout_classes = {"important", "note", "warning", "tip", "caution", "summary", "example"}
   
   for _, class in ipairs(callout_classes) do
     if el.classes:includes(class) then
