@@ -10,7 +10,7 @@ Designing COAM games requires a different mindset and considerations than tradit
   - They tend to be younger, are largely working class, and are more likely to be male when compared to casino players
   - Many speak English as a second language; some do not speak English at all
 - Sound is a big part of the casino experience, but in gas stations and other retail establishments, constant loud music and sounds are not generally welcome
-  - We can’t assume that the sound will be turned up, let alone turned on
+  - We can't assume that the sound will be turned up, let alone turned on
   - If there is no way to mute the sound in a game, many locations will simply unplug the speakers
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COMA games and cabinets
   - Screens can be difficult to easily see through the glare from overhead lights, and may be washed out by outside light, depending on how the location is set up
@@ -18,7 +18,7 @@ Designing COAM games requires a different mindset and considerations than tradit
   - These locations are unlikely to have any sort of security on-premises
   - The space is often limited, with low ceilings and cramped seating
 
-\includegraphics[width=1.0\textwidth]{images/IMG_6435.JPEG}
+![A fairly average recent COAM installation](images/IMG_6435.JPEG)
 
 This image—of a fairly average recent COAM installation—illustrates several of these points.
 
@@ -32,8 +32,7 @@ In our experience and observation, these factors can make the difference between
   - Persistent and Metamorphic features can create a similar anticipatory feeling and should be highlighted as well
 - **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
 - **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
-- **“Fair” math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
+- **"Fair" math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
   - Wins that pay less than your bet are frustrating
-  - Too many small wins can become grating—recall that the Skill Test isn’t really a feature, but a chore
+  - Too many small wins can become grating—recall that the Skill Test isn't really a feature, but a chore
   - Too few wins is, of course, a problem if the reward for their patience comes too late
-

@@ -36,7 +36,7 @@
   - The company that produces the games and cabinets. A Publisher can not also be an MLH or LLH. The Publisher can not profit directly from their games beyond the initial sale to an MLH
 - **MLH** = Master License Holder
   - A legally mandated buffer between the Publisher and Locations
-  - An MLH can not be the exclusive supplier of a Publisher’s products to Locations
+  - An MLH can not be the exclusive supplier of a Publisher's products to Locations
   - The MLH purchases games from the Publisher and leases them to the Location, and is entitled to 43.5% of net receipts
 - **Location**
   - Owns the retail space where the games are located.
@@ -78,39 +78,35 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count
   - If the Cash Out increment is set to less than $5, for the purposes of subtracting Hand Counts, round up to the next $5 increment
 
-::: example
-
-**Hand Count Cash-Out**
-
-A player has $42.50 in credit and 9 Hand Count.
-
-- If the Cash-out increment is $5:
-  - They will actually cash out $40 (a multiple of $5)
-  - $2.50 will remain on the machine
-  - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
-
-- If the Cash-out increment is set to $1:
-  - They will actually cash-out $42 (a multiple of $1)
-  - $0.50 will remain on the machine
-  - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
-
-:::
+> [!EXAMPLE]
+>
+> **Hand Count Cash-Out**
+>
+> A player has $42.50 in credit and 9 Hand Count.
+>
+> - If the Cash-out increment is $5:
+>   - They will actually cash out $40 (a multiple of $5)
+>   - $2.50 will remain on the machine
+>   - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
+>
+> - If the Cash-out increment is set to $1:
+>   - They will actually cash-out $42 (a multiple of $1)
+>   - $0.50 will remain on the machine
+>   - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
 
 - If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
 
-::: example
-
-**Hand Count Reset**
-
-A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
-
-- Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
-  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
-  - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
-
-:::
+> [!EXAMPLE]
+>
+> **Hand Count Reset**
+>
+> A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
+>
+> - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+>   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+>   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
 
 ## 01.04 Cash-Out Requirements and Limitations
 
@@ -120,25 +116,23 @@ Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
 
-::: tip
-
-Prior to July 1, 2026:
-
-- A COAM game can award vouchers, gift cards, or lottery products
-  - Must be redeemed on-site only
-  - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
-  - Other prizes of equivalent value are also permitted
-
-After July 1, 2026:
-
-- Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
-  - Gift cards can be used for any legal purchase at any location that accepts them 
-
-:::
+> [!TIP]
+>
+> Prior to July 1, 2026:
+>
+> - A COAM game can award vouchers, gift cards, or lottery products
+>   - Must be redeemed on-site only
+>   - Such vouchers cannot be redeemed for cash, firearms, alcohol, or tobacco
+>   - Other prizes of equivalent value are also permitted
+>
+> After July 1, 2026:
+>
+> - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
+>   - Gift cards can be used for any legal purchase at any location that accepts them 
 
 - Can cash out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
-  - Put another way, a $1500 cash-out isn’t a $1500 win; it is 300 × $5 wins.
+  - Put another way, a $1500 cash-out isn't a $1500 win; it is 300 × $5 wins.
 
 ## 01.05 Location Requirements
 
@@ -183,36 +177,34 @@ These are not explicit regulatory requirements, but rather guidance we have rece
 ### Cash Labels and Imagery Disallowed
 
 - There can be no messaging, implicit or implied, that the game will dispense actual cash
-- DO NOT use “Cash Out” in-game or on buttons
-	- Use “Collect” instead
-- DO NOT label anything as “Cash”
-	- Use “Credits” instead
+- DO NOT use "Cash Out" in-game or on buttons
+	- Use "Collect" instead
+- DO NOT label anything as "Cash"
+	- Use "Credits" instead
 - Dollar signs and cash values on credit amounts and prizes are OK
 - Dollar sign and gold bar or similar reel Symbols are OK
 - Bank and cash themes are OK
 
-::: summary
-
-- **Skill Tests**
-  - All wins are gated behind a Skill Test
-  - Skill Tests require player interaction
-  - Skill Test results are pass/fail
-- **Hand Count**
-  - Hand Count starts at 0; add 1 Hand Count per play
-  - The player can cash out only $5 per Hand Count
-    - For every $5 cashed-out, subtract 1 Hand Count
-  - Credits below the minimum Bet triggers the Hand Count Reset countdown
-    - If no credits are added before the countdown ends, Hand Count resets to 0
-- **Cash Out**
-  - No cash, award vouchers, gift cards, or lottery products
-  - After June 1, 2026, only prepaid gift cards
-- **Locations**
-  - No more than 50% revenue from COAM
-  - Limit of 9 COAM cabinets per location
-- **Restrictions**
-  - No network aside from Intralot's Site Controller
-  - Secondary SAS can not enable/disable games
-  - No casino imagery
-  - No "Cash"
-
-:::
+> [!SUMMARY]
+>
+> - **Skill Tests**
+>   - All wins are gated behind a Skill Test
+>   - Skill Tests require player interaction
+>   - Skill Test results are pass/fail
+> - **Hand Count**
+>   - Hand Count starts at 0; add 1 Hand Count per play
+>   - The player can cash out only $5 per Hand Count
+>     - For every $5 cashed-out, subtract 1 Hand Count
+>   - Credits below the minimum Bet triggers the Hand Count Reset countdown
+>     - If no credits are added before the countdown ends, Hand Count resets to 0
+> - **Cash Out**
+>   - No cash, award vouchers, gift cards, or lottery products
+>   - After June 1, 2026, only prepaid gift cards
+> - **Locations**
+>   - No more than 50% revenue from COAM
+>   - Limit of 9 COAM cabinets per location
+> - **Restrictions**
+>   - No network aside from Intralot's Site Controller
+>   - Secondary SAS can not enable/disable games
+>   - No casino imagery
+>   - No "Cash"

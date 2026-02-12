@@ -1,0 +1,253 @@
+% template.tex — Pandoc LaTeX template for Bravery Gaming documents
+% All formatting lives here; Markdown files stay pure GFM.
+\documentclass[$if(fontsize)$$fontsize$$else$11pt$endif$]{article}
+
+% ---------------------------------------------------------------------------
+% Core packages
+% ---------------------------------------------------------------------------
+\usepackage[$if(papersize)$$papersize$paper,$endif$margin=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[hidelinks]{hyperref}
+\usepackage{longtable,booktabs,array}
+\usepackage{amssymb}
+\usepackage{calc}
+
+% ---------------------------------------------------------------------------
+% Font setup (XeLaTeX / LuaLaTeX)
+% ---------------------------------------------------------------------------
+\usepackage{ifxetex,ifluatex}
+\ifxetex
+  \usepackage{fontspec}
+  \IfFontExistsTF{Clear Sans}{
+    \setmainfont{Clear Sans}
+    \setsansfont{Clear Sans}
+  }{
+    \IfFontExistsTF{Arial}{
+      \setmainfont{Arial}
+      \setsansfont{Arial}
+    }{
+      \IfFontExistsTF{Helvetica}{
+        \setmainfont{Helvetica}
+        \setsansfont{Helvetica}
+      }{
+        \setmainfont{DejaVu Sans}
+        \setsansfont{DejaVu Sans}
+      }
+    }
+  }
+\fi
+\ifluatex
+  \usepackage{fontspec}
+  \IfFontExistsTF{Clear Sans}{
+    \setmainfont{Clear Sans}
+    \setsansfont{Clear Sans}
+  }{
+    \IfFontExistsTF{Arial}{
+      \setmainfont{Arial}
+      \setsansfont{Arial}
+    }{
+      \IfFontExistsTF{Helvetica}{
+        \setmainfont{Helvetica}
+        \setsansfont{Helvetica}
+      }{
+        \setmainfont{DejaVu Sans}
+        \setsansfont{DejaVu Sans}
+      }
+    }
+  }
+\fi
+
+\linespread{1.15}
+
+% ---------------------------------------------------------------------------
+% Paragraph and list formatting
+% ---------------------------------------------------------------------------
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\setlistdepth{9}
+\renewlist{itemize}{itemize}{9}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=$$\circ$$}
+\setlist[itemize,3]{label=\scalebox{0.5}{$$\blacksquare$$}}
+\setlist[itemize,4]{label=$$\ast$$}
+\setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
+
+% ---------------------------------------------------------------------------
+% Section heading colors
+% ---------------------------------------------------------------------------
+\definecolor{brandblue}{RGB}{25,55,120}
+\titleformat{\section}{\Large\bfseries\color{brandblue}}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0em}{}
+\setcounter{secnumdepth}{0}
+
+% ---------------------------------------------------------------------------
+% Header & footer
+% ---------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}
+\fancyfoot[L]{$title$}
+\fancyfoot[R]{Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{\fancyhf{}}
+
+% ---------------------------------------------------------------------------
+% Callout / admonition environments  (mdframed)
+% ---------------------------------------------------------------------------
+\newmdenv[
+  linecolor=red!75!black, backgroundcolor=red!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Important, frametitlebackgroundcolor=red!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{important}
+
+\newmdenv[
+  linecolor=blue!75!black, backgroundcolor=blue!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Note, frametitlebackgroundcolor=blue!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{note}
+
+\newmdenv[
+  linecolor=orange!75!black, backgroundcolor=orange!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Warning, frametitlebackgroundcolor=orange!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{warning}
+
+\newmdenv[
+  linecolor=green!75!black, backgroundcolor=green!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Tip, frametitlebackgroundcolor=green!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{tip}
+
+\newmdenv[
+  linecolor=yellow!75!black, backgroundcolor=yellow!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Caution, frametitlebackgroundcolor=yellow!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{caution}
+
+\newmdenv[
+  linecolor=violet!75!black, backgroundcolor=violet!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Summary, frametitlebackgroundcolor=violet!75!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{summary}
+
+\newmdenv[
+  linecolor=black!80!black, backgroundcolor=black!5!white,
+  linewidth=2pt, roundcorner=2mm,
+  innertopmargin=10pt, innerbottommargin=10pt,
+  innerleftmargin=10pt, innerrightmargin=10pt,
+  skipabove=9pt, skipbelow=6pt, nobreak=true,
+  frametitle=Example, frametitlebackgroundcolor=black!80!black,
+  frametitlefont=\bfseries\color{white},
+  frametitleaboveskip=4pt, frametitlebelowskip=5pt
+]{example}
+
+% Blockquotes (for any blockquote not converted to an admonition)
+\renewenvironment{quote}{%
+  \begin{mdframed}[
+    linecolor=black!40, backgroundcolor=black!0,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=2pt, skipbelow=4pt, nobreak=true
+  ]%
+}{%
+  \end{mdframed}%
+}
+
+% Tight list support (Pandoc generates this)
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Scale images that are too wide
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,keepaspectratio}
+
+% ---------------------------------------------------------------------------
+% Document
+% ---------------------------------------------------------------------------
+\begin{document}
+
+% --- Title page ---
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \rule{\linewidth}{0.4pt}
+    \vspace{2em}
+
+    {\Huge $title$}
+
+    \vspace{0.75em}
+    {\large $author$}
+
+    \vspace{0.5em}
+    {$date$}
+
+    \vspace{3em}
+
+    $if(logo)$
+    \includegraphics[width=0.8\textwidth]{$logo$}
+    $endif$
+
+    \vfill
+
+    $if(disclaimer)$
+    \begin{warning}
+    $disclaimer$
+    \end{warning}
+    $endif$
+
+  \end{center}
+\end{titlepage}
+
+% --- Table of contents ---
+$if(toc)$
+\renewcommand{\contentsname}{Table of Contents}
+\setcounter{tocdepth}{$if(toc-depth)$$toc-depth$$else$3$endif$}
+\tableofcontents
+\newpage
+$endif$
+
+% --- Body ---
+$body$
+
+\end{document}

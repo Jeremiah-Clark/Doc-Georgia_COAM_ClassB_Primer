@@ -27,7 +27,7 @@ Refer to individual specs for specific details about our implementation of these
 ### Reel Nudge
 
 - After the reels stop spinning, if there is a potential Win, one of the reels will be positioned one stop too high or too low to complete the Win
-- Arrows will apprear at the top and bottom of every reel allow the Player to nudge a reel up or down by one reel stop
+- Arrows will appear at the top and bottom of every reel allow the Player to nudge a reel up or down by one reel stop
 - After ONE reel is nudged ONE stop, the Skill Test will be evaluated
 - Though it is uncommon in Georgia COAM, some Nudge games can be configured with the nudge arrows present after every spin, even if there is no potential Win
   - In these cases, pressing the *Play* button without solving the Skill Test will start the next game
@@ -49,6 +49,6 @@ Refer to individual specs for specific details about our implementation of these
   - Matching colors or numbers
   - Finding a hidden picture
   - Solving a maze
-  - Repeating a pattern (aka “Simon”)
+  - Repeating a pattern (aka "Simon")
 - Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort
 - They risk interrupting the flow of play if they are not carefully designed

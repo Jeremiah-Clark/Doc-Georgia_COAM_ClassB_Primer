@@ -11,73 +11,14 @@ keywords:
 subject: Georgia COAM market and regulations.
 lang: en-US
 
-documentclass: article
-papersize: letter
-fontsize: 11pt
-mainfont: "Clear Sans"
-sansfont: "Clear Sans"
-linestretch: 1.15
-geometry:
-  - margin=1in
-  - top=1.25in
-  - bottom=1.25in
-
+# Template controls
+logo: images/BraveryLogo.png
+disclaimer: "**This document is not legal advice**, nor is it meant to be all-inclusive. It is intended solely as an introduction and source of general information and market context. Check all up-to-date laws and regulations before taking any action."
+toc: true
 toc-depth: 3
 numbersections: false
 
-header-includes: |
-  \usepackage{fancyhdr}
-  \usepackage{xcolor}
-  \usepackage{graphicx}
-  \usepackage{enumitem}
-  \usepackage{titlesec}
-  \usepackage[framemethod=tikz]{mdframed}
-  \usepackage{ifxetex,ifluatex}
-  
-  \ifxetex
-    \usepackage{fontspec}
-    \IfFontExistsTF{Clear Sans}{
-      \setmainfont{Clear Sans}
-    }{
-      \IfFontExistsTF{Arial}{
-        \setmainfont{Arial}
-      }{
-        \setmainfont{Helvetica}
-      }
-    }
-  \fi
-  
-  \pagestyle{fancy}
-  \fancyhf{}
-  \fancyhead{}
-  \fancyfoot[L]{Georgia COAM (Class B) Primer}
-  \fancyfoot[R]{Page \thepage}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0.4pt}
-  \fancypagestyle{plain}{\fancyhf{}}
-  
-  \setlistdepth{9}
-  \renewlist{itemize}{itemize}{9}
-  \setlist[itemize,1]{label=\textbullet}
-  \setlist[itemize,2]{label=$\circ$}
-  \setlist[itemize,3]{label=\scalebox{0.5}{$\blacksquare$}}
-  \setlist[itemize,4]{label=$\ast$}
-  \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
-  
-  \definecolor{brandblue}{RGB}{25,55,120}
-  \titleformat{\section}{\Large\bfseries\color{brandblue}}{\thesection}{1em}{}
-  \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
-  \titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{1em}{}
-  
-  \setlength{\parskip}{6pt}
-  \setlength{\parindent}{0pt}
-  
-  \newmdenv[linecolor=red!75!black,backgroundcolor=red!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Important,frametitlebackgroundcolor=red!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{important}
-  \newmdenv[linecolor=blue!75!black,backgroundcolor=blue!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Note,frametitlebackgroundcolor=blue!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{note}
-  \newmdenv[linecolor=orange!75!black,backgroundcolor=orange!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Warning,frametitlebackgroundcolor=orange!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{warning}
-  \newmdenv[linecolor=green!75!black,backgroundcolor=green!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Tip,frametitlebackgroundcolor=green!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{tip}
-  \newmdenv[linecolor=yellow!75!black,backgroundcolor=yellow!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Caution,frametitlebackgroundcolor=yellow!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{caution}
-  \newmdenv[linecolor=violet!75!black,backgroundcolor=violet!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Summary,frametitlebackgroundcolor=violet!75!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{summary}
-  \newmdenv[linecolor=black!80!black,backgroundcolor=black!5!white,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=9pt,skipbelow=6pt,nobreak=true,frametitle=Example,frametitlebackgroundcolor=black!80!black,frametitlefont=\bfseries\color{white},frametitleaboveskip=4pt,frametitlebelowskip=5pt]{example}
-  \renewenvironment{quote}{\begin{mdframed}[linecolor=black!40,backgroundcolor=black!0,linewidth=2pt,roundcorner=2mm,innertopmargin=10pt,innerbottommargin=10pt,innerleftmargin=10pt,innerrightmargin=10pt,skipabove=2pt,skipbelow=4pt,nobreak=true]}{\end{mdframed}}
+# PDF settings
+fontsize: 11pt
+papersize: letter
 ---
