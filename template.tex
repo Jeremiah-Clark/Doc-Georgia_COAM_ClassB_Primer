@@ -1,4 +1,4 @@
-% template.tex — Pandoc LaTeX template for Bravery Gaming documents
+% template.tex — Pandoc LaTeX template for documents
 % All formatting lives here; Markdown files stay pure GFM.
 \documentclass[$if(fontsize)$$fontsize$$else$11pt$endif$]{article}
 
@@ -27,13 +27,13 @@
     \setmainfont{Clear Sans}
     \setsansfont{Clear Sans}
   }{
-    \IfFontExistsTF{Arial}{
-      \setmainfont{Arial}
-      \setsansfont{Arial}
+    \IfFontExistsTF{Helvetica}{
+      \setmainfont{Helvetica}
+      \setsansfont{Helvetica}
     }{
-      \IfFontExistsTF{Helvetica}{
-        \setmainfont{Helvetica}
-        \setsansfont{Helvetica}
+      \IfFontExistsTF{Arial}{
+        \setmainfont{Arial}
+        \setsansfont{Arial}
       }{
         \setmainfont{DejaVu Sans}
         \setsansfont{DejaVu Sans}
@@ -47,13 +47,13 @@
     \setmainfont{Clear Sans}
     \setsansfont{Clear Sans}
   }{
-    \IfFontExistsTF{Arial}{
-      \setmainfont{Arial}
-      \setsansfont{Arial}
+    \IfFontExistsTF{Helvetica}{
+      \setmainfont{Helvetica}
+      \setsansfont{Helvetica}
     }{
-      \IfFontExistsTF{Helvetica}{
-        \setmainfont{Helvetica}
-        \setsansfont{Helvetica}
+      \IfFontExistsTF{Arial}{
+        \setmainfont{Arial}
+        \setsansfont{Arial}
       }{
         \setmainfont{DejaVu Sans}
         \setsansfont{DejaVu Sans}
