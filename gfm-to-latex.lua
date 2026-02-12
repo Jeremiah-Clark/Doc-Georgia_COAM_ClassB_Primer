@@ -97,6 +97,48 @@ function strip_marker_inlines(inlines, marker_type)
 end
 
 -- ---------------------------------------------------------------------------
+-- 1b. Pandoc-native GFM alerts (Pandoc 3.1.14+) → LaTeX callout environments
+-- ---------------------------------------------------------------------------
+-- Newer Pandoc versions parse standard GFM alerts (NOTE, TIP, IMPORTANT,
+-- WARNING, CAUTION) into Div elements with "callout-*" classes before the
+-- Lua filter runs. The BlockQuote handler above still catches non-standard
+-- types (SUMMARY, EXAMPLE) and serves as a fallback for older Pandoc versions.
+
+local div_class_map = {
+  ["callout-warning"]   = "warning",
+  ["callout-note"]      = "note",
+  ["callout-tip"]       = "tip",
+  ["callout-important"] = "important",
+  ["callout-caution"]   = "caution",
+}
+
+function Div(el)
+  -- Check for Pandoc-native callout classes
+  for class, env_name in pairs(div_class_map) do
+    if el.classes:includes(class) then
+      local new_content = pandoc.List()
+
+      for _, block in ipairs(el.content) do
+        -- Skip the auto-generated callout-title Div (our mdframed has its own)
+        if block.t == "Div" and block.classes:includes("callout-title") then
+          -- skip
+        else
+          new_content:insert(block)
+        end
+      end
+
+      local result = pandoc.List()
+      result:insert(pandoc.RawBlock("latex", "\\begin{" .. env_name .. "}"))
+      result:extend(new_content)
+      result:insert(pandoc.RawBlock("latex", "\\end{" .. env_name .. "}"))
+      return result
+    end
+  end
+
+  return el
+end
+
+-- ---------------------------------------------------------------------------
 -- 2. Full-width images
 -- ---------------------------------------------------------------------------
 -- Pandoc's default LaTeX image output doesn't constrain width. This ensures

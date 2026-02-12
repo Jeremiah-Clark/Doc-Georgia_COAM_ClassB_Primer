@@ -1,0 +1,39 @@
+% titlepage.tex — Title page layout (pure LaTeX, edit per project)
+%
+% Available commands (populated from master.yaml via template.tex):
+%   \doctitle       — Document title
+%   \docauthor      — Author name
+%   \docdate        — Date string
+%   \doclogo        — Path to logo image (only defined if logo: is set in YAML)
+%   \docdisclaimer  — Disclaimer text (only defined if disclaimer: is set in YAML)
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \begin{center}
+    \rule{\linewidth}{0.4pt}
+    \vspace{2em}
+
+    {\Huge \doctitle}
+
+    \vspace{0.75em}
+    {\large \docauthor}
+
+    \vspace{0.5em}
+    {\docdate}
+
+    \vspace{3em}
+
+    \ifdefined\doclogo
+      \includegraphics[width=0.8\textwidth]{\doclogo}
+    \fi
+
+    \vfill
+
+%   \ifdefined\docdisclaimer
+%     \begin{warning}
+%     \docdisclaimer
+%     \end{warning}
+%   \fi
+
+  \end{center}
+\end{titlepage}

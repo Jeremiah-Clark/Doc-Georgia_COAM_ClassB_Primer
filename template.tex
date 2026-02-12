@@ -207,37 +207,18 @@
 % ---------------------------------------------------------------------------
 \begin{document}
 
-% --- Title page ---
-\begin{titlepage}
-  \thispagestyle{empty}
-  \begin{center}
-    \rule{\linewidth}{0.4pt}
-    \vspace{2em}
-
-    {\Huge $title$}
-
-    \vspace{0.75em}
-    {\large $author$}
-
-    \vspace{0.5em}
-    {$date$}
-
-    \vspace{3em}
-
-    $if(logo)$
-    \includegraphics[width=0.8\textwidth]{$logo$}
-    $endif$
-
-    \vfill
-
-    $if(disclaimer)$
-    \begin{warning}
-    $disclaimer$
-    \end{warning}
-    $endif$
-
-  \end{center}
-\end{titlepage}
+% --- Title page (loaded from titlepage.tex) ---
+% Pass Pandoc variables into LaTeX commands so titlepage.tex stays pure LaTeX
+\newcommand{\doctitle}{$title$}
+\newcommand{\docauthor}{$author$}
+\newcommand{\docdate}{$date$}
+$if(logo)$
+\newcommand{\doclogo}{$logo$}
+$endif$
+$if(disclaimer)$
+\newcommand{\docdisclaimer}{$disclaimer$}
+$endif$
+\input{titlepage}
 
 % --- Table of contents ---
 $if(toc)$
