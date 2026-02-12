@@ -50,14 +50,6 @@
 
 There are specific, legally mandated qualities that determine if gameplay is properly skill-based.
 
-::: summary
-
-- All wins are gated behind a Skill Test
-- Skill Tests require player interaction
-- Skill Test results are pass/fail
-
-:::
-
 - All Wins MUST be gated behind a Skill Test
   - The sequence is ALWAYS: **Bet → Skill → Award**
   - The Win Award may encompass an entire Bonus feature, so long as there has been a Skill Test between the Bet and the Award
@@ -75,16 +67,6 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 *(Ref: O.C.G.A § 16-12-35)*
 
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
-
-::: summary
-
-- Hand Count starts at 0; add 1 Hand Count per play
-- The player can cash out only $5 per Hand Count
-  - For every $5 cashed-out, subtract 1 Hand Count
-- Credits falling below the minimum Bet Level triggers the Hand Count Reset countdown
-  - If no credits are added before the countdown ends, Hand Count resets to 0
-
-:::
 
 - The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
 - The Hand Count starts at 0 when credits are first added to the machine
@@ -165,7 +147,7 @@ After July 1, 2026:
 There are particular requirements that locations must meet to qualify for a COAM license.
 
 - May be any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content, and primarily sells merchandise rather than services
-  - ***NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
+  - **NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
 - COAM revenue cannot exceed 50% of the total revenue for the location
 - There is a maximum of 9 COAM machines per site
 
@@ -208,3 +190,29 @@ These are not explicit regulatory requirements, but rather guidance we have rece
 - Dollar signs and cash values on credit amounts and prizes are OK
 - Dollar sign and gold bar or similar reel Symbols are OK
 - Bank and cash themes are OK
+
+::: summary
+
+- **Skill Tests**
+  - All wins are gated behind a Skill Test
+  - Skill Tests require player interaction
+  - Skill Test results are pass/fail
+- **Hand Count**
+  - Hand Count starts at 0; add 1 Hand Count per play
+  - The player can cash out only $5 per Hand Count
+    - For every $5 cashed-out, subtract 1 Hand Count
+  - Credits falling below the minimum Bet Level triggers the Hand Count Reset countdown
+    - If no credits are added before the countdown ends, Hand Count resets to 0
+- **Cash Out**
+  - No cash, award vouchers, gift cards, or lottery products
+  - After June 1 2026, only pre-paid gift cards
+- **Locations**
+  - No more than 50% revenue from COAM
+  - Limit of 9 COAM cabinets per location
+- **Restrictions**
+  - No network aside from Intralot's Site Controller
+  - Secondary SAS can not enable/disable games
+  - No casino imagery
+  - No "Cash"
+
+:::
