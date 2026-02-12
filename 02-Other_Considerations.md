@@ -18,25 +18,22 @@ Designing COAM games requires a different mindset and considerations than tradit
   - These locations are unlikely to have any sort of security on-premises
   - The space is often limited, with low ceilings and cramped seating
 
+\includegraphics[width=1.0\textwidth]{images/IMG_6435.JPEG}
+
+This image—of a fairly average recent COAM installation—illustrates several of these points.
+
 ## 02.02 What Attracts and Sustains COAM Players
 
-In our hard won experience, these factors can make the difference between a success and a failure:
+In our experience and observation, these factors can make the difference between a success and a failure. Note that these are generalities and prone to change over time and even from location to location.
 
-- **Progressives**: COAM players chase Progressives just like casino players. As a reminder, 
-  - Game packs with shared Progressives should feature them prominently on the top of the game select screen, as well as in each game. 
-  - Games with individual Progressives should show 
-- Simplicity: COAM games and their skill features need to be quick and easy to grasp
-- Entertainment Value: 
-- Familiarity: 
-- Fewer small wins
-- Fair math
-Most COAM games have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance, and are unlikely to look in the Help screens.
+- **Progressive Jackpots**: COAM players chase Progressives just like casino players. 
+  - Game packs with shared Progressives should feature them prominently on the game select screen
+  - Games with individual Progressives should show them on the game select screen as well, if possible
+  - Persistent and Metamorphic features can create a similar anticipatory feeling and should be highlighted as well
+- **Simplicity**: COAM games, especially their Skill Features, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
+- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Features. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
+- **“Fair” math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
+  - Wins that pay less than your bet are frustrating
+  - Too many small wins can become grating—recall that the Skill Feature isn’t really a feature, but a chore
+  - Too few wins is, of course, a problem if the reward for their patience comes too late
 
-\begin{center}
-\includegraphics[width=0.9\textwidth]{images/IMG_6435.JPEG}
-This image—of a fairly average recent COAM installation—illustrates several of these points.
-\end{center}
-
-
-
-§ 50-27-70
