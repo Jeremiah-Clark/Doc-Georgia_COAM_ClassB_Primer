@@ -1,4 +1,4 @@
-# 02 Other Considerations
+# 02 Market Considerations
 
 Designing COAM games requires a different mindset and considerations than traditional Class 2 and Class 3 slot games.
 
@@ -30,10 +30,10 @@ In our experience and observation, these factors can make the difference between
   - Game packs with shared Progressives should feature them prominently on the game select screen
   - Games with individual Progressives should show them on the game select screen as well, if possible
   - Persistent and Metamorphic features can create a similar anticipatory feeling and should be highlighted as well
-- **Simplicity**: COAM games, especially their Skill Features, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
-- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Features. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
+- **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
+- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
 - **“Fair” math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
   - Wins that pay less than your bet are frustrating
-  - Too many small wins can become grating—recall that the Skill Feature isn’t really a feature, but a chore
+  - Too many small wins can become grating—recall that the Skill Test isn’t really a feature, but a chore
   - Too few wins is, of course, a problem if the reward for their patience comes too late
 
