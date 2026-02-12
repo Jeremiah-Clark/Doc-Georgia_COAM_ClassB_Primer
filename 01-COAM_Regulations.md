@@ -94,19 +94,31 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
     - Not all Game Packs allow this to be changed; most that do default both to $5
   - Any remainder is left on the cabinet as credits
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count
-- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
-- When the countdown reaches 0, the Hand Count resets to 0
-- If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
+  - If the Cash Out increment is set to less than $5, for the purposes of subtracting Hand Counts, round up to the next $5 increment
 
 ::: example
 
 **Hand Count Cash-Out**
 
-A player has $42.50 in credit and 9 Hand Count:
+A player has $42.50 in credit and 9 Hand Count.
 
-- The most they could cash out under any circumstance is $45
-- If the Cash-out increment is set to $5, they will actually cash out $40; $2.50 will remain on the machine, and the Hand Count will be reduced to 1
-- If the Cash-out increment is set to $1, they will actually cash-out $42; $0.50 will remain on the machine, and the Hand Count will be reduced to 0
+- If the Cash-out increment is $5:
+  - They will actually cash out $40 (a multiple of $5)
+  - $2.50 will remain on the machine
+  - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
+
+- If the Cash-out increment is set to $1:
+  - They will actually cash-out $42 (a multiple of $1)
+  - $0.50 will remain on the machine
+  - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
+
+:::
+
+- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
+- When the countdown reaches 0, the Hand Count resets to 0
+- If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
+
+::: example
 
 **Hand Count Reset**
 
