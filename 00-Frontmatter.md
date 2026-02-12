@@ -1,8 +1,8 @@
 \begin{center}
-\includegraphics[width=0.9\textwidth]{images/BraveryLogo.png}
+\includegraphics[width=1.0\textwidth]{images/BraveryLogo.png}
 \end{center}
 
-\vspace{2em}
+\vspace{3em}
 
 ::: caution
 **This document is not legal advice**, nor is it meant to be all-inclusive. It is intended as a source of general information and market context only. Check all up to date laws and regulations before taking any action.
