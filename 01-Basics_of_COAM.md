@@ -2,14 +2,14 @@
 
 ## 01.01 Glossary
 
- *(Ref: O.C.G.A § 50-27-70; O.C.G.A § 50-27-84; O.C.G.A § 50-27-87; O.C.G.A § 50-27-102)*
+ *(Ref: O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-102)*
 
 - **COAM** = Coin Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
   - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
-    - Skill-based, cannot be 100% chance
+    - Skill-based—cannot be 100% chance
     - Credits are carried over from game to game
-    - Dispense credits in some form that must be redeemed for merchandise on-location
+    - Dispense credits that must be redeemed on-location
 - **Skill Test**
   - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
 - **Hand Count**
@@ -41,7 +41,7 @@
 
 ## 01.02. Skill Test
 
-(*Ref: O.C.G.A § 16-12-35*)
+*(Ref: O.C.G.A. § 16-12-35)*
 
 ### What Defines a Skill Test
 
@@ -129,7 +129,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 - The Hand Count starts at 0 when credits are first added to the machine
 - Every play adds 1 to the Hand Count
 - When cashing out, the maximum amount that can be collected is [Hand Count] × $5
-  - Cash-out increment and minimum Cash-out Amount can be set to anything from $0.01 to $5
+  - Cash-out increment and minimum Cash-out Amount can be anything from $0.01 to $5
   - Any remainder is left on the cabinet as credit
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count upon cashing out
 - If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
