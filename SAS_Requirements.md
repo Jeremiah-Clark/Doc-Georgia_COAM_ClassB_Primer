@@ -1,10 +1,10 @@
-# 04 SAS Requirements
+# SAS Requirements
 
 *(Ref: SAS Requirements v1.8)*
 
 The current COAM SAS implementation is based on **SAS Protocol 6.02**.
 
-## 04.01 Minimum Feature Support
+## 01 Minimum Feature Support
 
 - The cabinet remains enabled if disconnected from the Site Controller
 - The cabinet can be configured for any number from 1–127
@@ -19,8 +19,7 @@ The current COAM SAS implementation is based on **SAS Protocol 6.02**.
   - Only the Primary SAS may control the cabinet
   - **LP $01** and **LP $02** must be disabled on Secondary SAS
 
-
-## 04.02 Required Long Polls
+## 02 Required Long Polls
 
 - **LP $01** = Disables play
 - **LP $02** = Enables play
@@ -57,7 +56,7 @@ The current COAM SAS implementation is based on **SAS Protocol 6.02**.
 - **LP $56** = Number of games currently enabled
 - **LP $A0** = Enabled features
 
-## 04.03 Required Meters
+## 03 Required Meters
 
 - **0000** = Total Coin In
 - **0001** = Total Coin Out
@@ -84,11 +83,11 @@ The current COAM SAS implementation is based on **SAS Protocol 6.02**.
 
 > [!NOTE]
 >
-> \* The “attendant paid” and “hand paid” meters will remain at “0000”  
-> \** Denomination will always be “01”  
-> \*** “Jackpot” meters will remain at “00000000”
+> 1. \* The “attendant paid” and “hand paid” meters will remain at “0000”  
+> 2. \*\* Denomination will always be “01”  
+> 3. \*\*\* “Jackpot” meters will remain at “00000000”
 
-## 04.04 Required Events
+## 04 Required Events
 
 - **$15** = Logic Box Opened
 - **$16** = Logic Box Closed
