@@ -1,20 +1,24 @@
 # 04 SAS Requirements
 
+*(Ref: SAS Requirements v1.8)*
+
 The current COAM SAS implementation is based on SAS Protocol 6.02.
 
 ## 04.01 Minimum Feature Support
 
-- The cabinet remains enabled if disconnected from the Site Controller.
-- Event 70 as required by the SAS protocol.
-- The player must still be able to cash out if the cabinet has been disabled by **LP $01**.
-- Cabinet
-  - The cabinet can be configured for any number from 1–127.
-  - Can be configured to a $0.01 denomination
-- Secondary SAS
-  - Secondary SAS support is not required
+- The cabinet remains enabled if disconnected from the Site Controller
+- The cabinet can be configured for any number from 1–127
+- Event 70 as required by the SAS protocol
+- The player must still be able to cash out if the cabinet has been disabled by **LP $01**
+- Can be configured to a $0.01 denomination
+- **LP $21** is used to verify the Game Pack identity
+  - Two queries, using 0000 and 5555 as seeds
+  - The cabinet must respond to **LP $21** within seven minutes
+- Secondary SAS support is not required
   - Secondary SAS may not interfere with Primary SAS
   - Only the Primary SAS may control the cabinet
   - **LP $01** and **LP $02** must be disabled on Secondary SAS
+
 
 ## 04.02 Required Long Polls
 
@@ -81,7 +85,9 @@ The current COAM SAS implementation is based on SAS Protocol 6.02.
 > [!NOTE]
 >
 > \* The “attendant paid” and “hand paid” meters will remain at “0000”
+>
 > \** Denomination will always be “01”
+>
 > \*** “Jackpot” meters will remain at “00000000”
 
 ## 04.04 Required Events
