@@ -23,6 +23,7 @@ It also provides guidance for those new to this unique market (Section 03).
 - **03 Market Considerations**
   - 03.01 Key Differences from Casinos
   - 03.02 What Attracts and Sustains COAM Players
+- **04 SAS Requirements**
 
 ## Project Structure
 
@@ -31,7 +32,8 @@ It also provides guidance for those new to this unique market (Section 03).
 ├── 01-COAM_Regulations.md     # Main regulatory content
 ├── 02-Skill_Test_Considerations.md
 ├── 03-Market_Considerations.md
-├── 04-GA_Regulation_Documents.md
+├── 04-SAS_Requirements.md
+├── 05-GA_Regulation_Documents.md
 ├── master.yaml                # Document metadata (title, author, settings)
 ├── template.tex               # LaTeX template (all formatting lives here)
 ├── gfm-to-latex.lua           # Lua filter (GFM admonitions → LaTeX callouts)
@@ -81,6 +83,7 @@ chmod +x build.sh
 - v2 — Full reworking and updating, February 2026
   - Renamed "02 Other Design Considerations" to "03 Market Considerations"
   - Pulled content in the new section "02 Skill Test Considerations" from section 01
-  - Complete rewrite of section "03 Market Considerations"
+  - Complete rewrite of section "03 Market Considerations”
+  - Added “04 SAS Requirements”
   - Updated legal references and regulation details
   - Restructured build system: pure GFM source → LaTeX template + Lua filter
