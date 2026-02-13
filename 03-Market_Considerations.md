@@ -24,15 +24,15 @@ This image—of a fairly average recent COAM installation—illustrates several 
 
 ## 03.02 What Attracts and Sustains COAM Players
 
-In our experience and observation, these factors can make the difference between a success and a failure. Note that these are generalities and prone to change over time and even from location to location.
+In our experience and observation, these factors can make the difference between success and failure. Note that these are generalities and prone to change over time and even from location to location.
 
 - **Progressive Jackpots**: COAM players chase Progressives just like casino players. 
   - Game packs with shared Progressives should feature them prominently on the game select screen
   - Games with individual Progressives should show them on the game select screen as well, if possible
   - Persistent and Metamorphic features can create a similar anticipatory feeling and should be highlighted as well
-- **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
-- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
 - **"Fair" math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
   - Wins that pay less than your bet are frustrating
-  - Too many small wins can become grating—recall that the Skill Test isn't really a feature, but a chore
-  - Too few wins is, of course, a problem if the reward for their patience comes too late
+  - Too many small wins can become grating—recall that the Skill Test isn't a feature, it’s a chore
+  - Too few wins is a problem, even if the wins are big; too often, the reward for patience comes too late and the player has already given up
+- **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
+- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
