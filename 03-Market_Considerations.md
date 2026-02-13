@@ -13,9 +13,9 @@ Designing COAM games requires a different mindset and considerations than tradit
   - We can't assume that the sound will be turned up, let alone turned on
   - If there is no way to mute the sound in a game, many locations will simply unplug the speakers
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COAM games and cabinets
-  - Screens can be difficult to see through the glare from overhead lights, and may be washed out by outside light, depending on how the location is set up. Large, bold, contrasty designs and guiding animations help alleviate these problems
-  - Maintenance of the machines is the responsibility of the MLH, who may not be immediately available if a problem arises. It is important to design with robustness and recovery in mind
-  - These locations are unlikely to have any sort of security on-premises
+  - Screens can be difficult to see through the glare from overhead lights, and may be washed out by outside light, depending on how the location is set up. Large, bold, contrasty designs and clear guiding animations help alleviate these problems
+  - Maintenance of the machines is the responsibility of the MLH, who may not be immediately available if a problem arises. It is important to design with robustness and recovery in mind, both in hardware and software. Any repair more involved than power cycling the Cabinet is likely to leave it out of order for a time
+  - These locations are unlikely to have any on-premises security to prevent damage or attempts to break into the Cabinet. Once again, building robust hardware is very important
   - The space is often limited, with low ceilings and cramped seating
 
 ![A fairly average recent COAM installation](images/IMG_6435.JPEG)
@@ -28,11 +28,11 @@ In our experience and observation, these factors can make the difference between
 
 - **Progressive Jackpots**: COAM players chase Progressives just like casino players. Games that prominently display Progressives tend to outperform those that do not
   - Game packs with shared Progressives should feature them prominently on the game select screen
-  - Games with individual Progressives should show them on the game select screen as well, if possible
+  - Games with individual Progressives should show them on the game select screen as well, if possible, so players will know which games have Progressives
   - Persistent and Metamorphic features can create a similar anticipatory feeling if highlighted
-- **"Fair" math**: Since they tend to play more often, and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
-  - Avoid wins that pay back less than your bet; players report they can be frustrating, feeling like a waste of time
-  - Too many small wins can become grating—recall that the Skill Test isn't a feature, it’s a chore. Players can become bored or annoyed with a Skill Test that comes up too often for little gain
-  - Too few wins is a problem, even if the eventual wins are big. Not all players are patient; many will walk away from a game that feels as though it is only taking from them
-- **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. Most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance
-- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The best approach is to mix the innovative and the tried-and-true in each Game Pack
+- **"Fair" math**: Since they tend to play more often and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
+  - Avoid wins that pay back less than your bet; players report they can be frustrating, feeling like a waste of time and effort
+  - Too many *small* wins can become grating—recall that the Skill Test isn't a feature, it’s a chore. Players can become bored or annoyed with a Skill Test that comes up too often for little gain
+  - Too *few* wins can be a problem, even if the eventual wins are big. Not all players are patient; many will walk away from a game that feels as though it is only taking from them
+- **Simplicity**: COAM games, especially their Skill Tests, need to be quick and easy to grasp. For example, most COAM games also have their pay tables displayed on the screen at all times. Players are accustomed to being able to size up a game at a glance without resorting to the Help pages
+- **Familiarity & Innovation**: Many COAM players can be reluctant to try games with unfamiliar Skill Tests. At the same time, some players do seek out the new and different. The safest approach to attracting the most players is to mix the innovative and the tried-and-true in each Game Pack
