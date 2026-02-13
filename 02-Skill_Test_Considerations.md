@@ -32,7 +32,7 @@ Refer to individual specs for specific details about our implementation of these
 - Arrows will appear at the top and bottom of every reel allow the Player to nudge a reel up or down by one reel stop
 - After ONE reel is nudged ONE stop, the Skill Test will be evaluated
 - Though it is uncommon in Georgia COAM, some Nudge games can be configured with the nudge arrows present after every spin, even if there is no potential Win
-  - In these cases, pressing the *Play* button without solving the Skill Test will start the next game
+  - In these cases, pressing the *Play* button without solving the Skill Test will start the next game (this is the only exception to the rule that the *Play* button is disabled during a Skill Test)
   - After ONE reel is nudged ONE stop, the Skill Test will be evaluated as a failure
 - The nature of how Nudges work means they are best used in single-line, three-reel games
 - The earliest Georgia COAM games were Nudge games, and many players still prefer them over any other Skill Test type
