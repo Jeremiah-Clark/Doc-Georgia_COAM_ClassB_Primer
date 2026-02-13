@@ -2,7 +2,7 @@
 
 ## 01.01 The Basics
 
- *(Ref: O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-102)*
+ *(Ref: O.C.G.A. § 16-12-35; O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-101; O.C.G.A. § 50-27-102; RU 13.1.2; RU 13.1.13; RU 13.1.14)*
 
 - **COAM** = Coin-Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
@@ -16,12 +16,23 @@
   - Each play on a GA COAM machine adds to the Hand Count, which is used in determining cash-out values
 - **Game Pack**
   - COAM games are multi-game products, usually consisting of 5–6 titles per pack that may be freely switched between from a central Game Select screen
-- **Cabinet**
-  - A catch-all term for the physical hardware that the Game Pack is installed on
 - **Site Controller**
   - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
 - **SAS** = Slot Accounting System
   - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes
+
+### Cabinets
+
+*(RU 13.1.14; Standards for the Secured Compartment)*
+
+- **Cabinet**
+  - A catch-all term for the physical hardware that the Game Pack is installed on
+
+- **Hard Meters**
+  - COAM Cabinets are required to have two mechanical Hard Meters installed; one tracking coin-in, the other tracking coin-out, both in $1 increments
+- **Secured Compartment**
+  - COAM cabinets must have a compartment secured with a cylinder lock that houses the logic board and hard meters
+
 
 ### Governance
 
@@ -31,6 +42,8 @@
   - Contracted by the GLC to oversee the daily operation, security, accounting, and record keeping of all COAM games in Georgia
 
 ### Legal Entities
+
+ *(Ref: 50-27-102; RU 13.1.13)*
 
 - **Publisher**
   - The company that produces the games and cabinets. A Publisher can not also be an MLH or LLH. The Publisher can not profit directly from their games beyond the initial sale to an MLH
@@ -64,7 +77,7 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 
 ## 01.03 Hand Count
 
-*(Ref: O.C.G.A § 16-12-35)*
+*(Ref: O.C.G.A § 16-12-35; RU 3.1.14)*
 
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
 
@@ -110,7 +123,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 ## 01.04 Cash-Out Requirements and Limitations
 
-*(Ref: O.C.G.A § 16-12-35; O.C.G.A § 50-27-71)*
+*(Ref: O.C.G.A § 16-12-35; O.C.G.A § 50-27-71; RU 13.3.1)*
 
 Cash-out in Georgia COAM has several specific limitations:
 
@@ -136,7 +149,7 @@ Cash-out in Georgia COAM has several specific limitations:
 
 ## 01.05 Location Requirements
 
-*(Ref: O.C.G.A § 50-27-84)*
+*(Ref: O.C.G.A § 50-27-84; RU 13.1.13)*
 
 There are particular requirements that locations must meet to qualify for a COAM license.
 
@@ -147,13 +160,9 @@ There are particular requirements that locations must meet to qualify for a COAM
 
 ## 01.06  Other Regulations
 
-### Networking
-
-- COAM game cabinets are not allowed to be networked together
-  - Progressives can not be shared between cabinets, nor can they interact in any other way
-  - Games that are a part of the same Game Pack may share Progressives within that single cabinet
-
 ### SAS Support
+
+*(Ref: RU 3.1.14; COAM SAS Requirements v1.8)*
 
 - Our separate SAS Requirements document includes the full list of required SAS Long Polls, Meters, and Events
 - The Primary SAS port may only be used by Intralot to connect the Cabinet to their Site Controller
@@ -162,9 +171,16 @@ There are particular requirements that locations must meet to qualify for a COAM
 - The Secondary SAS port is allowed to be used by kiosk payment systems
   - Secondary SAS is disallowed from sending LP01 (Disable Play) and LP02 (Enable Play) commands
 
+### No Shared Progressives
+
+*(Ref: O.C.G.A § 50-27-70)*
+
+- As a consequence of the “Class B” legal definition allowing the carry-over of points only within a single session, Progressives can not be shared between cabinets
+  - Games that are a part of the same Game Pack may share Progressives within that single cabinet, as the game session includes all of the games in a Game Pack
+
 ## 01.07 Other Considerations
 
-These are not explicit regulatory requirements, but rather guidance we have received from interactions with regulators.
+These are not explicitly stated regulatory requirements; rather, they are guidance we have received from our interactions with regulators. Proceed with caution.
 
 ### Table Game Imagery Disallowed
 
