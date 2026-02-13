@@ -1,7 +1,11 @@
 # Doc-Georgia_COAM_ClassB_Primer
 
-A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02).
-It also provides guidance for those new to this unique market (Section 03).
+The intended audience for this document is experienced slot developers, designers, and decision-makers who need to quickly get up to speed on Georgia COAM.
+Toward that end, included are:
+
+- A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02)
+- Guidance and insight into this unique market (Section 03)
+- Links to important regulatory documents (Section 04)
 
 ## Latest Build
 
@@ -23,7 +27,6 @@ It also provides guidance for those new to this unique market (Section 03).
 - **03 Market Considerations**
   - 03.01 Key Differences from Casinos
   - 03.02 What Attracts and Sustains COAM Players
-- **04 SAS Requirements**
 
 ## Project Structure
 
@@ -32,8 +35,7 @@ It also provides guidance for those new to this unique market (Section 03).
 ├── 01-COAM_Regulations.md     # Main regulatory content
 ├── 02-Skill_Test_Considerations.md
 ├── 03-Market_Considerations.md
-├── 04-SAS_Requirements.md
-├── 05-GA_Regulation_Documents.md
+├── 04-GA_Regulation_Documents.md
 ├── master.yaml                # Document metadata (title, author, settings)
 ├── template.tex               # LaTeX template (all formatting lives here)
 ├── gfm-to-latex.lua           # Lua filter (GFM admonitions → LaTeX callouts)

@@ -2,6 +2,8 @@
 
 ## 02.01 Features Common to Skill Test Presentations
 
+The following patterns are standard ways to implement the legally required Skill Tests in-game.
+
 - Pressing the *Play* button without solving the Skill Test will do nothing
 - The *Bet Level*, *Max Bet*, *Exit*, and *Help* buttons are also disabled until the Skill Test is completed
 - If the game is AutoPlaying, the AutoPlay will stop when a Skill Test needs to be solved
@@ -21,7 +23,7 @@
 
 ## 02.02 Common Skill Test Types
 
-These are quick sketches of the most common Skill Tests used in GA COAM, included here for reference. 
+These are quick sketches of the most common, compliant Skill Tests used in GA COAM, included here for reference. 
 Refer to individual specs for specific details about our implementation of these features.
 
 ### Reel Nudge

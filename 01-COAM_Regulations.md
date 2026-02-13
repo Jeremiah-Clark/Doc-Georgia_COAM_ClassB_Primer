@@ -20,6 +20,7 @@
   - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
 - **SAS** = Slot Accounting System
   - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes
+  - Ultimately, the flow of information is: **Cabinet ⭤ Site Controller ⭤ Intralot ⭤ GLC**
 
 ### Cabinets
 
@@ -43,8 +44,8 @@
 
  *(Ref: 50-27-102; RU 13.1.13)*
 
-- **Publisher**
-  - The company that produces the games and cabinets. A Publisher can not also be an MLH or LLH. The Publisher can not profit directly from their games beyond the initial sale to an MLH
+- **Publisher/Distributor**
+  - The company that produces the games and cabinets. A Publisher cannot also be an MLH or a Location. The Publisher cannot profit directly from their games beyond the initial sale to an MLH
 - **MLH** = Master License Holder
   - A legally mandated buffer between the Publisher and Locations
   - An MLH can not be the exclusive supplier of a Publisher's products to Locations
@@ -62,10 +63,12 @@
 There are specific, legally mandated qualities that determine if gameplay is properly skill-based.
 
 - All Wins MUST be gated behind a Skill Test
-  - The sequence is ALWAYS: **Bet → Skill → Award**
+  - The sequence is ALWAYS: **Bet ➝ Skill ➝ Award**
   - The Win Award may encompass an entire Bonus feature, so long as there has been a Skill Test between the Bet and the Award
+  - You can wrap an entire bonus feature inside the Award step, as long as a Skill Test happens between Bet and that Award
   - The reel spin presentation may come before or after the Skill Test, though it is nearly always placed before the Skill Test 
 - The player must be required to take an action to determine success or failure
+  - That action must be part of the flow of play, not a menu or other unrelated action
   - If there is no player interaction, it is not skill-based
 - It must be possible for the test to fail
   - If there is no way to lose or fail, then it is not a Skill Test
@@ -77,7 +80,7 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 
 *(Ref: O.C.G.A § 16-12-35; RU 3.1.14)*
 
-The concept of a Hand Count is particular to a few skill-based markets, including Georgia.
+The concept of a Hand Count is particular to a few skill-based markets, including Georgia. The Hand Count caps the award of each “hand” at $5, which limits tax complexities as well as the viability of many forms of cheating.
 
 - The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
 - The Hand Count starts at 0 when credits are first added to the machine
@@ -91,32 +94,28 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 > [!EXAMPLE]
 >
-> **Hand Count Cash-Out**
->
 > A player has $42.50 in credit and 9 Hand Count.
 >
 > - If the Cash-out increment is $5:
->   - They will actually cash out $40 (a multiple of $5)
+>  - They will actually Cash Out $40 (a multiple of $5)
 >   - $2.50 will remain on the machine
 >   - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
->
+> 
 > - If the Cash-out increment is set to $1:
->   - They will actually cash-out $42 (a multiple of $1)
+>  - They will actually Cash Out $42 (a multiple of $1)
 >   - $0.50 will remain on the machine
 >   - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
 
-- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be set in the settings, and should default to 30 seconds
+- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be changed in settings; a good default is 30 seconds)
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
 
 > [!EXAMPLE]
 >
-> **Hand Count Reset**
->
 > A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
 >
 > - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
->   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+>  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
 >   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
 
 ## 01.04 Cash-Out Requirements and Limitations
@@ -127,7 +126,7 @@ Cash-out in Georgia COAM has several specific limitations:
 
 - A COAM machine **cannot** dispense cash
 
-> [!TIP]
+> [!NOTE]
 >
 > Prior to July 1, 2026:
 >
@@ -141,9 +140,11 @@ Cash-out in Georgia COAM has several specific limitations:
 > - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
 >   - Gift cards can be used for any legal purchase at any location that accepts them 
 
-- Can cash out no more than $5 per Hand Count
-- Each Hand Count is treated as an individual game with a $5 maximum award. Because of this, there are no taxable wins in Georgia COAM
-  - Put another way, a $1500 cash-out isn't a $1500 win; it is 300 × $5 wins.
+- Can Cash Out no more than $5 per Hand Count
+- Each Hand Count is treated as an individual game with a $5 maximum award
+  - Put another way, a $1500 cash-out isn't a $1500 win; it is 300 × $5 wins
+  - Because of this, there are no taxable wins in Georgia COAM
+  - Cheating and money laundering are also much more difficult. Cashing Out $20,000, for example, would require the player to play 4,000 times
 
 ## 01.05 Location Requirements
 
@@ -152,8 +153,7 @@ Cash-out in Georgia COAM has several specific limitations:
 There are particular requirements that locations must meet to qualify for a COAM license.
 
 - May be any retail location that does not primarily sell alcohol, firearms, tobacco, or pornographic/adult content, and primarily sells merchandise rather than services
-  - **NOTE:** A rule change is in the works to allow for COAM machines to be placed in bars*
-- COAM revenue cannot exceed 50% of the total revenue for the location
+- COAM revenue, specifically net receipts, cannot exceed 50% of the total revenue for the location
 - There is a maximum of 9 COAM machines per site
 
 ## 01.06  Other Regulations
@@ -173,7 +173,7 @@ There are particular requirements that locations must meet to qualify for a COAM
 
 *(Ref: O.C.G.A § 50-27-70)*
 
-- As a consequence of the “Class B” legal definition allowing the carry-over of points only within a single session, Progressives can not be shared between cabinets
+- Because the legal definition of “Class B” COAM only permits carry‑over of credits within a single player session on a single cabinet, progressives cannot legally be shared between cabinets
   - Games that are a part of the same Game Pack may share Progressives within that single cabinet, as the game session includes all of the games in a Game Pack
 
 ## 01.07 Other Considerations
@@ -182,10 +182,10 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 
 ### Table Game Imagery Disallowed
 
-- Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is not allowed
-- DO NOT use card suits and face cards in designs
-  - Traditional royal symbols (A, K, Q, J, and 10) are allowed so long as they do not look like cards and are not paired with a suit
-- Dice are allowed
+- Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is consistently rejected by regulators
+- Card suits and face cards are similarly called out and are better avoided
+  - Traditional royal symbols (A, K, Q, J, and 10) have been allowed so long as they do not look like cards and are not paired with a suit
+- Dice have been allowed so long as they are not being used in a gambling scenario
 
 ### Cash Labels and Imagery Disallowed
 
@@ -206,13 +206,13 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 >   - Skill Test results are pass/fail
 > - **Hand Count**
 >   - Hand Count starts at 0; add 1 Hand Count per play
->   - The player can cash out only $5 per Hand Count
+>   - The player can Cash Out only $5 per Hand Count
 >     - For every $5 cashed-out, subtract 1 Hand Count
->   - Credits below the minimum Bet triggers the Hand Count Reset countdown
+>   - Credits falling below the minimum Bet triggers the Hand Count Reset countdown
 >     - If no credits are added before the countdown ends, Hand Count resets to 0
 > - **Cash Out**
 >   - No cash, award vouchers, gift cards, or lottery products
->   - After June 1, 2026, only prepaid gift cards
+>   - After July 1, 2026, only prepaid gift cards and lottery products
 > - **Locations**
 >   - No more than 50% revenue from COAM
 >   - Limit of 9 COAM cabinets per location
