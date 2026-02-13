@@ -8,6 +8,7 @@ pandoc --from gfm-alerts \
        01-COAM_Regulations.md \
        02-Skill_Test_Considerations.md \
        03-Market_Considerations.md \
+       04-SAS_Requirements.md \
        -o Georgia_COAM_ClassB_Primer-Latest.pdf
 
 echo "PDF generated: Georgia_COAM_ClassB_Primer-Latest.pdf"
