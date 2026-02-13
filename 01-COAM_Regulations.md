@@ -27,12 +27,10 @@
 
 - **Cabinet**
   - A catch-all term for the physical hardware that the Game Pack is installed on
-
 - **Hard Meters**
   - COAM Cabinets are required to have two mechanical Hard Meters installed; one tracking coin-in, the other tracking coin-out, both in $1 increments
 - **Secured Compartment**
   - COAM cabinets must have a compartment secured with a cylinder lock that houses the logic board and hard meters
-
 
 ### Governance
 
@@ -187,7 +185,6 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 - Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is not allowed
 - DO NOT use card suits and face cards in designs
   - Traditional royal symbols (A, K, Q, J, and 10) are allowed so long as they do not look like cards and are not paired with a suit
-
 - Dice are allowed
 
 ### Cash Labels and Imagery Disallowed
