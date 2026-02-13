@@ -13,7 +13,7 @@
 - **Skill Test**
   - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
 - **Hand Count**
-  - Each play on a GA COAM machine adds to the Hand Count, which is used in determining cash-out values
+  - Each play on a GA COAM Cabinet adds to the Hand Count, which is used in determining cash-out values
 - **Game Pack**
   - COAM games are multi-game products, usually consisting of 5–6 titles per pack that may be freely switched between from a central Game Select screen
 - **Site Controller**
@@ -27,7 +27,7 @@
 *(RU 13.1.14; Standards for the Secured Compartment)*
 
 - **Cabinet**
-  - A catch-all term for the physical hardware that the Game Pack is installed on
+  - An inclusive term for the physical hardware and the Game Pack installed on it.
 - **Hard Meters**
   - COAM Cabinets are required to have two mechanical Hard Meters installed; one tracking coin-in, the other tracking coin-out, both in $1 increments
 - **Secured Compartment**
@@ -83,40 +83,40 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia. The Hand Count caps the award of each “hand” at $5, which limits tax complexities as well as the viability of many forms of cheating.
 
 - The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
-- The Hand Count starts at 0 when credits are first added to the machine
+- The Hand Count starts at 0 when credits are first added to the Cabinet
 - Every play adds 1 to the Hand Count
 - When cashing out, the maximum amount that can be collected is [Hand Count] × $5
   - Cash-out increment and Cash-out Amount can be anything from $0.01 to $5
     - Not all Game Packs allow this to be changed; most that do default both to $5
-  - Any remainder is left on the cabinet as credits
+  - Any remainder is left on the Cabinet as credits
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count
-  - If the Cash Out increment is set to less than $5, for the purposes of subtracting Hand Counts, round up to the next $5 increment
+  - If the cash out increment is set to less than $5, for the purposes of subtracting Hand Counts, round up to the next $5 increment
 
 > [!EXAMPLE]
 >
 > A player has $42.50 in credit and 9 Hand Count.
 >
 > - If the Cash-out increment is $5:
->  - They will actually Cash Out $40 (a multiple of $5)
->   - $2.50 will remain on the machine
+>  - They will actually cash out $40 (a multiple of $5)
+>   - $2.50 will remain on the Cabinet
 >   - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
 > 
 > - If the Cash-out increment is set to $1:
->  - They will actually Cash Out $42 (a multiple of $1)
->   - $0.50 will remain on the machine
+>  - They will actually cash out $42 (a multiple of $1)
+>   - $0.50 will remain on the Cabinet
 >   - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
 
-- If the Credits on the machine drop below the minimum bet level, a Hand Count Reset timer will begin (the length of the countdown can be changed in settings; a good default is 30 seconds)
+- If the Credits on the Cabinet drop below the minimum Bet, a Hand Count Reset timer will begin (the length of the countdown can be changed in settings; a good default is 30 seconds)
 - When the countdown reaches 0, the Hand Count resets to 0
-- If more Credits are added to the machine before the countdown ends, the countdown stops, and the Hand Count is retained
+- If more Credits are added to the Cabinet before the countdown ends, the countdown stops, and the Hand Count is retained
 
 > [!EXAMPLE]
 >
-> A player has $0.40 in credits, and the Minimum Bet for the game is $0.25:
+> A player has $0.40 in credits, and the minimum Bet for the game is $0.25:
 >
-> - Playing a game with a Bet of $0.16 or more will drop the current credits below the Minimum Bet, which will trigger the Hand Count Reset countdown:
+> - Playing a game with a Bet of $0.16 or more will drop the current credits below the minimum Bet, which will trigger the Hand Count Reset countdown:
 >  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
->   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the machine remain
+>   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the Cabinet remain
 
 ## 01.04 Cash-Out Requirements and Limitations
 
@@ -124,7 +124,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 Cash-out in Georgia COAM has several specific limitations:
 
-- A COAM machine **cannot** dispense cash
+- A COAM Cabinet **cannot** dispense cash
 
 > [!NOTE]
 >
@@ -140,7 +140,7 @@ Cash-out in Georgia COAM has several specific limitations:
 > - Prepaid gift cards and lottery products will be the ONLY allowed form of redemption  
 >   - Gift cards can be used for any legal purchase at any location that accepts them 
 
-- Can Cash Out no more than $5 per Hand Count
+- The player can cash out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award
   - Put another way, a $1500 cash-out isn't a $1500 win; it is 300 × $5 wins
   - Because of this, there are no taxable wins in Georgia COAM
@@ -173,8 +173,8 @@ There are particular requirements that locations must meet to qualify for a COAM
 
 *(Ref: O.C.G.A § 50-27-70)*
 
-- Because the legal definition of “Class B” COAM only permits carry‑over of credits within a single player session on a single cabinet, progressives cannot legally be shared between cabinets
-  - Games that are a part of the same Game Pack may share Progressives within that single cabinet, as the game session includes all of the games in a Game Pack
+- Because the legal definition of “Class B” COAM only permits carry‑over of credits within a single player session on a single Cabinet, progressives cannot legally be shared between cabinets
+  - Games that are a part of the same Game Pack may share Progressives within that single Cabinet, as the game session includes all of the games in a Game Pack
 
 ## 01.07 Other Considerations
 
@@ -206,7 +206,7 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 >   - Skill Test results are pass/fail
 > - **Hand Count**
 >   - Hand Count starts at 0; add 1 Hand Count per play
->   - The player can Cash Out only $5 per Hand Count
+>   - The player can cash out only $5 per Hand Count
 >     - For every $5 cashed-out, subtract 1 Hand Count
 >   - Credits falling below the minimum Bet triggers the Hand Count Reset countdown
 >     - If no credits are added before the countdown ends, Hand Count resets to 0
