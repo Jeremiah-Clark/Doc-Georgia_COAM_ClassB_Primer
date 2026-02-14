@@ -22,7 +22,7 @@ Designing COAM games requires a different mindset and considerations than tradit
 
 This image—of a fairly average recent COAM installation—illustrates several of these points.
 
-## 03.02 What Attracts and Sustains COAM Players
+## 03.02 What Attracts and Retains COAM Players
 
 In our experience and observation, these factors can make the difference between success and failure. Note that these are generalities and prone to change over time and even from location to location.
 
