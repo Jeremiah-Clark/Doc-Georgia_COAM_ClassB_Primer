@@ -5,6 +5,9 @@
 % ---------------------------------------------------------------------------
 % Core packages
 % ---------------------------------------------------------------------------
+% Pre-declare hyperref options before any package might load it as a dependency
+\PassOptionsToPackage{unicode}{hyperref}
+
 \usepackage[$if(papersize)$$papersize$paper,$endif$margin=1in,top=1.25in,bottom=1.25in]{geometry}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
@@ -12,7 +15,6 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[framemethod=tikz]{mdframed}
-\usepackage[hidelinks]{hyperref}
 \usepackage{longtable,booktabs,array}
 \usepackage{amssymb}
 \usepackage{calc}
@@ -63,6 +65,29 @@
 \fi
 
 \linespread{1.15}
+
+% ---------------------------------------------------------------------------
+% Hyperref (must be loaded after fontspec)
+% ---------------------------------------------------------------------------
+\definecolor{linkblue}{RGB}{40,80,180}
+\usepackage{soul}
+\setulcolor{linkblue}
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\urlstyle{same}
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=brandblue,
+  urlcolor=linkblue,
+  breaklinks=true,
+  $if(title)$pdftitle={$title$},$endif$
+  $if(author)$pdfauthor={$author$},$endif$
+  pdfcreator={LaTeX via pandoc}
+}
+% Underline external links (URLs) while keeping TOC links clean
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\ul{#2}}}
 
 % ---------------------------------------------------------------------------
 % Paragraph and list formatting
