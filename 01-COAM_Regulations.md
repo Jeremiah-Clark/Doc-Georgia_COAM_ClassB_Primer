@@ -2,36 +2,32 @@
 
 ## 01.01 The Basics
 
- *(Ref: O.C.G.A. § 16-12-35; O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-101; O.C.G.A. § 50-27-102; RU 13.1.2; RU 13.1.13; RU 13.1.14)*
+*(Ref: O.C.G.A. § 16-12-35; O.C.G.A. § 50-27-70; O.C.G.A. § 50-27-84; O.C.G.A. § 50-27-87; O.C.G.A. § 50-27-101; O.C.G.A. § 50-27-102; RU 13.1.2; RU 13.1.13; RU 13.1.14)*
 
 - **COAM** = Coin-Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
   - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
-    - Skill-based—cannot be 100% chance
-    - Credits are carried over from game to game
-    - Dispense credits that must be redeemed on-location
+    - Skill-based—cannot be 100% chance *(see 01.02)*
+    - Credits are carried over from game to game within a single session
+    - Award lottery products or credits that must be redeemed on-location (prior to July 1, 2026)
+    - Award lottery products of prepaid gift cards (after July 1, 2026; *see 01.04)*
 - **Skill Test**
-  - A defining feature of skill-based games is that all Wins are gated behind Skill Tests (see below)
+  - A defining feature of skill-based games is that all Wins are gated behind Skill Tests *(see 01.02)*
 - **Hand Count**
-  - Each play on a GA COAM Cabinet adds to the Hand Count, which is used in determining cash-out values
+  - Each play on a GA COAM Cabinet adds to the Hand Count, which is used in determining cash-out values *(see 01.03)*
 - **Game Pack**
-  - COAM games are multi-game products, usually consisting of 5–6 titles per pack that may be freely switched between from a central Game Select screen
-- **Site Controller**
-  - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
-- **SAS** = Slot Accounting System
-  - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes
-  - Ultimately, the flow of information is: **Cabinet ⭤ Site Controller ⭤ Intralot ⭤ GLC**
+  - COAM Cabinets are multi-game products sold as Game Packs. Each pack typically contains 5–6 titles that can be freely switched between using a central Game Select screen.
 
 ### Cabinets
 
-*(RU 13.1.14; Standards for the Secured Compartment)*
+*(Ref: RU 13.1.14; Standards for the Secured Compartment)*
 
 - **Cabinet**
-  - An inclusive term for the physical hardware and the Game Pack installed on it.
+  - An inclusive term for the physical hardware and the Game Pack installed on it
 - **Hard Meters**
   - COAM Cabinets are required to have two mechanical Hard Meters installed; one tracking coin-in, the other tracking coin-out, both in $1 increments
 - **Secured Compartment**
-  - COAM cabinets must have a compartment secured with a cylinder lock that houses the logic board and hard meters
+  - COAM cabinets must have a secured compartment that houses the logic board and Hard Meters
 
 ### Governance
 
@@ -39,6 +35,11 @@
   - The GLC oversees the regulation of COAM games in Georgia and retains 13% net receipts for the state
 - **Intralot**
   - Contracted by the GLC to oversee the daily operation, security, accounting, and record keeping of all COAM games in Georgia
+- **Site Controller**
+  - An on-site device that all cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks
+- **SAS** = Slot Accounting System *(see 01.06)*
+  - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes
+  - Ultimately, the flow of information is: **Cabinet ⭤ Site Controller ⭤ Intralot ⭤ GLC**
 
 ### Legal Entities
 
@@ -184,18 +185,17 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 
 - Gambling imagery—craps tables, roulette wheels, playing cards, casino backgrounds, and so on—is consistently rejected by regulators
 - Card suits and face cards are similarly called out and are better avoided
-  - Traditional royal symbols (A, K, Q, J, and 10) have been allowed so long as they do not look like cards and are not paired with a suit
+  - Traditional royal symbols (A, K, Q, J, and 10) have been allowed so long as they did not look like cards and were not paired with a suit
 - Dice have been allowed so long as they are not being used in a gambling scenario
 
 ### Cash Labels and Imagery Disallowed
 
-- There can be no messaging, implicit or implied, that the game will dispense actual cash
-- DO NOT use "Cash Out" in-game or on buttons
-	- Use "Collect" instead
-- DO NOT label anything as "Cash"
-	- Use "Credits" instead
+- There can be no messaging, implicit or implied, that the game will dispense actual cash, or it will be rejected. This has been communicated to us unequivocally
+  - DO NOT use "Cash Out" in-game or on buttons, use "Collect" instead
+  - DO NOT label anything as "Cash", use "Credits" instead
+
 - Dollar signs and cash values on credit amounts and prizes are OK
-- Dollar sign and gold bar or similar reel Symbols are OK
+- Dollar sign and gold bar reel Symbols and the like are OK
 - Bank and cash themes are OK
 
 > [!SUMMARY]
@@ -217,7 +217,8 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 >   - No more than 50% revenue from COAM
 >   - Limit of 9 COAM cabinets per location
 > - **Restrictions**
->   - No network aside from Intralot's Site Controller
+>   - No external control aside from Intralot's Site Controller
+>   - No shared Progressives between Cabinets
 >   - Secondary SAS can not enable/disable games
 >   - No casino imagery
 >   - No "Cash"
