@@ -95,7 +95,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
   - The number of Hand Counts cashed out will be subtracted from the current Hand Count
   - If the cash out increment is set to less than $5, for the purposes of subtracting Hand Counts, round up to the next $5 increment
 
-> [!EXAMPLE]
+> [!EXAMPLE] Examples: Hand Counts and Cashing Out
 >
 > A player has $42.50 in credit and 9 Hand Counts.
 >
@@ -112,7 +112,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 - When the countdown reaches 0, the Hand Count resets to 0
 - If more Credits are added to the Cabinet before the countdown ends, the countdown stops, and the Hand Count is retained
 
-> [!EXAMPLE]
+> [!EXAMPLE] Examples: Hand Count Reset
 >
 > A player has $0.40 in credits, and the minimum Bet for the game is $0.25:
 >
@@ -128,7 +128,7 @@ Cash out in Georgia COAM has several specific limitations:
 
 - A COAM Cabinet **cannot** dispense cash
 
-> [!NOTE]
+> [!NOTE] Redemption Rule Change
 >
 > Prior to July 1, 2026:
 >
@@ -198,7 +198,7 @@ These are not explicitly stated regulatory requirements; rather, they are guidan
 - Dollar sign and gold bar reel Symbols and the like are OK
 - Bank and cash themes are OK
 
-> [!SUMMARY]
+> [!SUMMARY] Quick Reference
 >
 > - **Skill Tests**
 >   - All wins are gated behind a Skill Test

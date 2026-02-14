@@ -28,13 +28,13 @@
   \usepackage{fontspec}
   \setmainfont{Noto Sans}
   \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
+  \setmonofont{Noto Sans}
 \fi
 \ifluatex
   \usepackage{fontspec}
   \setmainfont{Noto Sans}
   \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
+  \setmonofont{Noto Sans}
 \fi
 % Redirect any typewriter context to sans-serif (prevents ectt fallback)
 \renewcommand{\ttdefault}{\sfdefault}
@@ -76,7 +76,7 @@
 
 \setlistdepth{9}
 \renewlist{itemize}{itemize}{9}
-\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,1]{label=\scalebox{1.5}\textbullet}
 \setlist[itemize,2]{label=$$\circ$$}
 \setlist[itemize,3]{label=\scalebox{0.5}{$$\blacksquare$$}}
 \setlist[itemize,4]{label=$$\ast$$}
@@ -106,82 +106,100 @@
 % ---------------------------------------------------------------------------
 % Callout / admonition environments  (mdframed)
 % ---------------------------------------------------------------------------
-\newmdenv[
-  linecolor=red!75!black, backgroundcolor=red!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Important, frametitlebackgroundcolor=red!75!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{important}
+% Each environment accepts an optional argument to override the default title:
+%   \begin{example}                    → title bar says "Example"
+%   \begin{example}[Hand Count Reset]  → title bar says "Hand Count Reset"
 
-\newmdenv[
-  linecolor=blue!75!black, backgroundcolor=blue!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Note, frametitlebackgroundcolor=blue!75!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{note}
+\newenvironment{important}[1][Important]{%
+  \begin{mdframed}[
+    linecolor=red!75!black, backgroundcolor=red!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=red!75!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
-\newmdenv[
-  linecolor=orange!85!black, backgroundcolor=orange!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Warning, frametitlebackgroundcolor=orange!85!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{warning}
+\newenvironment{note}[1][Note]{%
+  \begin{mdframed}[
+    linecolor=blue!75!black, backgroundcolor=blue!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=blue!75!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
-\newmdenv[
-  linecolor=green!75!black, backgroundcolor=green!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Tip, frametitlebackgroundcolor=green!75!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{tip}
+\newenvironment{warning}[1][Warning]{%
+  \begin{mdframed}[
+    linecolor=orange!85!black, backgroundcolor=orange!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=orange!85!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
-\newmdenv[
-  linecolor=yellow!85!black, backgroundcolor=yellow!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Caution, frametitlebackgroundcolor=yellow!85!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{caution}
+\newenvironment{tip}[1][Tip]{%
+  \begin{mdframed}[
+    linecolor=green!75!black, backgroundcolor=green!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=green!75!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
-\newmdenv[
-  linecolor=violet!75!black, backgroundcolor=violet!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Summary, frametitlebackgroundcolor=violet!75!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{summary}
+\newenvironment{caution}[1][Caution]{%
+  \begin{mdframed}[
+    linecolor=yellow!85!black, backgroundcolor=yellow!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=yellow!85!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
-\newmdenv[
-  linecolor=black!80!black, backgroundcolor=black!5!white,
-  linewidth=2pt, roundcorner=2mm,
-  innertopmargin=10pt, innerbottommargin=10pt,
-  innerleftmargin=10pt, innerrightmargin=10pt,
-  skipabove=9pt, skipbelow=6pt, nobreak=true,
-  frametitle=Example, frametitlebackgroundcolor=black!80!black,
-  frametitlefont=\bfseries\color{white},
-  frametitleaboveskip=4pt, frametitlebelowskip=5pt
-]{example}
+\newenvironment{summary}[1][Summary]{%
+  \begin{mdframed}[
+    linecolor=violet!75!black, backgroundcolor=violet!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=violet!75!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
+
+\newenvironment{example}[1][Example]{%
+  \begin{mdframed}[
+    linecolor=black!80!black, backgroundcolor=black!5!white,
+    linewidth=2pt, roundcorner=2mm,
+    innertopmargin=10pt, innerbottommargin=10pt,
+    innerleftmargin=10pt, innerrightmargin=10pt,
+    skipabove=9pt, skipbelow=6pt, nobreak=true,
+    frametitle=#1, frametitlebackgroundcolor=black!80!black,
+    frametitlefont=\bfseries\color{white},
+    frametitleaboveskip=4pt, frametitlebelowskip=5pt
+  ]%
+}{\end{mdframed}}
 
 % Blockquotes (for any blockquote not converted to an admonition)
 \renewenvironment{quote}{%

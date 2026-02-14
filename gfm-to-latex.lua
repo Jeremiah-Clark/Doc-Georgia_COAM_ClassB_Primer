@@ -40,64 +40,27 @@ function BlockQuote(el)
   local env_name = admonition_map[admonition_type]
   if not env_name then return el end
 
-  -- Build new content, stripping the marker
+  -- Extract optional custom title (any text after [!TYPE] on the marker line)
+  local custom_title = first_text:match("^%[!%u+%]%s+(.+)$")
+
+  -- Body content always starts from the second block onward;
+  -- the first paragraph is consumed entirely (marker + optional title)
   local new_content = pandoc.List()
-
-  -- Determine if the marker is alone on its paragraph or has trailing content
-  local marker_only = first_text:match("^%[!%u+%]%s*$")
-
-  if not marker_only then
-    -- Content follows the marker on the same line — strip the marker from inlines
-    local stripped = strip_marker_inlines(first_block.content, admonition_type)
-    if #stripped > 0 then
-      new_content:insert(pandoc.Para(stripped))
-    end
-  end
-
-  -- Append all subsequent blocks from the blockquote
   for i = 2, #el.content do
     new_content:insert(el.content[i])
   end
 
-  -- Wrap in LaTeX environment
+  -- Wrap in LaTeX environment, with optional custom title
   local result = pandoc.List()
-  result:insert(pandoc.RawBlock("latex", "\\begin{" .. env_name .. "}"))
+  if custom_title and custom_title ~= "" then
+    result:insert(pandoc.RawBlock("latex", "\\begin{" .. env_name .. "}[" .. custom_title .. "]"))
+  else
+    result:insert(pandoc.RawBlock("latex", "\\begin{" .. env_name .. "}"))
+  end
   result:extend(new_content)
   result:insert(pandoc.RawBlock("latex", "\\end{" .. env_name .. "}"))
 
   return result
-end
-
--- Helper: remove the [!TYPE] marker from the start of an Inlines list
--- while preserving all subsequent formatting (bold, links, etc.)
-function strip_marker_inlines(inlines, marker_type)
-  local new = pandoc.List()
-  local pattern = "%[!" .. marker_type .. "%]"
-  local found = false
-
-  for _, inline in ipairs(inlines) do
-    if not found then
-      if inline.t == "Str" and inline.text:match(pattern) then
-        -- Remove the marker; keep any text after it
-        local after = inline.text:gsub(pattern .. "%s*", "")
-        if after ~= "" then
-          new:insert(pandoc.Str(after))
-        end
-        found = true
-      end
-      -- Skip Str/Space elements that are part of the not-yet-found marker
-    else
-      -- After the marker: skip a leading Space or SoftBreak if we haven't
-      -- collected any real content yet
-      if #new == 0 and (inline.t == "Space" or inline.t == "SoftBreak") then
-        -- skip leading whitespace after marker
-      else
-        new:insert(inline)
-      end
-    end
-  end
-
-  return new
 end
 
 -- ---------------------------------------------------------------------------

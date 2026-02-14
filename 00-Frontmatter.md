@@ -7,6 +7,6 @@ Toward that end, included are:
 - Guidance and insight into this unique market (Section 03)
 - Links to important regulatory documents (Section 04)
 
-> [!CAUTION]
+> [!CAUTION] Disclaimer
 >
 > **This document is not legal advice**, nor is it meant to be all-inclusive. It is intended solely as an introduction and source of general information and market context. Check all up-to-date laws and regulations before taking any action.
