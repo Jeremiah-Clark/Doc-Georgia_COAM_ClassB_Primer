@@ -28,13 +28,13 @@
   \usepackage{fontspec}
   \setmainfont{Noto Sans}
   \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans}
+  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
 \fi
 \ifluatex
   \usepackage{fontspec}
   \setmainfont{Noto Sans}
   \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans}
+  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
 \fi
 % Redirect any typewriter context to sans-serif (prevents ectt fallback)
 \renewcommand{\ttdefault}{\sfdefault}
@@ -76,9 +76,9 @@
 
 \setlistdepth{9}
 \renewlist{itemize}{itemize}{9}
-\setlist[itemize,1]{label=\scalebox{1.5}\textbullet}
-\setlist[itemize,2]{label=$$\circ$$}
-\setlist[itemize,3]{label=\scalebox{0.5}{$$\blacksquare$$}}
+\setlist[itemize,1]{label=\raisebox{-0.42ex}{\scalebox{1.5}{\textbullet}}}
+\setlist[itemize,2]{label=\raisebox{0.15ex}{$$\circ$$}}
+\setlist[itemize,3]{label=\raisebox{0.25ex}{\scalebox{0.5}{$$\blacksquare$$}}}
 \setlist[itemize,4]{label=$$\ast$$}
 \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
 
