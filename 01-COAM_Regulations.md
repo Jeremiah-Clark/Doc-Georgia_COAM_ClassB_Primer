@@ -103,7 +103,6 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 >  - They will actually cash out $40 (a multiple of $5)
 >   - $2.50 will remain on the Cabinet
 >   - The Hand Count will be reduced to 1 ($40/5 = 8 Hand Counts)
-> 
 > - If the cash out increment is set to $1:
 >  - They will actually cash out $42 (a multiple of $1)
 >   - $0.50 will remain on the Cabinet
@@ -118,7 +117,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 > A player has $0.40 in credits, and the minimum Bet for the game is $0.25:
 >
 > - Playing a game with a Bet of $0.16 or more will drop the current credits below the minimum Bet, which will trigger the Hand Count Reset countdown:
->  - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
+>   - If enough credits are inserted before the countdown reaches 0, the Hand Count will be retained
 >   - If the countdown reaches 0, the Hand Count is reset to 0, and any credits left on the Cabinet remain
 
 ## 01.04 Cash Out Requirements and Limitations

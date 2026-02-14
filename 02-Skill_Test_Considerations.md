@@ -50,7 +50,6 @@ Refer to individual specs for specific details about our implementation of these
   - Choosing correctly between two or more items
   - Matching colors or numbers
   - Finding a hidden picture
-  - Solving a maze
   - Repeating a pattern (aka "Simon")
 - Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort
 - They risk interrupting the flow of play if they are not carefully designed
