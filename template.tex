@@ -36,6 +36,8 @@
   \setsansfont{Noto Sans}
   \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
 \fi
+% Redirect any typewriter context to sans-serif (prevents ectt fallback)
+\renewcommand{\ttdefault}{\sfdefault}
 
 % Map non-breaking hyphen (U+2011) to a regular hyphen — most fonts lack it
 \newunicodechar{‑}{-}
@@ -53,6 +55,7 @@
 \urlstyle{same}
 \hypersetup{
   unicode=true,
+  pdfencoding=unicode,
   colorlinks=true,
   linkcolor=brandblue,
   urlcolor=linkblue,
