@@ -16,7 +16,7 @@
 - **Hand Count**
   - Each play on a GA COAM Cabinet adds to the Hand Count, which is used in determining cash out values *(see 01.03)*
 - **Game Pack**
-  - COAM Cabinets are multi-game products sold as Game Packs. Each pack typically contains 5–6 titles that can be freely switched between using a central Game Select screen.
+  - COAM Cabinets are multi-game products sold as Game Packs. Each pack typically contains 5 or 6 titles that can be freely switched between using a central Game Select screen.
 
 ### Cabinets
 
@@ -88,7 +88,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 - The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
 - The Hand Count starts at 0 when credits are first added to the Cabinet
 - Every play adds 1 to the Hand Count
-- When cashing out, the maximum amount that can be collected is [Hand Count] × $5
+- When cashing out, the maximum amount that can be collected is $5×[Hand Count]
   - Cash out increment and cash out Amount can be anything from $0.01 to $5
     - Not all Game Packs allow this to be changed; most that do default both to $5
   - Any remainder is left on the Cabinet as credits
@@ -97,7 +97,7 @@ The concept of a Hand Count is particular to a few skill-based markets, includin
 
 > [!EXAMPLE]
 >
-> A player has $42.50 in credit and 9 Hand Count.
+> A player has $42.50 in credit and 9 Hand Counts.
 >
 > - If the cash out increment is $5:
 >  - They will actually cash out $40 (a multiple of $5)
@@ -145,8 +145,8 @@ Cash out in Georgia COAM has several specific limitations:
 
 - The player can cash out no more than $5 per Hand Count
 - Each Hand Count is treated as an individual game with a $5 maximum award
-  - Put another way, a $1500 cash out isn't a $1500 win; it is 300 × $5 wins
-  - Because of this, there are no taxable wins in Georgia COAM
+  - Put another way, a $1500 cash out isn't a single $1500 win; it’s 300 separate $5 wins
+  - Because of this, there are no taxable wins in Georgia COAM, and no real “Hand Pay”
   - Cheating and money laundering are also much more difficult. Cashing Out $20,000, for example, would require the player to play 4,000 times
 
 ## 01.05 Location Requirements
@@ -176,7 +176,7 @@ There are particular requirements that Locations must meet to qualify for a COAM
 
 *Ref: O.C.G.A § 50-27-70* (2025)
 
-- Because the legal definition of “Class B” COAM only permits carry‑over of credits within a single player session on a single Cabinet, Progressives cannot legally be shared between Cabinets
+- Because the legal definition of “Class B” COAM only permits carry-over of credits within a single player session on a single Cabinet, Progressives cannot legally be shared between Cabinets
   - Games that are a part of the same Game Pack may share Progressives within that single Cabinet, as the game session includes all of the games in a Game Pack
 
 ## 01.07 Other Considerations
