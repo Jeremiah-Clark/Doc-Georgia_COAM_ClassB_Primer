@@ -4,13 +4,13 @@
 
 The following patterns are standard ways to implement the legally required Skill Tests in-game.
 
-- Pressing the *Play* button without solving the Skill Test will do nothing
+- In a standard Skill Test, pressing the *Play* button without solving the Skill Test will do nothing
 - The *Bet Level*, *Max Bet*, *Exit*, and *Help* buttons are also disabled until the Skill Test is completed
 - If the game is AutoPlaying, the AutoPlay will stop when a Skill Test needs to be solved
-  - The game may resume AutoPlay following the Skill Test evaluation, but it is not required
+  - By default, the game should resume AutoPlay following the Skill Test evaluation (though this is not legally required)
 - The potential Win Line or combination is highlighted, so it is clear to the player which potential Win is being evaluated
-  - This may also involve deemphasizing symbols not involved in the potential Win, but this is not required
-  - This may not apply to Overlay Skill Tests that cover the reels
+  - You may also deemphasize unrelated symbols to further emphasize the win, but this is optional
+  - This does not apply to Overlay Skill Tests that cover the reels; in that case, all required information must be included on the overlay
 - There may be multiple Wins present; in these cases, the Skill Test is applied to the highest Win
   - Correctly solving the Skill Test awards **ALL the Wins**
   - Failing the Skill Test awards **NONE of the Wins**

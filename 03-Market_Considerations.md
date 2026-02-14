@@ -10,11 +10,11 @@ Designing COAM games requires a different mindset and considerations than tradit
   - Anecdotally, they tend to be younger, are largely working class, and are more likely to be male than casino players. As such, the themes that work in casinos do not always work in COAM
   - Many speak English as a second language; some do not speak English at all. Aim for designs that are understandable without needing to read anything
 - Sound is a big part of the casino experience, but in gas stations and other retail establishments, constant loud music and sounds are not generally welcome
-  - We can't assume that the sound will be turned up, let alone turned on. Design games and features so that they are still playable and enjoyable without sound
+  - We can't assume that the sound will be turned on. All critical feedback and directions must be visible on-screen; never rely on sound alone
   - Make sure you can mute the sound in your game. If you cannot, many locations will simply unplug the speakers
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COAM games and cabinets
-  - Screens can be difficult to see through the glare from overhead lights, and may be washed out by outside light, depending on how the location is set up. Large, bold, contrasty designs and clear guiding animations help alleviate these problems
-  - Maintenance of the machines is the responsibility of the MLH, who may not be immediately available if a problem arises. It is important to design with robustness and recovery in mind, both in hardware and software. Any repair more involved than power cycling the Cabinet is likely to leave it out of order for a time
+  - Screens can be difficult to see through glare from overhead lights and outside light, depending on how the location is set up. Avoid small text, subtle color changes, and small designs for anything of importance
+  - Maintenance of the machines is the responsibility of the MLH, who may not be immediately available if a problem arises. Design games and hardware to recover gracefully from most errors. Anything not resolved by power cycling the Cabinet is likely to leave it out of order for a time
   - These locations are unlikely to have any on-premises security to prevent damage or attempts to break into the Cabinet. Once again, building robust hardware is important
   - The space is often limited, with low ceilings and cramped seating. There is not much to be done about this except to make games that players will keep playing regardless of any discomfort
 
