@@ -4,19 +4,19 @@ Designing COAM games requires a different mindset and considerations than tradit
 
 ## 03.01 Key Differences from Casinos
 
-- Casinos are destinations, located in and adjacent to resorts, fine dining, and hotels; players travel specifically to visit them and play their games. COAM games are located in gas stations and restaurants, often in back rooms and dark corners.
+- Casinos are destinations, located in and adjacent to resorts, fine dining, and hotels; players travel specifically to visit them and play their games. COAM games are located in gas stations and restaurants, often in back rooms and dark corners
 - The average COAM player—inasmuch as such a thing exists—is markedly different from the average casino player:
   - Many are only seeking a momentary diversion, a chance to blow off a little steam, and a chance to pocket a little something extra; many do not specifically set out to play
-  - Anecdotally, they tend to be younger, are largely working class, and are more likely to be male when compared to casino players
-  - Many speak English as a second language; some do not speak English at all. Aim for designs that are understandable without needing to read 
+  - Anecdotally, they tend to be younger, are largely working class, and are more likely to be male than casino players. As such, the themes that work in casinos do not always work in COAM
+  - Many speak English as a second language; some do not speak English at all. Aim for designs that are understandable without needing to read anything
 - Sound is a big part of the casino experience, but in gas stations and other retail establishments, constant loud music and sounds are not generally welcome
-  - We can't assume that the sound will be turned up, let alone turned on
-  - If there is no way to mute the sound in a game, many locations will simply unplug the speakers
+  - We can't assume that the sound will be turned up, let alone turned on. Design games and features so that they are still playable and enjoyable without sound
+  - Make sure you can mute the sound in your game. If you cannot, many locations will simply unplug the speakers
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COAM games and cabinets
   - Screens can be difficult to see through the glare from overhead lights, and may be washed out by outside light, depending on how the location is set up. Large, bold, contrasty designs and clear guiding animations help alleviate these problems
   - Maintenance of the machines is the responsibility of the MLH, who may not be immediately available if a problem arises. It is important to design with robustness and recovery in mind, both in hardware and software. Any repair more involved than power cycling the Cabinet is likely to leave it out of order for a time
-  - These locations are unlikely to have any on-premises security to prevent damage or attempts to break into the Cabinet. Once again, building robust hardware is very important
-  - The space is often limited, with low ceilings and cramped seating
+  - These locations are unlikely to have any on-premises security to prevent damage or attempts to break into the Cabinet. Once again, building robust hardware is important
+  - The space is often limited, with low ceilings and cramped seating. There is not much to be done about this except to make games that players will keep playing regardless of any discomfort
 
 ![A fairly average recent COAM installation](images/IMG_6435.JPEG)
 
@@ -28,8 +28,8 @@ In our experience and observation, these factors can make the difference between
 
 - **Progressive Jackpots**: COAM players chase Progressives just like casino players. Games that prominently display Progressives tend to outperform those that do not
   - Game packs with shared Progressives should feature them prominently on the game select screen
-  - Games with individual Progressives should show them on the game select screen as well, if possible, so players will know which games have Progressives
-  - Persistent and Metamorphic features can create a similar anticipatory feeling if highlighted
+  - Games with individual Progressives should show them on the game select screen as well so players will know which games have Progressives
+  - Persistent and Metamorphic features can create a similar anticipatory feeling as well
 - **"Fair" math**: Since they tend to play more often and for shorter periods of time compared to casino players, finding the right math for COAM players can be a challenge.
   - Avoid wins that pay back less than your bet; players report they can be frustrating, feeling like a waste of time and effort
   - Too many *small* wins can become grating—recall that the Skill Test isn't a feature, it’s a chore. Players can become bored or annoyed with a Skill Test that comes up too often for little gain
