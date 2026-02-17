@@ -1,4 +1,4 @@
-# Doc-Georgia_COAM_ClassB_Primer
+# Doc-Georgia COAM (ClassB) Primer
 
 A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02), with guidance and insight into this unique market (Section 03), and links to important regulatory documents (Section 04).
 
