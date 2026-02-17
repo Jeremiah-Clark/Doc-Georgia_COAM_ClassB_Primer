@@ -37,7 +37,6 @@ A plain-English description of current Georgia COAM regulations as of February 2
   - Complete rewrite of section "03 Market Considerations"
   - Added section "04 GA Regulatory Documents"
   - Updated legal references and regulation details
-  - Restructured build system: pure GFM source with LaTeX template + Lua filter
 
 ---
 
