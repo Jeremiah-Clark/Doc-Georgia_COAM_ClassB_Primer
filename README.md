@@ -124,6 +124,7 @@ All settings live in `master.yaml`. Every style setting has a built-in default, 
 | `papersize` | `letter` | Paper size (`letter` or `a4`) |
 | `toc` | `true` | Whether to generate a table of contents |
 | `toc-depth` | `3` | How many heading levels to include in the TOC |
+| `numbersections` | `true` | Whether to automatically number sections in the TOC |
 
 ### Fonts
 
