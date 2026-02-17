@@ -18,7 +18,6 @@ Toward that end, included are:
   - Updated legal references and regulation details
 
 
-> [!CAUTION] Disclaimer
+> [!CAUTION] Legal Disclaimer
 >
-> **This document is not legal advice**, nor is it meant to be all-inclusive. It is intended solely as an introduction and source of general information and market context. Check all up-to-date laws and regulations before taking any action.
-
+> **This document is for general information only and does not constitute legal advice.** It is not guaranteed to be complete or up to date. You should consult a qualified professional and independently verify all regulations before acting. Bravery Gaming LLC, its owners, officers, employees, agents, affiliates, and representatives assume no liability for any errors, omissions, or actions taken in reliance on this information."
