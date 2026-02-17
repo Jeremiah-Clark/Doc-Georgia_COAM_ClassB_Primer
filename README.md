@@ -6,7 +6,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
 
 **Georgia_COAM_ClassB_Primer-Latest.pdf** is always the most recent build of this document.
 
-## Document Contents
+### Document Contents
 
 - **01 COAM Regulations**
   - 01.01 The Basics
@@ -21,10 +21,27 @@ A plain-English description of current Georgia COAM regulations as of February 2
   - 02.02 Common Skill Test Types
 - **03 Market Considerations**
   - 03.01 Key Differences from Casinos
-  - 03.02 What Attracts and Sustains COAM Players
+  - 03.02 What Attracts and Retains COAM Players
 - **04 GA Regulatory Documents**
+  - 04.01 Georgia Criminal Code
+  - 04.02 Official Code of Georgia Annotated
+  - 04.03 GLC Rules - COAM
+  - 04.04 Misc Documents 
+
+### Version History
+
+- **v1** — Initial document, October 2022
+- **v2** — Full reworking and updating, February 2026
+  - Renamed "02 Other Design Considerations" to "03 Market Considerations"
+  - Pulled content in the new section "02 Skill Test Considerations" from section 01
+  - Complete rewrite of section "03 Market Considerations"
+  - Added section "04 GA Regulatory Documents"
+  - Updated legal references and regulation details
+  - Restructured build system: pure GFM source with LaTeX template + Lua filter
 
 ---
+
+# Template System
 
 ## How It Works
 
@@ -45,8 +62,8 @@ When you build the PDF, Pandoc reads the Markdown files and converts them to a f
 ├── 02-Skill_Test_Considerations.md
 ├── 03-Market_Considerations.md
 ├── 04-GA_Regulatory_Documents.md  # Links to official documents
-├── master.yaml                    # Metadata + style settings (edit this)
-├── titlepage.tex                  # Title page layout (edit per project)
+├── master.yaml                    # Metadata + style settings (edit)
+├── titlepage.tex                  # Title page layout (edit)
 ├── template.tex                   # Formatting template (reusable)
 ├── gfm-to-latex.lua               # GFM-to-LaTeX filter (reusable)
 ├── build.sh                       # Build script
@@ -182,16 +199,3 @@ The template system is designed to be reusable. To create a new document:
 3. Create a new `master.yaml` with your document's metadata and style preferences
 4. Write your content as standard GFM Markdown files
 5. Update the file list in `build.sh` to point to your new Markdown files
-
----
-
-## Version History
-
-- **v1** — Initial document, October 2022
-- **v2** — Full reworking and updating, February 2026
-  - Renamed "02 Other Design Considerations" to "03 Market Considerations"
-  - Pulled content in the new section "02 Skill Test Considerations" from section 01
-  - Complete rewrite of section "03 Market Considerations"
-  - Added section "04 GA Regulatory Documents"
-  - Updated legal references and regulation details
-  - Restructured build system: pure GFM source with LaTeX template + Lua filter
