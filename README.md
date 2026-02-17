@@ -6,7 +6,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
 
 **Georgia_COAM_ClassB_Primer-Latest.pdf** is always the most recent build of this document.
 
-### Document Contents
+## Document Contents
 
 - **01 COAM Regulations**
   - 01.01 The Basics
@@ -28,7 +28,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
   - 04.03 GLC Rules - COAM
   - 04.04 Misc Documents 
 
-### Version History
+## Version History
 
 - **v1** — Initial document, October 2022
 - **v2** — Full reworking and updating, February 2026
