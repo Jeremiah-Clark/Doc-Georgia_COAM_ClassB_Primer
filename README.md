@@ -13,7 +13,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
 ├── 04-GA_Regulatory_Documents.md          # Links to source documents
 ├── master.yaml                            # Metadata + style settings
 ├── build.sh                               # Build script
-└── images/
+└── images/                                # Image folder
     ├── BraveryLogo.png
     └── IMG_6435.JPEG
 ```
