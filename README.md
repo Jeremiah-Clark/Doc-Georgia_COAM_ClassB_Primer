@@ -18,7 +18,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
     └── IMG_6435.JPEG
 ```
 
-## Document Contents
+## Document Table of Contents
 
 - **01 COAM Regulations**
   - 01.01 The Basics
