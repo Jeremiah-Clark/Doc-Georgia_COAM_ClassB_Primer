@@ -2,9 +2,21 @@
 
 A plain-English description of current Georgia COAM regulations as of February 2026 (Sections 01 & 02), with guidance and insight into this unique market (Section 03), and links to important regulatory documents (Section 04).
 
-## Latest Build
+## Project Structure
 
-**Georgia_COAM_ClassB_Primer-Latest.pdf** is always the most recent build of this document.
+```
+├── Georgia_COAM_ClassB_Primer-Latest.pdf  # The most recent build of this document
+├── 00-Frontmatter.md                      # Document information and disclaimer
+├── 01-COAM_Regulations.md                 # Explanation of market regulations
+├── 02-Skill_Test_Considerations.md        # Advice for designing skill features
+├── 03-Market_Considerations.md            # Observations about the GA COAM market
+├── 04-GA_Regulatory_Documents.md          # Links to source documents
+├── master.yaml                            # Metadata + style settings
+├── build.sh                               # Build script
+└── images/
+    ├── BraveryLogo.png
+    └── IMG_6435.JPEG
+```
 
 ## Document Contents
 
