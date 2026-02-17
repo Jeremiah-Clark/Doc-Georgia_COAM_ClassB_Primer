@@ -20,6 +20,9 @@ A plain-English description of current Georgia COAM regulations as of February 2
 
 ## Document Table of Contents
 
+- **Frontmatter**
+  - Description
+  - Version History
 - **01 COAM Regulations**
   - 01.01 The Basics
   - 01.02 Skill Test
