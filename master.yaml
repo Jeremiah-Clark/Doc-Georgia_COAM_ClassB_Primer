@@ -1,7 +1,7 @@
 ---
 title: Georgia COAM (Class B) Primer
 author: Jeremiah D Clark
-date: 2026-02-14
+date: 2026-02-11
 version: "2.0"
 keywords:
   - gaming
@@ -13,12 +13,37 @@ lang: en-US
 
 # Template controls
 logo: images/BraveryLogo.png
-disclaimer: "All information contained herein, unless otherwise indicated, is considered the intellectual property of Bravery Gaming, LLC. Do not disseminate or share such assets and information unless expressly approved by Bravery Gaming, LLC and its constituents."
+disclaimer: "**This document is not legal advice**, nor is it meant to be all-inclusive. It is intended solely as an introduction and source of general information and market context. Check all up-to-date laws and regulations before taking any action."
 toc: true
-toc-depth: 2
+toc-depth: 3
 numbersections: false
 
 # PDF settings
 fontsize: 11pt
 papersize: letter
+
+# ---------------------------------------------------------------------------
+# Style settings
+# ---------------------------------------------------------------------------
+# Fonts
+font-body: "Noto Sans"
+font-heading: "Noto Sans"
+font-mono: "Noto Sans Mono"
+
+# Line spacing (1.0 = single, 1.15 = default, 1.5 = one-and-a-half)
+linespread: "1.15"
+
+# Colors — RGB values as "R,G,B" (0–255)
+color-heading: "25,55,120"
+color-link: "40,80,180"
+
+# Callout colors — LaTeX color names (red, blue, orange, green, etc.)
+# The template derives the title bar, border, and background from this base.
+color-important: "red"
+color-note: "blue"
+color-warning: "orange"
+color-tip: "green"
+color-caution: "yellow"
+color-summary: "violet"
+color-example: "black"
 ---

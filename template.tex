@@ -1,5 +1,6 @@
 % template.tex — Pandoc LaTeX template for documents
 % All formatting lives here; Markdown files stay pure GFM.
+% Style settings (fonts, colors, etc.) are controlled from master.yaml.
 \documentclass[$if(fontsize)$$fontsize$$else$11pt$endif$]{article}
 
 % ---------------------------------------------------------------------------
@@ -26,15 +27,15 @@
 \usepackage{newunicodechar}
 \ifxetex
   \usepackage{fontspec}
-  \setmainfont{Noto Sans}
-  \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
+  \setmainfont{$if(font-body)$$font-body$$else$Noto Sans$endif$}
+  \setsansfont{$if(font-heading)$$font-heading$$else$Noto Sans$endif$}
+  \setmonofont{$if(font-mono)$$font-mono$$else$Noto Sans Mono$endif$}[Scale=MatchLowercase]
 \fi
 \ifluatex
   \usepackage{fontspec}
-  \setmainfont{Noto Sans}
-  \setsansfont{Noto Sans}
-  \setmonofont{Noto Sans Mono}[Scale=MatchLowercase]
+  \setmainfont{$if(font-body)$$font-body$$else$Noto Sans$endif$}
+  \setsansfont{$if(font-heading)$$font-heading$$else$Noto Sans$endif$}
+  \setmonofont{$if(font-mono)$$font-mono$$else$Noto Sans Mono$endif$}[Scale=MatchLowercase]
 \fi
 % Redirect any typewriter context to sans-serif (prevents ectt fallback)
 \renewcommand{\ttdefault}{\sfdefault}
@@ -42,12 +43,17 @@
 % Map non-breaking hyphen (U+2011) to a regular hyphen — most fonts lack it
 \newunicodechar{‑}{-}
 
-\linespread{1.15}
+\linespread{$if(linespread)$$linespread$$else$1.15$endif$}
+
+% ---------------------------------------------------------------------------
+% Colors (from YAML, with defaults)
+% ---------------------------------------------------------------------------
+\definecolor{brandblue}{RGB}{$if(color-heading)$$color-heading$$else$25,55,120$endif$}
+\definecolor{linkblue}{RGB}{$if(color-link)$$color-link$$else$40,80,180$endif$}
 
 % ---------------------------------------------------------------------------
 % Hyperref (must be loaded after fontspec)
 % ---------------------------------------------------------------------------
-\definecolor{linkblue}{RGB}{40,80,180}
 \usepackage{soul}
 \setulcolor{linkblue}
 
@@ -83,9 +89,8 @@
 \setlist{noitemsep, topsep=0pt, parsep=3pt, partopsep=0pt}
 
 % ---------------------------------------------------------------------------
-% Section heading colors
+% Section heading styles
 % ---------------------------------------------------------------------------
-\definecolor{brandblue}{RGB}{25,55,120}
 \titleformat{\section}{\Large\bfseries\sffamily\color{brandblue}}{}{0em}{}
 \titleformat{\subsection}{\large\bfseries\sffamily}{}{0em}{}
 \titleformat{\subsubsection}{\normalsize\bfseries\sffamily}{}{0em}{}
@@ -97,7 +102,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead{}
-\fancyfoot[L]{$title$}
+\fancyfoot[L]{$title$$if(version)$\hspace{0.75em}{\small\color{black!60}v$version$}$endif$}
 \fancyfoot[R]{Page \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -109,97 +114,33 @@
 % Each environment accepts an optional argument to override the default title:
 %   \begin{example}                    → title bar says "Example"
 %   \begin{example}[Hand Count Reset]  → title bar says "Hand Count Reset"
+%
+% Helper macro: \definecallout{envname}{Default Title}{base-color}
+% Derives border/title bar (color!80!black) and background (color!5!white)
+% from a single base color.
 
-\newenvironment{important}[1][Important]{%
-  \begin{mdframed}[
-    linecolor=red!75!black, backgroundcolor=red!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=red!75!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
+\newcommand{\definecallout}[3]{%
+  \newenvironment{#1}[1][#2]{%
+    \begin{mdframed}[
+      linecolor=#3!80!black, backgroundcolor=#3!5!white,
+      linewidth=2pt, roundcorner=2mm,
+      innertopmargin=10pt, innerbottommargin=10pt,
+      innerleftmargin=10pt, innerrightmargin=10pt,
+      skipabove=9pt, skipbelow=6pt, nobreak=true,
+      frametitle=##1, frametitlebackgroundcolor=#3!80!black,
+      frametitlefont=\bfseries\color{white},
+      frametitleaboveskip=4pt, frametitlebelowskip=5pt
+    ]%
+  }{\end{mdframed}}%
+}
 
-\newenvironment{note}[1][Note]{%
-  \begin{mdframed}[
-    linecolor=blue!75!black, backgroundcolor=blue!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=blue!75!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
-
-\newenvironment{warning}[1][Warning]{%
-  \begin{mdframed}[
-    linecolor=orange!85!black, backgroundcolor=orange!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=orange!85!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
-
-\newenvironment{tip}[1][Tip]{%
-  \begin{mdframed}[
-    linecolor=green!75!black, backgroundcolor=green!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=green!75!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
-
-\newenvironment{caution}[1][Caution]{%
-  \begin{mdframed}[
-    linecolor=yellow!85!black, backgroundcolor=yellow!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=yellow!85!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
-
-\newenvironment{summary}[1][Summary]{%
-  \begin{mdframed}[
-    linecolor=violet!75!black, backgroundcolor=violet!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=violet!75!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
-
-\newenvironment{example}[1][Example]{%
-  \begin{mdframed}[
-    linecolor=black!80!black, backgroundcolor=black!5!white,
-    linewidth=2pt, roundcorner=2mm,
-    innertopmargin=10pt, innerbottommargin=10pt,
-    innerleftmargin=10pt, innerrightmargin=10pt,
-    skipabove=9pt, skipbelow=6pt, nobreak=true,
-    frametitle=#1, frametitlebackgroundcolor=black!80!black,
-    frametitlefont=\bfseries\color{white},
-    frametitleaboveskip=4pt, frametitlebelowskip=5pt
-  ]%
-}{\end{mdframed}}
+\definecallout{important}{Important}{$if(color-important)$$color-important$$else$red$endif$}
+\definecallout{note}{Note}{$if(color-note)$$color-note$$else$blue$endif$}
+\definecallout{warning}{Warning}{$if(color-warning)$$color-warning$$else$orange$endif$}
+\definecallout{tip}{Tip}{$if(color-tip)$$color-tip$$else$green$endif$}
+\definecallout{caution}{Caution}{$if(color-caution)$$color-caution$$else$yellow$endif$}
+\definecallout{summary}{Summary}{$if(color-summary)$$color-summary$$else$violet$endif$}
+\definecallout{example}{Example}{$if(color-example)$$color-example$$else$black$endif$}
 
 % Blockquotes (for any blockquote not converted to an admonition)
 \renewenvironment{quote}{%
@@ -234,6 +175,9 @@
 \newcommand{\doctitle}{$title$}
 \newcommand{\docauthor}{$author$}
 \newcommand{\docdate}{$date$}
+$if(version)$
+\newcommand{\docversion}{$version$}
+$endif$
 $if(logo)$
 \newcommand{\doclogo}{$logo$}
 $endif$

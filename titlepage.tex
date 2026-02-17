@@ -4,11 +4,22 @@
 %   \doctitle       — Document title
 %   \docauthor      — Author name
 %   \docdate        — Date string
+%   \docversion     — Version string (only defined if version: is set in YAML)
 %   \doclogo        — Path to logo image (only defined if logo: is set in YAML)
 %   \docdisclaimer  — Disclaimer text (only defined if disclaimer: is set in YAML)
 
 \begin{titlepage}
   \thispagestyle{empty}
+
+  % Version stamp — top-right corner
+  \ifdefined\docversion
+    \begin{flushright}
+      \vspace*{-1.5em}
+      {\small\sffamily\color{black!60} v\docversion}
+    \end{flushright}
+    \vspace{-1em}
+  \fi
+
   \begin{center}
     \rule{\linewidth}{0.4pt}
     \vspace{2em}
@@ -30,9 +41,9 @@
     \vfill
 
     \ifdefined\docdisclaimer
-      \begin{important}
+      \begin{warning}
       \docdisclaimer
-      \end{important}
+      \end{warning}
     \fi
 
   \end{center}
