@@ -83,7 +83,8 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 
 *Ref: GA Code § 16-12-35; (2021) • RU 13.1 (2019)*
 
-The concept of a Hand Count is particular to a few skill-based markets, including Georgia. The Hand Count caps the award of each “hand” at $5, which limits tax complexities as well as the viability of many forms of cheating.
+The concept of a Hand Count is particular to a few skill-based markets, including Georgia. 
+The Hand Count caps the award of each “hand” at $5, which limits tax complexities as well as the viability of many forms of cheating.
 
 - The current Hand Count must be visible to the player during normal play as well as in the Game Selection screen
 - The Hand Count starts at 0 when credits are first added to the Cabinet
@@ -180,7 +181,8 @@ There are particular requirements that Locations must meet to qualify for a COAM
 
 ## 01.07 Other Considerations
 
-These are not explicitly stated regulatory requirements; rather, they are guidance we have received from our interactions with regulators. Proceed with caution.
+These are not explicitly stated regulatory requirements; rather, they are guidance we have received from our interactions with regulators. 
+Proceed with caution.
 
 ### Table Game Imagery Disallowed
 

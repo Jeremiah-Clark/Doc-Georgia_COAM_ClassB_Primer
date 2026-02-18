@@ -24,7 +24,8 @@ This image—of a fairly average recent COAM installation—illustrates several 
 
 ## 03.02 What Attracts and Retains COAM Players
 
-In our experience and observation, these factors can make the difference between success and failure. Note that these are generalities and prone to change over time and even from location to location.
+In our experience and observation, these factors can make the difference between success and failure. 
+Note that these are generalities and prone to change over time and even from location to location.
 
 - **Progressive Jackpots**: COAM players chase Progressives just like casino players. Games that prominently display Progressives tend to outperform those that do not
   - Game packs with shared Progressives should feature them prominently on the game select screen
