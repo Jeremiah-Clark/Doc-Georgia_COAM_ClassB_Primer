@@ -57,4 +57,4 @@ A plain-English description of current Georgia COAM regulations as of February 2
 
 # Template System
 
-This document uses my SimpleDoc Template System (I'll include a link to the repo once it's ready).
+This document uses my [SimpleDoc Template System](https://github.com/Jeremiah-Clark/Template-Simple_Doc)
