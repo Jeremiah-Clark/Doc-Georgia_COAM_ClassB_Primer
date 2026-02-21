@@ -18,9 +18,9 @@ Designing COAM games requires a different mindset and considerations than tradit
   - These locations are unlikely to have any on-premises security to prevent damage or attempts to break into the Cabinet. Once again, building robust hardware is important
   - The space is often limited, with low ceilings and cramped seating. There is not much to be done about this except to make games that players will keep playing regardless of any discomfort
 
-![A fairly average recent COAM installation](images/IMG_6435.JPEG)
-
 This image—of a fairly average recent COAM installation—illustrates several of these points.
+
+![A fairly average recent COAM installation](images/IMG_6435.JPEG)
 
 ## 03.02 What Attracts and Retains COAM Players
 

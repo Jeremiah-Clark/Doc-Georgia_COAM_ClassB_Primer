@@ -9,7 +9,6 @@ pandoc --from gfm-alerts \
        02-Skill_Test_Considerations.md \
        03-Market_Considerations.md \
        04-GA_Regulatory_Documents.md \
-       And so on \
        -o Georgia_COAM_ClassB_Primer-Latest.pdf
 
 echo "PDF generated"
