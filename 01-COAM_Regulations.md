@@ -2,7 +2,7 @@
 
 ## 01.01 The Basics
 
-*Ref: GA Code § 16-12-20 (2021) • O.C.G.A. § 50-27-70 (2025) • RU 13.1 (2019) • RU 13.3 (2019)*
+*Reference: GA Code § 16-12-20 (2021) • O.C.G.A. § 50-27-70 (2025) • RU 13.1 (2019) • RU 13.3 (2019)*
 
 - **COAM** = Coin-Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
@@ -20,7 +20,7 @@
 
 ### Cabinets
 
-*Ref: RU 13.1 (2019); Standards for the Secured Compartment*
+*RU 13.1 (2019); Standards for the Secured Compartment*
 
 - **Cabinet**
   - An inclusive term for the physical hardware and the Game Pack installed on it
@@ -31,7 +31,7 @@
 
 ### Governance
 
-*Ref: O.C.G.A. § 50-27-101 (2025) • RU 13.1 (2019)*
+*O.C.G.A. § 50-27-101 (2025) • RU 13.1 (2019)*
 
 - **GLC** = Georgia Lottery Commission
   - The GLC oversees the regulation of COAM games in Georgia and retains 13% net receipts for the state
@@ -45,7 +45,7 @@
 
 ### Legal Entities
 
-*Ref: O.C.G.A. § 50-27-84 (2025) • O.C.G.A. § 50-27-87 (2025) • O.C.G.A. § 50-27-102 (2025) • RU 13.1 (2019)*
+*O.C.G.A. § 50-27-84 (2025) • O.C.G.A. § 50-27-87 (2025) • O.C.G.A. § 50-27-102 (2025) • RU 13.1 (2019)*
 
 - **Publisher/Distributor**
   - The company that produces the games and Cabinets. A Publisher cannot also be an MLH or a Location. The Publisher cannot profit directly from their games beyond the initial sale to an MLH
@@ -59,7 +59,7 @@
 
 ## 01.02 Skill Test
 
-*Ref: GA Code § 16-12-35 (2021)*
+*GA Code § 16-12-35 (2021)*
 
 ### What Defines a Skill Test
 
@@ -81,7 +81,7 @@ There are specific, legally mandated qualities that determine if gameplay is pro
 
 ## 01.03 Hand Count
 
-*Ref: GA Code § 16-12-35; (2021) • RU 13.1 (2019)*
+*GA Code § 16-12-35; (2021) • RU 13.1 (2019)*
 
 The concept of a Hand Count is particular to a few skill-based markets, including Georgia. 
 The Hand Count caps the award of each “hand” at $5, which limits tax complexities as well as the viability of many forms of cheating.
@@ -123,7 +123,7 @@ The Hand Count caps the award of each “hand” at $5, which limits tax complex
 
 ## 01.04 Cash Out Requirements and Limitations
 
-*Ref: GA Code § 16-12-35 (2021) • O.C.G.A § 50-27-71.1 (2025) • RU 13.3 (2019)*
+*GA Code § 16-12-35 (2021) • O.C.G.A § 50-27-71.1 (2025) • RU 13.3 (2019)*
 
 Cash out in Georgia COAM has several specific limitations:
 
@@ -151,7 +151,7 @@ Cash out in Georgia COAM has several specific limitations:
 
 ## 01.05 Location Requirements
 
-*Ref: O.C.G.A. § 50-27-84 (2025) • RU 13.1 (2019)*
+*O.C.G.A. § 50-27-84 (2025) • RU 13.1 (2019)*
 
 There are particular requirements that Locations must meet to qualify for a COAM license.
 
@@ -163,7 +163,7 @@ There are particular requirements that Locations must meet to qualify for a COAM
 
 ### SAS Support
 
-*Ref: RU 13.1 (2019) • COAM SAS Requirements v1.8*
+*RU 13.1 (2019) • COAM SAS Requirements v1.8*
 
 - Our separate SAS Requirements document includes the full list of required SAS Long Polls, Meters, and Events
 - The Primary SAS port may only be used by Intralot to connect the Cabinet to their Site Controller
@@ -174,7 +174,7 @@ There are particular requirements that Locations must meet to qualify for a COAM
 
 ### No Shared Progressives
 
-*Ref: O.C.G.A § 50-27-70* (2025)
+*O.C.G.A § 50-27-70* (2025)
 
 - Because the legal definition of “Class B” COAM only permits carry-over of credits within a single player session on a single Cabinet, Progressives cannot legally be shared between Cabinets
   - Games that are a part of the same Game Pack may share Progressives within that single Cabinet, as the game session includes all of the games in a Game Pack
