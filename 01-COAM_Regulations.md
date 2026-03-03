@@ -2,11 +2,11 @@
 
 ## 01.01 The Basics
 
-*Reference: GA Code § 16-12-20 (2021) • O.C.G.A. § 50-27-70 (2025) • RU 13.1 (2019) • RU 13.3 (2019)*
+*References: GA Code § 16-12-20 (2021) • O.C.G.A. § 50-27-70 (2025) • RU 13.1 (2019) • RU 13.3 (2019)*
 
 - **COAM** = Coin-Operated Amusement Machines
   - **Class A:** Classic arcade-style games like skee-ball and claw games.
-  - **Class B:** Usually resemble casino games (slots in particular), and have a few key attributes:
+  - **Class B:** Usually resemble casino games—slots in particular—and have a few key attributes:
     - Skill-based—cannot be 100% chance *(see 01.02)*
     - Credits are carried over from game to game within a single session
     - Award lottery products or credits that must be redeemed on-location (prior to July 1, 2026)
