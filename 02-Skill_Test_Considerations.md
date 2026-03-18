@@ -9,7 +9,7 @@ The following patterns are standard ways to implement the legally required Skill
 - If the game is AutoPlaying, the AutoPlay will stop when a Skill Test needs to be solved
   - By default, the game should resume AutoPlay following the Skill Test evaluation (though this is not legally required)
 - The potential Win Line or combination is highlighted, so it is clear to the player which potential Win is being evaluated
-  - You may also deemphasize unrelated symbols to further emphasize the win, but this is optional
+  - You may also deemphasize unrelated symbols to further emphasize the Win, but this is optional
   - This does not apply to Overlay Skill Tests that cover the reels; in that case, all required information must be included on the overlay
 - There may be multiple Wins present; in these cases, the Skill Test is applied to the highest Win
   - Correctly solving the Skill Test awards **ALL the Wins**
@@ -29,11 +29,11 @@ Refer to individual specs for specific details about our implementation of these
 ### Reel Nudge
 
 - After the reels stop spinning, if there is a potential Win, one of the reels will be positioned one stop too high or too low to complete the Win
-- Arrows will appear at the top and bottom of every reel allow the Player to nudge a reel up or down by one reel stop
-- After ONE reel is nudged ONE stop, the Skill Test will be evaluated
+- Arrows will appear at the top and bottom of every reel, allowing the Player to nudge a reel up or down by one reel stop
+- After **one** reel is nudged **one** stop, the Skill Test will be evaluated
 - Though it is uncommon in Georgia COAM, some Nudge games can be configured with the nudge arrows present after every spin, even if there is no potential Win
   - In these cases, pressing the *Play* button without solving the Skill Test will start the next game (this is the only exception to the rule that the *Play* button is disabled during a Skill Test)
-  - After ONE reel is nudged ONE stop, the Skill Test will be evaluated as a failure
+  - After **one** reel is nudged **one** stop, the Skill Test will be evaluated as a failure
 - The nature of how Nudges work means they are best used in single-line, three-reel games
 - The earliest Georgia COAM games were Nudge games, and many players still prefer them over any other Skill Test type
 
@@ -50,6 +50,6 @@ Refer to individual specs for specific details about our implementation of these
   - Choosing correctly between two or more items
   - Matching colors or numbers
   - Finding a hidden picture
-  - Repeating a pattern (aka "Simon")
+  - Repeating a pattern (also known as "Simon")
 - Since Overlay features do not need to interact with the reels or symbols, they can be applied to many different games with minimal effort
 - They risk interrupting the flow of play if they are not carefully designed
