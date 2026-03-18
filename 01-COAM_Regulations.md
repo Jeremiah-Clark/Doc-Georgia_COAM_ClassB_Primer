@@ -9,7 +9,7 @@
   - **Class B:** Usually resemble casino games—slots in particular—and have a few key attributes:
     - Skill-based—cannot be 100% chance *(see 01.02)*.
     - Credits are carried over from game to game within a single session.
-    - Award lottery products or Credits that must be redeemed on-site (prior to July 1, 2026).
+    - Award lottery products or vouchers that must be redeemed on-site (prior to July 1, 2026).
     - Award lottery products or prepaid gift cards (on or after July 1, 2026; *see 01.04)*.
 - **Skill Test**
   - A defining feature of skill-based games is that all Wins are gated behind Skill Tests *(see 01.02)*.
@@ -97,7 +97,7 @@ The Hand Count caps the award of each “hand” at $5, which limits tax complex
 
 > [!EXAMPLE] Examples: Hand Counts and Cashing Out
 >
-> A player has $42.50 in credit and 9 Hand Counts.
+> A player has $42.50 in Credits and 9 Hand Counts.
 >
 > - If the cash out increment is $5:
 >   - They will actually cash out $40 (a multiple of $5)
@@ -145,7 +145,7 @@ Cash out in Georgia COAM has several specific limitations:
 - The player can cash out no more than $5 per Hand Count.
 - Each Hand Count is treated as an individual game with a $5 maximum award.
   - Put another way, a $1,500 cash out isn't a single $1,500 win; it’s 300 separate $5 wins.
-  - Because of this, there are no taxable wins in Georgia COAM, and no real “Hand Pay”.
+  - Because of this, there are no taxable wins in Georgia COAM, and no real “Hand Pay.”
   - Cheating and money laundering are also much more difficult. Cashing Out $20,000, for example, would require the player to play 4,000 times.
 
 ## 01.05 Location Requirements
@@ -196,13 +196,13 @@ Proceed with caution.
   - DO NOT use "Cash Out" in-game or on buttons, use "Collect" instead.
   - DO NOT label anything as "Cash," use "Credits" instead.
 - Dollar signs and cash values on credit amounts and prizes are OK.
-- Dollar sign and gold bar reel Symbols and the like are OK.
+- Dollar sign and gold bar reel symbols and the like are OK.
 - Bank and cash themes are OK.
 
 > [!SUMMARY] Quick Reference
 >
 > - **Skill Tests**
->   - All wins are gated behind a Skill Test.
+>   - All Wins are gated behind a Skill Test.
 >   - Skill Tests require player interaction.
 >   - Skill Test results are pass/fail.
 > - **Hand Count**
