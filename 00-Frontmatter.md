@@ -16,6 +16,9 @@ Toward that end, included are:
   - Complete rewrite of section "03 Market Considerations"
   - Added section "04 GA Regulatory Documents"
   - Updated legal references and regulation details
+- **v2.1** — Polish pass
+  - Cleaned up some typos
+  - Corrected inconsistencies of terminology and capitalization
 
 
 > [!CAUTION] Legal Disclaimer
