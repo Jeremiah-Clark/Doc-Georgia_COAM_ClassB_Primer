@@ -19,6 +19,10 @@ Toward that end, included are:
 - **v2.1** — Polish pass
   - Cleaned up some typos
   - Corrected inconsistencies of terminology and capitalization
+- **v2.2** — Polish pass
+  - Cleaned up some lingering tone issues
+  - Clarified a few points, but no substantive changes
+
 
 
 > [!CAUTION] Legal Disclaimer
