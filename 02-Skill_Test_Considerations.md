@@ -1,5 +1,7 @@
 # 02 Skill Test Considerations
 
+This Section expands on the requirements to bear in mind—both regulatory and market expectation—when developing a Skill Test.
+
 ## 02.01 Features Common to Skill Test Presentations
 
 The following patterns are standard ways to implement the legally required Skill Tests in-game.
@@ -12,8 +14,8 @@ The following patterns are standard ways to implement the legally required Skill
   - You may also deemphasize unrelated symbols to further emphasize the Win, but this is optional.
   - This does not apply to Overlay Skill Tests that cover the reels; in that case, all required information must be included on the overlay.
 - There may be multiple Wins present; in these cases, the Skill Test is applied to the highest Win.
-  - Correctly solving the Skill Test awards **ALL the Wins**.
-  - Failing the Skill Test awards **NONE of the Wins**.
+  - Correctly solving the Skill Test awards **all qualifying Wins**.
+  - Failing the Skill Test awards **none of the qualifying Wins**.
   - This must be made clear in the Help Pages.
 - Hinting at the correct answer is allowed. Some examples of hinting include: 
   - Making the correct option a different color.
@@ -23,7 +25,7 @@ The following patterns are standard ways to implement the legally required Skill
 
 ## 02.02 Common Skill Test Types
 
-These are quick sketches of the most common, compliant Skill Tests used in GA COAM, included here for reference. 
+The following are high-level summaries of compliant Skill Tests used in GA COAM, included here for reference. 
 Refer to individual specs for specific details about our implementation of these features.
 
 ### Reel Nudge

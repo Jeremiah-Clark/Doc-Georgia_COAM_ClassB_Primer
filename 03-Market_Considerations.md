@@ -1,6 +1,6 @@
 # 03 Market Considerations
 
-Designing COAM games requires a different mindset and considerations than traditional Class 2 and Class 3 slot games.
+Designing COAM games requires a different mindset and considerations than traditional Class 2 and Class 3 slot games. The following section reflects implementation practices and market observations and does not constitute statutory requirements.
 
 ## 03.01 Key Differences from Casinos
 
@@ -10,7 +10,7 @@ Designing COAM games requires a different mindset and considerations than tradit
   - Anecdotally, they tend to be younger, are largely working class, and are more likely to be male than casino players. As such, the themes that work in casinos do not always work in COAM.
   - Many speak English as a second language; some do not speak English at all. Aim for designs that are understandable without needing to read anything.
 - Sound is a big part of the casino experience, but in gas stations and other retail establishments, constant loud music and sounds are not generally welcome.
-  - We can't assume that the sound will be turned on. All critical feedback and directions must be visible on-screen; never rely on sound alone.
+  - It can't be assumed that the sound will be enabled. All critical feedback and directions must be visible on-screen; never rely on sound alone.
   - Make sure you can mute the sound in your game. If you cannot, in our experience many locations will simply unplug the speakers.
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COAM games and Cabinets.
   - Screens can be difficult to see through glare from overhead lights and outside light, depending on how the location is set up. Avoid small text, subtle color changes, and small designs for anything of importance.

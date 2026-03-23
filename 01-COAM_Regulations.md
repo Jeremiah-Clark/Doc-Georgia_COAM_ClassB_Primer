@@ -65,8 +65,8 @@
 
 There are specific, legally mandated qualities that determine if gameplay is properly skill-based.
 
-- All Wins MUST be gated behind a Skill Test.
-  - The sequence is ALWAYS: Bet → Skill → Award
+- All Wins must be gated behind a Skill Test.
+  - The sequence is always: Bet → Skill → Award
   - The Win Award may encompass an entire Bonus feature, so long as there has been a Skill Test between the Bet and the Award.
   - The reel spin presentation may come before or after the Skill Test, though it is nearly always placed before the Skill Test.
 - The player must be required to take an action to determine success or failure.
@@ -74,8 +74,8 @@ There are specific, legally mandated qualities that determine if gameplay is pro
   - If there is no player interaction, it is not skill-based.
 - It must be possible for the test to fail.
   - If there is no way to lose or fail, then it is not a Skill Test.
-- The award amount is predetermined as normal.
-  - The Skill Test result is pass or fail only; it does not impact the prize amount.
+- The award amount is predetermined prior to the Skill Test.
+  - The Skill Test result is binary (pass or fail only), and does not impact the prize amount.
 - These guidelines apply to all prize awards, including regular plays, bonus games, jackpots, Progressives, etc.
 
 ## 01.03 Hand Count
@@ -108,7 +108,7 @@ The Hand Count caps the award of each “hand” at $5, which limits tax complex
 >   - $0.50 will remain on the Cabinet
 >   - The Hand Count will be reduced to 0 ($42/5 = 8.4 Hand Counts)
 
-- If the Credits on the Cabinet drop below the minimum Bet, a Hand Count Reset timer will begin (the length of the countdown can be changed in settings; a good default is 30 seconds).
+- If the Credits on the Cabinet drop below the minimum Bet, a Hand Count Reset timer will begin (the length of the countdown can be changed in settings; 30 seconds is a common default.
 - When the countdown reaches 0, the Hand Count resets to 0.
 - If more Credits are added to the Cabinet before the countdown ends, the countdown stops, and the Hand Count is retained.
 
@@ -126,7 +126,7 @@ The Hand Count caps the award of each “hand” at $5, which limits tax complex
 
 Cash out in Georgia COAM has several specific limitations:
 
-- A COAM Cabinet **cannot** dispense cash
+- A COAM Cabinet **cannot** dispense cash under any circumstances.
 
 > [!NOTE] Redemption Rule Change
 >
@@ -145,7 +145,7 @@ Cash out in Georgia COAM has several specific limitations:
 - The player can cash out no more than $5 per Hand Count.
 - Each Hand Count is treated as an individual game with a $5 maximum award.
   - Put another way, a $1,500 cash out isn't a single $1,500 win; it’s 300 separate $5 wins.
-  - Because of this, there are no taxable wins in Georgia COAM, and no real “Hand Pay.”
+  - Because each Hand Count is capped at $5, individual awards do not reach typical tax reporting thresholds. Thus, there is no real “Hand Pay” in COAM.
   - Cheating and money laundering are also much more difficult. Cashing Out $20,000, for example, would require the player to play 4,000 times.
 
 ## 01.05 Location Requirements
@@ -192,7 +192,7 @@ Proceed with caution.
 
 ### Cash Labels and Imagery Disallowed
 
-- There can be no messaging, explicit or implied, that the game will dispense actual cash; any such messaging will be rejected. This has been communicated to us unequivocally.
+- There can be no messaging, explicit or implied, that the game will dispense actual cash. Regulators have consistently rejected such messaging.
   - DO NOT use "Cash Out" in-game or on buttons, use "Collect" instead.
   - DO NOT label anything as "Cash," use "Credits" instead.
 - Dollar signs and cash values on credit amounts and prizes are OK.
