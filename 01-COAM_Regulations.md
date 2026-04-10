@@ -41,7 +41,7 @@
   - An on-site device that all Cabinets communicate with to handle Intralot reporting, game commissioning, and other related tasks.
 - **SAS** = Slot Accounting System *(see 01.06)*
   - A common communication protocol used by Intralot to monitor gaming for legal, regulatory, and taxation purposes.
-  - Ultimately, the flow of information is: Cabinet ↔ Site Controller ↔ Intralot ↔ GLC
+  - Ultimately, the flow of information is: Cabinet 󰹳 Site Controller 󰹳 Intralot 󰹳 GLC
 
 ### Legal Entities
 
@@ -66,7 +66,7 @@
 There are specific, legally mandated qualities that determine if gameplay is properly skill-based.
 
 - All Wins must be gated behind a Skill Test.
-  - The sequence is always: Bet → Skill → Award
+  - The sequence is always: Bet 󱦰 Skill 󱦰 Award
   - The Win Award may encompass an entire Bonus feature, so long as there has been a Skill Test between the Bet and the Award.
   - The reel spin presentation may come before or after the Skill Test, though it is nearly always placed before the Skill Test.
 - The player must be required to take an action to determine success or failure.
