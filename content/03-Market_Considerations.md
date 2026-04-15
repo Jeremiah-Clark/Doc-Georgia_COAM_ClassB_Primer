@@ -20,7 +20,7 @@ Designing COAM games requires a different mindset and considerations than tradit
 
 This image—of a fairly average recent COAM installation—illustrates several of these points.
 
-![A fairly average recent COAM installation](images/IMG_6435.JPEG)
+![A fairly average recent COAM installation](../images/IMG_6435.JPEG)
 
 ## 03.02 What Attracts and Retains COAM Players
 

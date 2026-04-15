@@ -1,7 +1,8 @@
 ---
 title: "Georgia COAM (Class B) Primer"
 author: "Jeremiah D Clark"
-date: "2026-03-23"
+date: "Date"
+auto-date: true          # Uncomment to use today's date instead of the date above
 version: "2.2"
 keywords:
 - gaming
@@ -12,11 +13,20 @@ subject: "Georgia COAM market and regulations."
 lang: en-US
 
 # Template controls
-logo: images/BraveryLogo.png     # Will be large and centered on title page
+logo: ../images/logo.png     # Will be large and centered on title page
+# Disclaimer text for the title page. Replace YOUR_ORG with your company or
+# organization name, or delete the entire line to hide the disclaimer box.
 disclaimer: "All information contained herein, unless otherwise indicated, is considered the intellectual property of Bravery Gaming LLC. Do not disseminate or share such information unless expressly approved by Bravery Gaming LLC and its constituents."
 toc: true                 # true/false
 toc-depth: 2              # 1-6
 secnumdepth: 0            # 0 = no numbers; 1 = H1 only; 2 = H1, and H2; 3 = H1, H2, and H3
+h2-page-break: false      # true = start each H2 subsection on a new page
+
+# Watermark — displays angled text on every page (e.g. "DRAFT", "CONFIDENTIAL")
+# Delete or comment out to disable.
+# watermark: "DRAFT"
+# watermark-opacity: "0.15"  # 0.0 = invisible, 1.0 = fully opaque (default: 0.15)
+# watermark-scale: "80pt"    # Font size of the watermark text (default: 80pt)
 
 # PDF settings
 fontsize: 11pt
@@ -39,6 +49,14 @@ footskip: "30pt"          # Distance from the body bottom to the footer baseline
 header-rule: "0.4pt"
 footer-rule: "0.4pt"
 
+# Custom header content — leave blank or delete to hide
+# header-left: ""
+# header-center: ""
+header-right: "Bravery Gaming, LLC"
+
+# Footer options
+page-total: true          # Uncomment to show "Page X of Y" instead of "Page X"
+
 # ---------------------------------------------------------------------------
 # Title page
 # ---------------------------------------------------------------------------
@@ -54,10 +72,22 @@ titlepage-post-date: "3em"      # After the date, before the logo
 # ---------------------------------------------------------------------------
 # Style settings
 # ---------------------------------------------------------------------------
-# Fonts
+# Fonts — the primary font is tried first. If it isn't installed, the
+# fallback is used automatically (a console message will tell you).
+#
+# Default primary: Noto Sans Nerd Font (NF) — includes thousands of extra
+# icons and symbols. Install from https://www.nerdfonts.com/font-downloads
+# (look for "Noto Sans Mono Nerd Font" and "Noto Sans Nerd Font").
+#
+# Default fallback: standard Noto Sans / Noto Sans Mono — works perfectly
+# for all normal text. Only the extended symbol set is missing.
+# See the README for installation instructions for both options.
 font-body: "NotoSansNF-Reg"
+font-body-fallback: "Noto Sans"
 font-heading: "NotoSansNF-Reg"
+font-heading-fallback: "Noto Sans"
 font-mono: "NotoMonoNF"
+font-mono-fallback: "Noto Sans Mono"
 
 # Line spacing (1.0 = single, 1.25 = default, 1.5 = one-and-a-half)
 linespread: "1.25"
