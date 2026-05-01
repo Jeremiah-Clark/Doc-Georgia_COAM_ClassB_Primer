@@ -1,14 +1,15 @@
 #!/bin/bash
 # ─────────────────────────────────────────────────────────────
-# Simple Doc — Build Script
+# SimpleDoc v1.1.2 — Build Script
 # Converts Markdown files into a styled PDF via Pandoc + XeLaTeX.
-# Run from the project root:  ./build.sh
+# Run from template folder:  ./build.sh
 # ─────────────────────────────────────────────────────────────
 
 set -euo pipefail
 
 # ── Configuration ────────────────────────────────────────────
-# Edit these to match your project:
+
+# EDIT BELOW TO MATCH YOUR PROJECT:
 
 OUTPUT="../Georgia_COAM_ClassB_Primer-Latest.pdf"
 
@@ -22,6 +23,8 @@ INPUT_FILES=(
   ../content/04-GA_Regulatory_Documents.md
   # Add more files here, one per line
 )
+
+# DO NOT EDIT BELOW THIS LINE  ──────────────────────────────────
 
 # ── Help ─────────────────────────────────────────────────────
 if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
