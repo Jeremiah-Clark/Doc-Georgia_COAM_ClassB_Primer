@@ -11,11 +11,11 @@ A plain-English description of current Georgia COAM regulations as of February 2
 ├── 02-Skill_Test_Considerations.md        # Advice for designing skill features
 ├── 03-Market_Considerations.md            # Observations about the GA COAM market
 ├── 04-GA_Regulatory_Documents.md          # Links to source documents
-├── master.yaml                            # Default metadata + style settings
-├── project.yaml                           # Custom metadata + style settings
+├── master.yaml                            # Metadata + style setting defaults
+├── project.yaml                           # Project metadata + style settings
 ├── build.sh                               # Build script
 └── images/                                # Image folder
-    ├── BraveryLogo.png
+    ├── logo.png
     └── IMG_6435.JPEG
 ```
 
@@ -59,7 +59,7 @@ A plain-English description of current Georgia COAM regulations as of February 2
 - **v2.2** — Updated template, formatting updates
   - Cleaned up some typos
 - **v2.3** — Updated template, formatting updates
-  - Updated cover message
+  - Updated cover message and logo
 
 ---
 
