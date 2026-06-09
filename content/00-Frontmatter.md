@@ -22,8 +22,9 @@ Toward that end, included are:
 - **v2.2** — Polish pass
   - Cleaned up some lingering tone issues
   - Clarified a few points, but no substantive changes
-
-
+- **v2.3** — Updated template
+  - Formatting updates
+  - Updated cover message
 
 > [!CAUTION] Legal Disclaimer
 >
