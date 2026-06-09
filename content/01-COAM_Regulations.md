@@ -180,7 +180,7 @@ There are particular requirements that Locations must meet to qualify for a COAM
 
 ## 01.07 Other Considerations
 
-These are not explicitly stated regulatory requirements; rather, they are guidance we have received from our interactions with regulators. 
+These are not explicitly stated regulatory requirements; rather, they are guidance I have received from interactions with regulators. 
 Proceed with caution.
 
 ### Table Game Imagery Disallowed
