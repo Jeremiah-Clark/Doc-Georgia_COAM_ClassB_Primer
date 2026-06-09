@@ -11,7 +11,7 @@ Designing COAM games requires a different mindset and considerations than tradit
   - Many speak English as a second language; some do not speak English at all. Aim for designs that are understandable without needing to read anything.
 - Sound is a big part of the casino experience, but in gas stations and other retail establishments, constant loud music and sounds are not generally welcome.
   - It can't be assumed that the sound will be enabled. All critical feedback and directions must be visible on-screen; never rely on sound alone.
-  - Make sure you can mute the sound in your game. If you cannot, in our experience many locations will simply unplug the speakers.
+  - Make sure you can mute the sound in your game. If you cannot, in my experience many locations will simply unplug the speakers.
 - Because of where COAM games are located, there are specific complicating factors to take into account when designing COAM games and Cabinets.
   - Screens can be difficult to see through glare from overhead lights and outside light, depending on how the location is set up. Avoid small text, subtle color changes, and small designs for anything of importance.
   - Maintenance of the Cabinets is the responsibility of the MLH, who may not be immediately available if a problem arises. Design games and hardware to recover gracefully from most errors. Anything not resolved by power cycling the Cabinet is likely to leave it out of order for a time.
@@ -24,7 +24,7 @@ This image—of a fairly average recent COAM installation—illustrates several 
 
 ## 03.02 What Attracts and Retains COAM Players
 
-In our experience and observation, these factors can make the difference between success and failure. 
+In my experience and observation, these factors can make the difference between success and failure. 
 Note that these are generalities and prone to change over time and even from location to location.
 
 - **Progressive Jackpots**: COAM players chase Progressives just like casino players. Games that prominently display Progressives tend to outperform those that do not.

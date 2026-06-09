@@ -1,6 +1,6 @@
 # SimpleDoc — Project Configuration
-# Only fields listed here override master.yaml defaults.
-# Delete any line you don't need — master.yaml fills in the rest.
+# Override only the fields you need. master.yaml supplies all defaults.
+# ─────────────────────────────────────────────────────────────
 ---
 
 # ── Build settings ───────────────────────────────────────────
@@ -16,8 +16,8 @@ input-files:
 # ── Document metadata ────────────────────────────────────────
 title:   "Georgia COAM Class B Primer"
 author:  "Jeremiah D Clark"
-date:    "YYYY-MM-DD"
-auto-date: true     # Use today's date instead of the date above
+date:    "2026-02-27"
+# auto-date: true          # Use today's date instead of date above
 version: "2.3"
 subject: "This document explains the current Georgia COAM regulations as of February 2026. It also provides guidance for those new to this unique market."
 keywords:
@@ -27,56 +27,81 @@ keywords:
   - Regulations
 
 # ── Layout ──────────────────────────────────────────────────
-short-form: false     # true = compact page-1 header; false = full title page
+short-form: false          # true = compact page-1 header; false = full title page
 # short-form-image-height: "2.2in"
 
 # ── Logo ────────────────────────────────────────────────────
-logo: ../images/BraveryLogo.png
+# Path to your logo image. Delete or comment out this line for no logo.
+# Long-form: square/portrait, ~1500×1500 px. Short-form: landscape banner, ~2000×600 px.
+logo: ../images/logo.png
 
-# ── Cover / title page ──────────────────────────────────────
-# disclaimer: "Confidential. Do not distribute."
-# logo-width: "0.8"
+# ── Cover disclaimer (long-form only) ───────────────────────
+# Appears in a box at the bottom of the title page.
+# Delete or comment out this line to hide the disclaimer box.
+disclaimer: "This document draws on publicly available sources. The selection, organization, analysis, and original commentary are the author's own and are protected by copyright."
 
 # ── Navigation ──────────────────────────────────────────────
 toc: true
 # toc-depth: 2
-# secnumdepth: 2
-# h2-page-break: true
+# secnumdepth: 2            # 0 = none, 1 = H1, 2 = H1+H2, 3 = H1+H2+H3
+# h2-page-break: false      # true = each H2 starts on a new page
 
 # ── Watermark ───────────────────────────────────────────────
+# Angled text across every page. Delete all three lines to disable.
 # watermark: "DRAFT"
-# watermark-opacity: "0.15"
+# watermark-opacity: "0.15"  # 0.0 = invisible, 1.0 = fully opaque
 # watermark-scale: "80pt"
 
-# ── Page size & margins ─────────────────────────────────────
-# papersize: letter        # letter / a4
+# ── Page size ───────────────────────────────────────────────
+# papersize: letter          # letter / a4
 # fontsize: 11pt
-# margin: "1in"
+
+# ── Margins ─────────────────────────────────────────────────
+# margin: "1in"              # left and right
 margin-top: "1in"
 margin-bottom: "1.1in"
 
-# ── Headers ─────────────────────────────────────────────────
-# header-left:   ""
+# ── Header & footer geometry ─────────────────────────────────
+# headheight: "14pt"         # height of the header box
+# headsep: "12pt"            # gap between header rule and body text
+# footskip: "30pt"           # distance from body bottom to footer baseline
+
+# ── Header & footer rules ────────────────────────────────────
+# header-rule: "0.4pt"       # set to "0pt" to hide
+# footer-rule: "0.4pt"       # set to "0pt" to hide
+
+# ── Custom header content ────────────────────────────────────
+# Leave commented out to show no header text (the rule still appears).
+header-left:   "©2026 Jeremiah Clark"
 # header-center: ""
-header-right:  "Bravery Gaming, LLC"
+header-right:  "JeremiahClark.com"
 
 # ── Footer ──────────────────────────────────────────────────
-page-total: true    # Show "Page X of Y" instead of "Page X"
+page-total: true           # true = "Page X of Y"; false = "Page X"
+
+# ── Title page layout (long-form only) ──────────────────────
+logo-width: "0.7"          # logo width as fraction of text width (0.0–1.0)
+# titlepage-post-rule:   "2em"    # space after top rule, before title
+# titlepage-post-title:  "0.75em" # space after title, before author
+# titlepage-post-author: "0.5em"  # space after author, before date
+# titlepage-post-date:   "3em"    # space after date, before logo
 
 # ── Fonts ───────────────────────────────────────────────────
+# Primary is tried first; falls back automatically if not installed.
 # font-body:             "NotoSansNF-Reg"
 # font-body-fallback:    "Noto Sans"
 # font-heading:          "NotoSansNF-Reg"
 # font-heading-fallback: "Noto Sans"
 # font-mono:             "NotoMonoNF"
 # font-mono-fallback:    "Noto Sans Mono"
-# linespread: "1.25"
+# linespread: "1.25"     # 1.0 = single, 1.25 = default, 1.5 = one-and-a-half
 
 # ── Colors ──────────────────────────────────────────────────
 # color-heading: "25,55,120"   # R,G,B (0–255)
 # color-link:    "40,80,180"
 
 # ── Callout colors ──────────────────────────────────────────
+# LaTeX color names: red, blue, orange, green, yellow, violet, black, gray
 # color-important: "red"
 # color-note:      "blue"
 # color-warning:   "orange"
