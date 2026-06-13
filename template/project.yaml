@@ -43,7 +43,7 @@ disclaimer: "This document draws on publicly available sources. The selection, o
 # ── Navigation ──────────────────────────────────────────────
 toc: true
 # toc-depth: 2
-# secnumdepth: 2            # 0 = none, 1 = H1, 2 = H1+H2, 3 = H1+H2+H3
+secnumdepth: 0            # 0 = none, 1 = H1, 2 = H1+H2, 3 = H1+H2+H3
 # h2-page-break: false      # true = each H2 starts on a new page
 
 # ── Watermark ───────────────────────────────────────────────
