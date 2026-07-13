@@ -3,9 +3,9 @@
 # ─────────────────────────────────────────────────────────────
 ---
 
-# ── Build settings ───────────────────────────────────────────
-output: "../Georgia_COAM_ClassB_Primer-Latest.pdf"
+# ── BUILD SETTINGS ───────────────────────────────────────────
 
+output: "../Georgia_COAM_ClassB_Primer-Latest.pdf"
 input-files:
   - ../content/00-Frontmatter.md
   - ../content/01-COAM_Regulations.md
@@ -13,100 +13,125 @@ input-files:
   - ../content/03-Market_Considerations.md
   - ../content/04-GA_Regulatory_Documents.md
 
-# ── Document metadata ────────────────────────────────────────
+# ── DOCUMENT METADATA ────────────────────────────────────────
+
 title:   "Georgia COAM Class B Primer"
 author:  "Jeremiah D Clark"
 date:    "2026-02-27"
-# auto-date: true          # Use today's date instead of date above
+auto-date: false          # Use today's date instead of the date above
 version: "2.3"
 subject: "This document explains the current Georgia COAM regulations as of February 2026. It also provides guidance for those new to this unique market."
 keywords:
-  - Georgia
   - COAM
-  - Lottery
-  - Regulations
+  - Georgia
+  - Slots
 
-# ── Layout ──────────────────────────────────────────────────
-short-form: false          # true = compact page-1 header; false = full title page
-# short-form-image-height: "2.2in"
+# ── LAYOUT ──────────────────────────────────────────────────
 
-# ── Logo ────────────────────────────────────────────────────
+short-form: false          # true = compact header; false = title page
+short-form-image-height: "2.2in"
+
+# ── LOGO ────────────────────────────────────────────────────
 # Path to your logo image. Delete or comment out this line for no logo.
-# Long-form: square/portrait, ~1500×1500 px. Short-form: landscape banner, ~2000×600 px.
+# Long-form: square/portrait, ~1500×1500 px.
+# Short-form: landscape banner, ~2000×600 px.
+
 logo: ../images/logo.png
 
-# ── Cover disclaimer (long-form only) ───────────────────────
+# ── COVER DISCLAIMER (long-form only) ───────────────────────
 # Appears in a box at the bottom of the title page.
-# Delete or comment out this line to hide the disclaimer box.
-disclaimer: "This document draws on publicly available sources. The selection, organization, analysis, and original commentary are the author's own and are protected by copyright."
+# Comment out this line to hide the disclaimer box.
 
-# ── Navigation ──────────────────────────────────────────────
+disclaimer: "This document draws on publicly available sources. The selection, organization, analysis,
+and original commentary are the author’s own and are protected by copyright."
+
+# ── NAVIGATION ──────────────────────────────────────────────
+
 toc: true
-# toc-depth: 2
+toc-depth: 2
 secnumdepth: 0            # 0 = none, 1 = H1, 2 = H1+H2, 3 = H1+H2+H3
-# h2-page-break: false      # true = each H2 starts on a new page
+h2-page-break: false      # true = each H2 starts on a new page
+figure-captions: true     # false = don't show image alt text as captions
 
-# ── Watermark ───────────────────────────────────────────────
-# Angled text across every page. Delete all three lines to disable.
+# ── WATERMARK ───────────────────────────────────────────────
+# Angled text across every page. Comment out all three lines to disable.
+
 # watermark: "DRAFT"
 # watermark-opacity: "0.15"  # 0.0 = invisible, 1.0 = fully opaque
 # watermark-scale: "80pt"
 
-# ── Page size ───────────────────────────────────────────────
-# papersize: letter          # letter / a4
-# fontsize: 11pt
+# ── PAGE SIZE ───────────────────────────────────────────────
 
-# ── Margins ─────────────────────────────────────────────────
-# margin: "1in"              # left and right
+papersize: letter          # letter / a4
+fontsize: 11pt
+
+# ── MARGINS ─────────────────────────────────────────────────
+
+margin: "1in"              # left and right
 margin-top: "1in"
-margin-bottom: "1.1in"
+margin-bottom: "1in"
 
-# ── Header & footer geometry ─────────────────────────────────
-# headheight: "14pt"         # height of the header box
-# headsep: "12pt"            # gap between header rule and body text
-# footskip: "30pt"           # distance from body bottom to footer baseline
+# ── HEADER & FOOTER GEOMETRY ─────────────────────────────────
 
-# ── Header & footer rules ────────────────────────────────────
-# header-rule: "0.4pt"       # set to "0pt" to hide
-# footer-rule: "0.4pt"       # set to "0pt" to hide
+headheight: "14pt"         # height of the header box
+headsep: "12pt"            # gap between header rule and body text
+footskip: "30pt"           # distance from body bottom to footer baseline
 
-# ── Custom header content ────────────────────────────────────
-# Leave commented out to show no header text (the rule still appears).
-header-left:   "©2026 Jeremiah Clark"
-# header-center: ""
+# ── HEADER & FOOTER RULES ────────────────────────────────────
+
+header-rule: "0.4pt"       # set to "0pt" to hide
+footer-rule: "0.4pt"       # set to "0pt" to hide
+
+# ── CUSTOM HEADER CONTENT ────────────────────────────────────
+# Leave empty (or commented out) to show no header text.
+
+header-left:   "© 2026 Jeremiah Clark"
+header-center: ""
 header-right:  "JeremiahClark.com"
 
-# ── Footer ──────────────────────────────────────────────────
+# ── FOOTER ──────────────────────────────────────────────────
+
 page-total: true           # true = "Page X of Y"; false = "Page X"
 
-# ── Title page layout (long-form only) ──────────────────────
-logo-width: "0.7"          # logo width as fraction of text width (0.0–1.0)
-# titlepage-post-rule:   "2em"    # space after top rule, before title
-# titlepage-post-title:  "0.75em" # space after title, before author
-# titlepage-post-author: "0.5em"  # space after author, before date
-# titlepage-post-date:   "3em"    # space after date, before logo
+# ── TITLE PAGE LAYOUT (long-form only) ──────────────────────
 
-# ── Fonts ───────────────────────────────────────────────────
-# Primary is tried first; falls back automatically if not installed.
-# font-body:             "NotoSansNF-Reg"
-# font-body-fallback:    "Noto Sans"
-# font-heading:          "NotoSansNF-Reg"
-# font-heading-fallback: "Noto Sans"
-# font-mono:             "NotoMonoNF"
-# font-mono-fallback:    "Noto Sans Mono"
-# linespread: "1.25"     # 1.0 = single, 1.25 = default, 1.5 = one-and-a-half
+logo-width: "0.7"               # logo width as fraction of text width (0.0–1.0)
+titlepage-post-rule:   "2em"    # space after top rule, before title
+titlepage-post-title:  "0.75em" # space after title, before author
+titlepage-post-author: "0.5em"  # space after author, before date
+titlepage-post-date:   "3em"    # space after date, before logo
 
-# ── Colors ──────────────────────────────────────────────────
-# color-heading: "25,55,120"   # R,G,B (0–255)
-# color-link:    "40,80,180"
+# ── FONTS ───────────────────────────────────────────────────
+# The primary is tried first, then the optional -fallback, then Latin
+# Modern (bundled with TeX) — a missing font never fails the build.
+# Nerd Font setup (extra icons/symbols, see README):
+#   font-body:             "NotoSansNF-Reg"
+#   font-body-fallback:    "Noto Sans"
 
-# ── Callout colors ──────────────────────────────────────────
-# LaTeX color names: red, blue, orange, green, yellow, violet, black, gray
-# color-important: "red"
-# color-note:      "blue"
-# color-warning:   "orange"
-# color-tip:       "green"
-# color-caution:   "yellow"
-# color-summary:   "violet"
-# color-example:   "black"
+font-body:             "NotoSansNF-Reg"
+font-heading:          "NotoSansNF-Reg"
+font-mono:             "NotoSansMono-Regular"
+font-body-fallback:    "Noto Sans"
+font-heading-fallback: "Noto Sans"
+font-mono-fallback:    "Noto Sans Mono"
+linespread: "1.25"     # 1.0 = single, 1.25 = default, 1.5 = one-and-a-half
+
+# ── COLORS ──────────────────────────────────────────────────
+
+color-heading: "25,55,120"   # R,G,B (0–255)
+color-link:    "40,80,180"
+
+# ── CALLOUT COLORS ──────────────────────────────────────────
+# Defaults are the tuned sd-* palette (sd-red, sd-blue, sd-orange,
+# sd-green, sd-amber, sd-purple, sd-gray). Plain LaTeX color names
+# (red, blue, orange, ...) also work.
+
+color-important: "sd-red"
+color-note:      "sd-blue"
+color-warning:   "sd-orange"
+color-tip:       "sd-green"
+color-caution:   "sd-amber"
+color-summary:   "sd-purple"
+color-example:   "sd-gray"
+color-disclaimer: "sd-gray"   # title-page disclaimer box
 ---
