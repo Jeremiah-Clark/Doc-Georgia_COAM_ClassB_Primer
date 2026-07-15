@@ -17,12 +17,14 @@ lang: en-US
 # Document layout
 short-form: false
 short-form-image-height: "2.2in"
+short-form-image-width: "1.0"   # banner width as fraction of text width
 
 # Template controls
 toc: true
 toc-depth: 2
 secnumdepth: 2
 figure-captions: true      # show image alt text as a caption under the image
+callout-keep-whole: false  # true = never split a callout across pages
 h2-page-break: false
 page-total: false
 

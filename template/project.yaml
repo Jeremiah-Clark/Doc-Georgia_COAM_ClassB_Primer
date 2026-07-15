@@ -29,7 +29,8 @@ keywords:
 # ── LAYOUT ──────────────────────────────────────────────────
 
 short-form: false          # true = compact header; false = title page
-short-form-image-height: "2.2in"
+short-form-image-height: "2.2in"   # banner max height
+short-form-image-width: "1.0"      # banner width as fraction of text width (0.0-1.0)
 
 # ── LOGO ────────────────────────────────────────────────────
 # Path to your logo image. Delete or comment out this line for no logo.
@@ -42,8 +43,7 @@ logo: ../images/logo.png
 # Appears in a box at the bottom of the title page.
 # Comment out this line to hide the disclaimer box.
 
-disclaimer: "This document draws on publicly available sources. The selection, organization, analysis,
-and original commentary are the author’s own and are protected by copyright."
+disclaimer: "This document draws on publicly available sources. The selection, organization, analysis, and original commentary are the author’s own and are protected by copyright."
 
 # ── NAVIGATION ──────────────────────────────────────────────
 
@@ -52,6 +52,7 @@ toc-depth: 2
 secnumdepth: 0            # 0 = none, 1 = H1, 2 = H1+H2, 3 = H1+H2+H3
 h2-page-break: false      # true = each H2 starts on a new page
 figure-captions: true     # false = don't show image alt text as captions
+callout-keep-whole: true # true = never split a callout across pages
 
 # ── WATERMARK ───────────────────────────────────────────────
 # Angled text across every page. Comment out all three lines to disable.
